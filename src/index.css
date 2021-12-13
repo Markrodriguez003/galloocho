@@ -11,3 +11,13 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+
+@font-face {
+  font-family: "brandFont";
+  src: url("./fonts/Glaschu-Inline.ttf");
+  /* src: url("./fonts/Kiona-Regular.ttf"); */
+  /* src: url("./fonts/telegrafico.ttf"); */
+ 
+  
+}
