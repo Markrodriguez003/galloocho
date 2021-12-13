@@ -17,7 +17,10 @@ code {
   font-family: "brandFont";
   src: url("./fonts/Glaschu-Inline.ttf");
   /* src: url("./fonts/Kiona-Regular.ttf"); */
-  /* src: url("./fonts/telegrafico.ttf"); */
- 
-  
+  /* src: url("./fonts/telegrafico.ttf"); */ 
+}
+
+@font-face {
+  font-family: "menuFont";
+  src: url("./fonts/telegrafico.ttf"); 
 }

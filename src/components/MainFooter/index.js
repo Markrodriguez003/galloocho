@@ -9,8 +9,6 @@ import { Button, Navbar, Container, Offcanvas } from 'react-bootstrap';
 // IMAGES
 import rosterLogo from "../../imgs/logo/roosterE.png";
 
-// ICONS
-import { BsFillArrowRightCircleFill } from "react-icons/bs";
 
 // CSS
 const Header = styled(Navbar)`
@@ -23,10 +21,17 @@ const Header = styled(Navbar)`
   /* background-color: #2e80d1;  */
   /* margin: 10px; */
   padding: 13px;
-  -webkit-box-shadow: 1px 7px 27px 3px rgba(0,0,0,0.53); 
-box-shadow: 1px 7px 27px 3px rgba(0,0,0,0.53);
+ 
+  position: relative;
+  left: 0;
+  bottom: 0;
     
 `;
+
+const ContentContainer = styled('div')`
+ min-height: calc(100vh - 34px);
+ background-color:red;
+ `
 
 const Menu = styled('h1')`
   color: white;
@@ -59,9 +64,10 @@ function MainHeader() {
     const handleShow = () => setShow(true);
     return (
         <>
-            <Header fixed="top" >
+        <ContentContainer></ContentContainer>
+            <Header >
                 {/* Maybe put a menu Icon - Roster's Head at the end of the "Menu" Left btton */}
-                <Menu onClick={handleShow}>Menu < BsFillArrowRightCircleFill/></Menu>
+                <Menu onClick={handleShow}>Menu</Menu>
                 <Offcanvas show={show} onHide={handleClose}>
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title>Offcanvas</Offcanvas.Title>
