@@ -56,7 +56,7 @@ const BrandText = styled('h1')`
     margin-top: 4px;
     font-size: 46px;
 `
-
+ 
 function MainHeader() {
     const [show, setShow] = useState(false);
 
@@ -64,11 +64,11 @@ function MainHeader() {
     const handleShow = () => setShow(true);
     return (
         <>
-        <ContentContainer></ContentContainer>
+            {/* <ContentContainer></ContentContainer> */}
             <Header >
                 {/* Maybe put a menu Icon - Roster's Head at the end of the "Menu" Left btton */}
-                <Menu onClick={handleShow}>Menu</Menu>
-                <Offcanvas show={show} onHide={handleClose}>
+                <Menu onClick={handleShow}>Menu </Menu>
+                <Offcanvas show={show} onHide={handleClose} >
                     <Offcanvas.Header closeButton>
                         <Offcanvas.Title>Offcanvas</Offcanvas.Title>
                     </Offcanvas.Header>

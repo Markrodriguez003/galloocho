@@ -9,11 +9,12 @@ import { Button, Container, Carousel, CarouselItem } from 'react-bootstrap';
 // IMAGES
 import rosterLogo from "../../imgs/logo/roosterE.png";
 import heroTextureBG from "../../imgs/textures/TextureA.jpg"
+import rooster1 from "../../imgs/product/sculptures/Rooster-1-Large.jpg"
 
 
 // CSS
 const CarouselContainer = styled(Container)`
-padding-top: 120px;
+padding-top: 180px;
 padding-left:auto;
 padding-right:auto;
 text-align: center;
@@ -38,10 +39,11 @@ const HeroContainer = styled(Container)`
 `;
 
 const CarouselImg = styled('img')`
-width: 780px;
-height: 800px;
+width: 548px;
+height: 625px;
 
 `
+
 
 
 function Hero() {
@@ -57,7 +59,7 @@ function Hero() {
                         <Carousel.Item>
                             <CarouselImg
 
-                                src="https://m.media-amazon.com/images/I/918ZqRvCzJL._AC_SL1500_.jpg"
+                                src={rooster1}
                                 alt="First slide"
                             />
                             <Carousel.Caption>
@@ -68,7 +70,7 @@ function Hero() {
                         <Carousel.Item>
                             <CarouselImg
 
-                                src="https://m.media-amazon.com/images/I/917XBCENBXL._AC_SL1500_.jpg"
+                                src={rooster1}
                                 alt="Second slide"
                             />
 
@@ -80,7 +82,7 @@ function Hero() {
                         <Carousel.Item>
                             <CarouselImg
 
-                                src="https://m.media-amazon.com/images/I/81wOz4LcEaL._AC_SL1500_.jpg"
+                                src={rooster1}
                                 alt="Third slide"
                             />
 
