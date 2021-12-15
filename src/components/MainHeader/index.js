@@ -67,6 +67,14 @@ const Menu = styled("h2")`
   font-family: "menuFont";
   font-size: 30px;
   margin-left: 6px;
+
+  @media (max-width: 675px) {
+    font-size: 22px;
+  }
+
+  @media (max-width: 455px) {
+    font-size: 13.5px;
+  }
 `;
 
 const SubSideMenu = styled("div")`
@@ -90,6 +98,17 @@ const BrandIcon = styled("img")`
   padding: 7px;
   margin-bottom: 8px;
   margin-right: 3px;
+  @media (max-width: 675px) {
+    width: 50px;
+  height: 55px;
+  }
+
+  @media (max-width: 455px) {
+    width: 40px;
+  height: 45px;
+  }
+
+ 
 `;
 const MenuHeaderIcon = styled("img")`
   width: 160px;
@@ -115,6 +134,22 @@ const BrandText = styled("h1")`
   margin-right: 6px;
   margin-top: 4px;
   font-size: 48px;
+
+  @media (max-width: 725px) {
+    font-size: 38px;
+  }
+
+  @media (max-width: 675px) {
+    font-size: 28px;
+  }
+
+  @media (max-width: 550px) {
+    font-size: 24px;
+  }
+
+  @media (max-width: 455px) {
+    font-size: 18px;
+  }
 `;
 
 const SlideMenuContainer = styled(Offcanvas)`
@@ -169,14 +204,15 @@ function MainHeader() {
     <>
       <Header fixed="top">
         {/* Maybe put a menu Icon - Roster's Head at the end of the "Menu" Left btton */}
-        <SubSideMenu >
+        <SubSideMenu>
           <Menu onClick={handleShow}>
-            Menu  <BsFillArrowRightCircleFill />
+            Menu <BsFillArrowRightCircleFill style={{ marginRight: "2px" }} />
           </Menu>
+
           <Menu onClick={handleShowB}>
             | Cart <BsFillCartFill />
           </Menu>
-        </SubSideMenu >
+        </SubSideMenu>
 
         {/* OFFSIDE-LEFT-SLIDE-MENU */}
         <SlideMenuContainer show={show} onHide={handleClose}>
@@ -219,12 +255,17 @@ function MainHeader() {
         </SlideMenuContainer>
 
         {/* OFFSIDE-RIGHT-SLIDE-MENU */}
-        <SlideMenuContainer placement={"end"} show={showB} onHide={handleCloseB}>
+        <SlideMenuContainer
+          placement={"end"}
+          show={showB}
+          onHide={handleCloseB}
+        >
           <Offcanvas.Body>
             <MenuFlex>
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title>
-                <BsFillCartFill />CART
+                  <BsFillCartFill />
+                  CART
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <p>__________</p>
