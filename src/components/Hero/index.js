@@ -1,6 +1,11 @@
 // import '../MainHeader/MainHeader.css'
 import { useState } from "react";
 import styled from "styled-components";
+
+
+// REACT-FBER-THREE import
+ import ShowRooster from "../ThreeD"
+ 
 // CSS
 
 import { Button, Container, Carousel, CarouselItem } from "react-bootstrap";
@@ -21,16 +26,14 @@ const CarouselContainer = styled(Container)`
 
 const SplashBackground = styled("div")`
   background: white;
-  width: 50%;
-  height: 100%;
+  width: 48vw;
+  height: 100vh;
   margin-left: auto;
   margin-right: auto;
   background-color: white;
-  min-width: 60%;
-
-  border: 10px royalblue dotted;
-  outline: 4px dotted white;
-  outline-offset: 5px;
+  /* border: 10px royalblue dotted; */
+  outline: 5px dotted white;
+  outline-offset: 2px;
 `;
 
 const HeroContainer = styled(Container)`
@@ -57,7 +60,19 @@ function Hero() {
     <>
       <HeroContainer fluid>
         <SplashBackground>
-          <CarouselContainer>
+        {/* <ShowRooster/> */}
+        </SplashBackground>
+      </HeroContainer>
+    </>
+  );
+}
+
+export default Hero;
+
+/* CAROUSEL
+
+
+   {/* <CarouselContainer>
             <Carousel>
               <Carousel.Item>
                 <CarouselImg src={rooster1} alt="First slide" />
@@ -89,19 +104,6 @@ function Hero() {
                 </Carousel.Caption>
               </Carousel.Item>
             </Carousel>
-          </CarouselContainer>
-        </SplashBackground>
-      </HeroContainer>
-    </>
-  );
-}
-
-export default Hero;
-
-/* CAROUSEL
-
-
-
+          </CarouselContainer> */
  
-
-*/
+ 
