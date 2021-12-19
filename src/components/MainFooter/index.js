@@ -3,83 +3,192 @@ import { useState } from 'react';
 import styled from 'styled-components'
 // CSS 
 
-import { Button, Navbar, Container, Offcanvas } from 'react-bootstrap';
+import { Button, Navbar, Container, Offcanvas, Form } from 'react-bootstrap';
 // FONTS
 
 // IMAGES
-import rosterLogo from "../../imgs/logo/roosterE.png";
+import rosterLogo2 from "../../imgs/logo/roosterE.png";
+// ICONS
+import {
+    BsFillArrowRightCircleFill,
+    BsFillCartFill,
+    BsFacebook,
+    BsInstagram,
+    BsYoutube,
+    BsFillEnvelopeFill,
+    BsTwitter,
+    BsFillQuestionCircleFill,
+    BsFillBagXFill,
+    BsFillBagCheckFill,
+    BsXOctagonFill,
+    BsFillBagPlusFill
+} from "react-icons/bs";
 
 
 // CSS
-const Header = styled(Navbar)`
+const Footer = styled(Navbar)`
  display: flex;
- justify-content: space-between;
-  color: palevioletred;
-  /* background-color:#4a4a4a;  */
+ position:"relative";
   background-color:#2f3030;
-; 
-  /* background-color: #2e80d1;  */
-  /* margin: 10px; */
-  padding: 13px;
- 
+  padding: 33px;
   position: relative;
   left: 0;
   bottom: 0;
-    
+  margin-left:auto;
+  margin-right:auto;
+  text-align:"center";
+  align-content:"center";
+  justify-content:"center";
+  align-items:"center";
+
 `;
 
-const ContentContainer = styled('div')`
- min-height: calc(100vh - 34px);
- background-color:red;
- `
-
-const Menu = styled('h1')`
-  color: white;
-  background-color:transparent; 
-  cursor: pointer;
-  text-decoration:none;   
-  font-family:"menuFont";
-  font-size: 42px;
-  margin-left: 6px;
-`;
-
-const BrandLink = styled('a')`
+const FooterAnchor = styled('a')`
 text-decoration: none;
-`
-const BrandText = styled('h1')`
-    font-family:"brandFont";
-    color:white;
-    letter-spacing: 2.5px;
-    border: white 4.2px dotted;  
-    padding: 6px 6px 0px 6px;
-    margin-right: 6px;
-    margin-top: 4px;
-    font-size: 46px;
-`
- 
-function MainHeader() {
-    const [show, setShow] = useState(false);
+  color: white;
+  font-size: 28px;
+  padding-top: 10.5px;
+  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+  
 
-    const handleClose = () => setShow(false);
-    const handleShow = () => setShow(true);
+  &:hover {
+  /* color: lightpink; */
+  color: #fc6a6a;
+   
+  }
+`
+
+const SocialMediaBar = styled("div")`
+  color: white;
+  /* background-color:red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: space-around;
+  margin-top: 16px;
+`;
+
+const SocialMediaItem = styled("a")`
+  text-decoration: none;
+  padding: 12px;
+  font-size: 30px;
+  color: white;
+  /* -webkit-transition: all 0.3s ease;  
+    -moz-transition: all 0.3s ease;  
+    -ms-transition: all 0.3s ease;  
+    -o-transition: all 0.3s ease;  
+    transition: all 0.3s ease; */
+  &:hover {
+  /* color: lightpink; */
+  color: #fc6a6a;
+  /* font-size: 38px; */
+}
+`;
+
+const MenuHeaderIcon = styled("img")`
+  width: 160px;
+  height: 195px;
+  background-color: transparent;
+  color: white;
+  padding: 4px;
+  margin-top: 40px;
+  margin-left: 130px;
+  margin-right: 45px;
+  margin-bottom: 8px;
+`;
+
+const SmallText = styled('small')`
+color:"grey";
+background-color:#2f3030;
+text-align:"center";
+padding:22px;
+
+
+`
+
+function MainHeader() {
+
     return (
         <>
             {/* <ContentContainer></ContentContainer> */}
-            <Header >
-                {/* Maybe put a menu Icon - Roster's Head at the end of the "Menu" Left btton */}
-                <Menu onClick={handleShow}>Menu </Menu>
-                <Offcanvas show={show} onHide={handleClose} >
-                    <Offcanvas.Header closeButton>
-                        <Offcanvas.Title>Offcanvas</Offcanvas.Title>
-                    </Offcanvas.Header>
-                    <Offcanvas.Body>
-                        Some text as placeholder. In real life you can have the elements you
-                        have chosen. Like, text, images, lists, etc.
-                    </Offcanvas.Body>
-                </Offcanvas>
-                <BrandLink href="https://www.nhl.com/"><BrandText>GALLO-OCHO</BrandText></BrandLink>
-            </Header>
+            <Footer >
 
+                <MenuHeaderIcon src={rosterLogo2} />
+
+                <div style={{ display: "flex", flexDirection: "column", marginLeft: "44px" }}>
+                    <FooterAnchor href="#">HOME</FooterAnchor>
+                    <FooterAnchor href="#">SHOP</FooterAnchor>
+                    <FooterAnchor href="#">ARTISTS</FooterAnchor>
+                    <FooterAnchor href="#">NEWSLETTER</FooterAnchor>
+                    <FooterAnchor href="#">FUTURE ATTRACTIONS</FooterAnchor>
+                    <FooterAnchor href="#">REFUND POLICY</FooterAnchor>
+                </div>
+
+                <div style={{ display: "flex", flexDirection: "column", marginLeft: "84px" }}>
+                    <FooterAnchor href="#">CONTACT</FooterAnchor>
+                    <FooterAnchor href="#" style={{ fontSize: "18px", }}><  BsFillEnvelopeFill/> email@email.com</FooterAnchor>
+                    <FooterAnchor href="#">ARTISTS WANTED!</FooterAnchor>
+                    <small style={{ color: "grey", fontStyle: "italic", marginBottom: "6px" }}>Submit your portfolio to us below!</small>
+
+                    <Form style={{ width: "400px" }}>
+                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                            <Form.Control type="email" placeholder="name@example.com" />
+                        </Form.Group>
+                        <Form.Group className="mb-3" controlId="exampleForm.ControlTextarea1">
+                            <Form.Control as="textarea" rows={3} placeholder="Include portfolio and contact info and we'll reach out!" />
+                        </Form.Group>
+                    </Form>
+                </div>
+
+                <div style={{ display: "flex", flexDirection: "column", marginLeft: "84px" }}>
+                    <FooterAnchor href="#">SUBSCRIBE TO OUR NEWSLETTER</FooterAnchor>
+                    <Form>
+                        <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
+                            <Form.Label>Email address</Form.Label>
+                            <Form.Control type="email" placeholder="name@example.com" />
+                        </Form.Group>
+                    </Form>
+                    <SocialMediaBar>
+                        <SocialMediaItem href="#">
+                            <BsFacebook />
+                        </SocialMediaItem>
+                        <SocialMediaItem href="#">
+                            {" "}
+                            <BsInstagram />
+                        </SocialMediaItem>
+                        <SocialMediaItem href="#">
+                            {" "}
+                            <BsYoutube />
+                        </SocialMediaItem>
+                        <SocialMediaItem href="#">
+                            {" "}
+                            <BsFillEnvelopeFill />
+                        </SocialMediaItem>
+                        <SocialMediaItem href="#">
+                            {" "}
+                            <BsTwitter />
+                        </SocialMediaItem>
+                    </SocialMediaBar>
+
+                </div>
+
+
+            </Footer>
+            <SmallText style={{ display: "block", textAlign: "center", color: "white", fontSize:"12px" }}>© [name of rightsholder or rightsholders] [publication year]: e.g.  © XYZ Press and contributors 2014
+
+                [date of terms of use]
+
+                Except as permitted by the copyright law applicable to you, you may not reproduce or communicate any of the content on this website, including files downloadable from this website, without the permission of the copyright owner.
+
+                The Australian Copyright Act allows certain uses of content from the internet without the copyright owner’s permission. This includes uses by educational institutions and by Commonwealth and State governments, provided fair compensation is paid. For more information, see www.copyright.com.au and www.copyright.org.au.
+
+                The owners of copyright in the content on this website may receive compensation for the use of their content by educational institutions and governments, including from licensing schemes managed by Copyright Agency.
+
+                We may change these terms of use from time to time. Check before re-using any content from this website.</SmallText>
         </>
 
 

@@ -1,11 +1,11 @@
 // import '../MainHeader/MainHeader.css'
 import { useState } from "react";
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 
 // REACT-FBER-THREE import
- import ShowRooster from "../ThreeD"
- 
+import ThreeD from "../ThreeD/index"
+
 // CSS
 
 import { Button, Container, Carousel, CarouselItem } from "react-bootstrap";
@@ -14,34 +14,95 @@ import { Button, Container, Carousel, CarouselItem } from "react-bootstrap";
 // IMAGES
 import rosterLogo from "../../imgs/logo/roosterE.png";
 import heroTextureBG from "../../imgs/textures/TextureA.jpg";
-import rooster1 from "../../imgs/product/sculptures/Rooster-1-Large.jpg";
+import rooster1 from "../../imgs/product/sculptures/A.png";
 
 // CSS
-const CarouselContainer = styled(Container)`
-  padding-top: 180px;
-  padding-left: auto;
-  padding-right: auto;
-  text-align: center;
-`;
 
-const SplashBackground = styled("div")`
-  background: white;
-  width: 48vw;
-  height: 100vh;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: white;
-  /* border: 10px royalblue dotted; */
-  outline: 5px dotted white;
-  outline-offset: 2px;
-`;
 
-const HeroContainer = styled(Container)`
+
+// FLEX BOX THAT HOLDS TEXT CONTAINER + ROOSTER IMAGE
+const HeroFlex = styled('div')`
+display:inline-flex;
+position: relative;
+flex-direction: row;
+align-content: center;
+align-items: center;
+/* background-color: limegreen; */
+padding-top: 45px;
+top: 300px;
+left: 350px;
+ 
+`
+const HeroImgContainer = styled('div')`
+/* background-color:tomato; */
+/* margin-bottom: 600px; */
+/* width: 450px;
+height: 500px; */
+ 
+
+`
+// FLEX BOX CONTAINER THAT HOLDS ALL INDIVIDUAL HERO TEXT CONTAINER
+const HeroTextContainer = styled('div')`
+display:inline-flex;
+position: relative;
+flex-direction: column;
+align-content: center;
+align-items: center;
+/* background-color: pink; */
+ 
+
+`
+// INDIVIDUAL HERO TEXT CONTAINER 
+const HeroText = styled('span')`
+display:inline;
+position: relative;
+background-color: #1e1e1e;
+color: white;
+/* width: 20vw;
+height: 25vh; */
+font-size: 42px;
+font-family: "heroFont";
+ 
+
+ 
+// ** STYLING FOR EACH INDIVIDUAL HERO SPLASH TEXT CONTAINER
+${props =>
+    props.first &&
+    css`
+      /* background: palevioletred; */
+      /* transform: rotateZ(4deg); */
+      border-radius: 5%;
+      /* margin: 30px 0px 30px -90px; */
+    `};
+
+${props =>
+    props.second &&
+    css`
+      /* background: palevioletred; */
+      /* transform: rotateZ(4deg); */
+      border-radius: 5%;
+      margin: 30px 0px 30px -90px;
+    `};
+ 
+
+${props =>
+    props.three &&
+    css`
+      /* background: palevioletred; */
+      /* transform: rotateZ(-7deg); */
+      border-radius: 5%;
+      margin: 30px 0px 30px 125px;
+    `};
+ 
+ 
+`
+// ENTIRE HERO SPLASH PAGE CONTAINER (SPLATTER PAINT GRAPHIC)
+const HeroContainer = styled('div')`
+display: block;
+position: relative;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   background-image: url(${heroTextureBG});
-  /* background-color: darkblue; */
-  /* background-color: #07204a; */
   background-color: #041b42;
   background-blend-mode: screen;
   background-position: center;
@@ -58,10 +119,24 @@ const CarouselImg = styled("img")`
 function Hero() {
   return (
     <>
-      <HeroContainer fluid>
-        <SplashBackground>
-        {/* <ShowRooster/> */}
-        </SplashBackground>
+
+      {/* <HeroContainer fluid> */}
+      <HeroContainer >
+
+
+        {/* <ThreeD /> */}
+
+        <HeroFlex>
+          <HeroTextContainer>
+            <HeroText first>Custom-Made</HeroText>
+            <HeroText second>Limited-Edition</HeroText>
+            <HeroText three>Artist Painted</HeroText>
+            <HeroText>Own a Unique Piece of Miami</HeroText>
+          </HeroTextContainer>
+
+          <div>  <ThreeD /></div>
+        </HeroFlex>
+
       </HeroContainer>
     </>
   );
@@ -71,6 +146,14 @@ export default Hero;
 
 /* CAROUSEL
 
+
+// COMPONENT FUNCTION
+const CarouselContainer = styled(Container)`
+  padding-top: 180px;
+  padding-left: auto;
+  padding-right: auto;
+  text-align: center;
+`;
 
    {/* <CarouselContainer>
             <Carousel>
@@ -105,5 +188,5 @@ export default Hero;
               </Carousel.Item>
             </Carousel>
           </CarouselContainer> */
- 
- 
+
+

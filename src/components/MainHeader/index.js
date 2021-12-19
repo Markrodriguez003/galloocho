@@ -20,6 +20,11 @@ import {
   BsYoutube,
   BsFillEnvelopeFill,
   BsTwitter,
+  BsFillQuestionCircleFill,
+  BsFillBagXFill,
+  BsFillBagCheckFill,
+  BsXOctagonFill,
+  BsFillBagPlusFill
 } from "react-icons/bs";
 
 // CSS
@@ -117,14 +122,10 @@ const MenuHeaderIcon = styled("img")`
   color: white;
   padding: 4px;
   margin-top: 40px;
-  margin-left: 50px;
+  margin-left: 68px;
   margin-bottom: 8px;
 `;
 
-const MenuDivider = styled("hr")`
-  color: white;
-  font-size: 40px;
-`;
 const BrandText = styled("h1")`
   font-family: "brandFont";
   color: white;
@@ -155,7 +156,39 @@ const BrandText = styled("h1")`
 const SlideMenuContainer = styled(Offcanvas)`
   background-color: #2f3030;
   color: white;
+
+  &:* {
+    color:white;
+  }
+
+ 
 `;
+
+const SiteButton = styled(Button)`
+/* background-color: white; */
+background-color: #f5f5f5;
+color: #2f3030;
+border:none;
+display:"inline";
+/* margin-right:120px;
+margin-left:120px;
+margin-bottom:135px; */
+font-size:20px;
+/* border-radius: 20px; */
+font-weight:bold;
+ 
+-webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+&:hover {
+  /* background-color: lightpink; */
+  background-color: #fc6a6a;
+ 
+ 
+}
+`
 
 const MenuFlex = styled("div")`
   display: flex;
@@ -170,6 +203,18 @@ const MenuItem = styled("a")`
   color: white;
   font-size: 28px;
   padding-top: 10.5px;
+  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
+    -moz-transition: all 0.5s ease; /* Firefox */
+    -ms-transition: all 0.5s ease; /* IE 9 */
+    -o-transition: all 0.5s ease; /* Opera */
+    transition: all 0.5s ease;
+
+  &:hover {
+  /* color: lightpink; */
+  color: #fc6a6a;
+  font-size: 38px;
+ 
+}
 `;
 
 const SocialMediaBar = styled("div")`
@@ -179,7 +224,7 @@ const SocialMediaBar = styled("div")`
   justify-content: center;
   align-items: center;
   align-content: space-around;
-  margin-top: 10px;
+  margin-top: 16px;
 `;
 
 const SocialMediaItem = styled("a")`
@@ -187,6 +232,16 @@ const SocialMediaItem = styled("a")`
   padding: 12px;
   font-size: 30px;
   color: white;
+  /* -webkit-transition: all 0.3s ease;  
+    -moz-transition: all 0.3s ease;  
+    -ms-transition: all 0.3s ease;  
+    -o-transition: all 0.3s ease;  
+    transition: all 0.3s ease; */
+  &:hover {
+  /* color: lightpink; */
+  color: #fc6a6a;
+  font-size: 38px;
+}
 `;
 
 function MainHeader() {
@@ -252,6 +307,7 @@ function MainHeader() {
               </SocialMediaItem>
             </SocialMediaBar>
           </Offcanvas.Body>
+          <SiteButton >Need Help <BsFillQuestionCircleFill style={{ marginBottom: "4.5px" }} /> </SiteButton>
         </SlideMenuContainer>
 
         {/* OFFSIDE-RIGHT-SLIDE-MENU */}
@@ -263,15 +319,46 @@ function MainHeader() {
           <Offcanvas.Body>
             <MenuFlex>
               <Offcanvas.Header closeButton>
-                <Offcanvas.Title>
-                  <BsFillCartFill />
-                  CART
+                <Offcanvas.Title style={{ fontSize: "30px" }}>
+                  <BsFillCartFill style={{ marginTop: "-13px" }} /> {" "}
+                  SHOPPING CART
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <p>__________</p>
-              <MenuItem href="">ITEMS:</MenuItem>
+              <MenuItem href="#" style={{ fontSize: "22px" }}>ITEMS:</MenuItem>
             </MenuFlex>
+            <BsFillBagXFill style={{
+              display: "block",
+              color: "grey",
+              fontStyle: "italic",
+              marginLeft: "auto",
+              marginRight: "auto",
+              marginTop: "170px",
+              transform: "scale(3.5)",
+              opacity: "0.35",
+              textAlign: "center"
+            }} />
+
+            <small style={{
+              display: "block",
+              color: "grey",
+              fontStyle: "italic",
+              marginLeft: "auto",
+              marginRight: "auto",
+              marginTop: "50px",
+              textAlign: "center"
+
+
+            }}>Your cart is empty</small>
+
           </Offcanvas.Body>
+          <div style={{ display: "flex", marginBottom:"20px", textAlign:"center", justifyContent:"center" }}>
+            <Button variant="success" style={{fontSize:"15px", marginLeft:"10px"}}><BsFillBagCheckFill style={{marginBottom:"4.5px", paddingRight:"3px"}}/>Checkout</Button>{' '}
+           
+            <Button variant="primary" style={{fontSize:"15px", marginLeft:"10px"}}><BsFillBagPlusFill style={{marginBottom:"4.5px", paddingRight:"3px"}}/>Add More Items</Button>{' '}
+            <Button variant="outline-danger" style={{fontSize:"15px", marginLeft:"10px"}}><BsXOctagonFill style={{marginBottom:"4.5px", paddingRight:"3px"}}/>Clear Cart</Button>{' '}
+          </div>
+          <SiteButton >Need Help <BsFillQuestionCircleFill style={{ marginBottom: "4.5px" }} /> </SiteButton>
         </SlideMenuContainer>
 
         {/*** DIFFERENT LOGO IDEAS */}

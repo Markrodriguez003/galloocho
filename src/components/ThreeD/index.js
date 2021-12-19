@@ -1,50 +1,57 @@
 
 import { useState } from "react";
 import styled from "styled-components";
-import {OrbitControls} from "@react-three/drei";
+import { OrbitControls } from "@react-three/drei";
 
 import React, { Suspense } from 'react';
-import { useGLTF } from "@react-three/drei"
+import { useGLTF, Stage, PerspectiveCamera, OrthographicCamera } from "@react-three/drei"
 import { Canvas } from "@react-three/fiber"
+import { BsPiggyBank } from "react-icons/bs";
 
 function Model() {
-    const { scene } = useGLTF("rooster.glb");
+    const { scene } = useGLTF("scene.glb");
     return <primitive object={scene} />
 }
-
-// function Light({ brightness, color }) {
-//     return (
-//       <rectAreaLight
-//         width={3}
-//         height={3}
-//         color={color}
-//         intensity={brightness}
-//         position={[45, 10, 12]}
-//         lookAt={[0, 0, 0]}
-//         penumbra={1}
-//         castShadow
-//       />
-//     );
-//   }
-
 
 
 function ThreeD(props) {
     return (
-        <div style={{ height: "100vh", width: "50vw", backgroundColor: "white", marginLeft:"auto", marginRight:"auto"    }}>
-    
-            <Canvas  shadows camera={{ position: [52, 18, 23], fov: 100.5 }}>
-            <ambientLight intensity={5.5} color="grey" />
-                {/* <pointLight position={[40,10,15]} intensity={1.4} power={1.5} distance={2} /> */}
+
+
+
+        <div >
+            <Canvas camera={{ position: [200, 65, 140], fov: 5.7, }} style={{
+
+                position: "absolute",
+                width: "24vw",
+                height: "116vh",
+                // marginTop: "200px",
+                top: "-150px",
+                // backgroundColor: "pink",
+                // transform:"scale3d(2.5, 1.2, 0.3);"
+
+
+            }}>
+                <ambientLight intensity={1.5} color="white" />
+                <directionalLight intensity={1.7} color="azure" />
                 <Suspense fallback={null}>
-                    
-                    <OrbitControls />
+
+
+
+
                     <Model />
+
+                    <OrbitControls />
+
+
+
+
                 </Suspense>
             </Canvas>
-
-
         </div>
+
+
+
     )
 }
 
