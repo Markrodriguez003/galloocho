@@ -10,8 +10,8 @@ function App() {
     <>
       <MainHeader />
       <Hero />
-      {/* <FrontPageShop /> */}
-      {/* <MainFooter/> */}
+  {/*     <FrontPageShop />
+      <MainFooter/> */}
     </>
   );
 }
