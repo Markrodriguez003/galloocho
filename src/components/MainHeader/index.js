@@ -32,10 +32,8 @@ const Header = styled(Navbar)`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  /* background-color:#4a4a4a;  */
-  background-color: #2f3030;
-  /* background-color: #2e80d1;  */
-  /* margin: 10px; */
+  /* background-color: #2f3030; */
+  background-color: white;
   padding: 13px;
   -webkit-box-shadow: 1px 7px 27px 3px rgba(0, 0, 0, 0.53);
   box-shadow: 1px 7px 27px 3px rgba(0, 0, 0, 0.53);
@@ -65,7 +63,7 @@ const Header = styled(Navbar)`
 `;
 
 const Menu = styled("h2")`
-  color: white;
+  color: black;
   background-color: transparent;
   cursor: pointer;
   text-decoration: none;
@@ -97,8 +95,6 @@ const BrandIcon = styled("img")`
   width: 70px;
   height: 75px;
   background-color: transparent;
-  /* border: white 4px dotted; */
-  /* border: white 4px transparent; */
   border-radius: 50%;
   padding: 7px;
   margin-bottom: 8px;
@@ -119,7 +115,7 @@ const MenuHeaderIcon = styled("img")`
   width: 160px;
   height: 195px;
   background-color: transparent;
-  color: white;
+  color: black;
   padding: 4px;
   margin-top: 40px;
   margin-left: 68px;
@@ -128,14 +124,14 @@ const MenuHeaderIcon = styled("img")`
 
 const BrandText = styled("h1")`
   font-family: "brandFont";
-  color: white;
+  color: black;
   letter-spacing: 2px;
-  border: white 4.2px dotted;
+  border: black 4.2px dotted;
   padding: 6px 6px 0px 6px;
   margin-right: 6px;
-  margin-top: 4px;
-  font-size: 48px;
-
+  margin-top: 8px;
+  font-size: 52px;
+ 
   @media (max-width: 725px) {
     font-size: 38px;
   }
@@ -154,7 +150,9 @@ const BrandText = styled("h1")`
 `;
 
 const SlideMenuContainer = styled(Offcanvas)`
-  background-color: #2f3030;
+  background-color: black;
+  background-color: black;
+  /* background-color: #2f3030; */
   color: white;
 
   &:* {

@@ -33,7 +33,9 @@ const Footer = styled(Navbar)`
   padding: 33px;
   position: relative;
   left: 0;
+  /* bottom: -500px; */
   bottom: 0;
+  padding-top: "200px";
   margin-left:auto;
   margin-right:auto;
   text-align:"center";
@@ -96,7 +98,7 @@ const MenuHeaderIcon = styled("img")`
   color: white;
   padding: 4px;
   margin-top: 40px;
-  margin-left: 130px;
+  margin-left: 220px;
   margin-right: 45px;
   margin-bottom: 8px;
 `;
@@ -114,7 +116,6 @@ function MainHeader() {
 
     return (
         <>
-            {/* <ContentContainer></ContentContainer> */}
             <Footer >
 
                 <MenuHeaderIcon src={rosterLogo2} />
@@ -130,7 +131,7 @@ function MainHeader() {
 
                 <div style={{ display: "flex", flexDirection: "column", marginLeft: "84px" }}>
                     <FooterAnchor href="#">CONTACT</FooterAnchor>
-                    <FooterAnchor href="#" style={{ fontSize: "18px", }}><  BsFillEnvelopeFill/> email@email.com</FooterAnchor>
+                    <FooterAnchor href="#" style={{ fontSize: "18px", }}><  BsFillEnvelopeFill /> email@email.com</FooterAnchor>
                     <FooterAnchor href="#">ARTISTS WANTED!</FooterAnchor>
                     <small style={{ color: "grey", fontStyle: "italic", marginBottom: "6px" }}>Submit your portfolio to us below!</small>
 
@@ -178,7 +179,7 @@ function MainHeader() {
 
 
             </Footer>
-            <SmallText style={{ display: "block", textAlign: "center", color: "white", fontSize:"12px" }}>© [name of rightsholder or rightsholders] [publication year]: e.g.  © XYZ Press and contributors 2014
+            <SmallText style={{ display: "block", textAlign: "center", color: "white", fontSize: "12px" }}>© [name of rightsholder or rightsholders] [publication year]: e.g.  © XYZ Press and contributors 2014
 
                 [date of terms of use]
 

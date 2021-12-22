@@ -4,10 +4,11 @@ import styled, { css } from "styled-components";
 
 // COMPONENTS 
 import ProductCard from "../ProductCard";
-
+import FrontPageArtists from "../FrontPageArtists"
 import {Form} from "react-bootstrap";
 
 
+import {AiOutlineCaretDown } from "react-icons/ai";
 
 // CSS
 
@@ -23,7 +24,7 @@ padding: 45px;
 display: block;
 position: relative;
   width: 100%;
-  height: 100vh;
+  height: 200vh;
  
 
 /* TEXTURE NO.1 */
@@ -68,8 +69,9 @@ function FrontPageShop() {
           <option value="2">Two</option>
           <option value="3">Three</option>
         </Form.Select> */}
-        <FrontPageShopHeader>LATEST ARRIVALS</FrontPageShopHeader>
+        <FrontPageShopHeader>LATEST ARRIVALS <AiOutlineCaretDown/></FrontPageShopHeader>
         <ProductCard></ProductCard>
+        <FrontPageArtists></FrontPageArtists>
       </FrontPageShopContainer>
 
     </>

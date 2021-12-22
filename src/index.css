@@ -28,18 +28,23 @@ code {
 @font-face {
   font-family: "menuFont";
   src: url("./fonts/telegrafico.ttf");
+  /* src: url("./fonts/heroTapeFont/Trincha.ttf");  */
+}
+
+@font-face {
+  font-family: "cardFont";
+  src: url("./fonts/heroTapeFont/Trincha.ttf"); 
 }
 
 @font-face {
   font-family: "heroFont";
-  /* src: url("./fonts/heroTapeFont/Zdarx Simpl.ttf");  */
+  src: url("./fonts/heroTapeFont/Zdarx Simpl.ttf"); 
   /* src: url("./fonts/heroTapeFont/Zdarx Hardcore.ttf");  */
-  /* src: url("./fonts/heroTapeFont/Trincha.ttf");  */
   /* src: url("./fonts/heroTapeFont/Scribble Scrawl.ttf");  */
   /* src: url("./fonts/heroTapeFont/Scratchies.ttf");  */
   /* src: url("./fonts/heroTapeFont/Remain3kRoyals-Regular.ttf");  */
   /* src: url("./fonts/heroTapeFont/My Grandpa's Farm.ttf");  */
   /* src: url("./fonts/heroTapeFont/Memento Griseo Ruber.ttf");  */
   /* src: url("./fonts/heroTapeFont/HotSauce.ttf");  */
-  src: url("./fonts/heroTapeFont/Handvetica Neue Regular Trial.ttf");
+  /* src: url("./fonts/heroTapeFont/Handvetica Neue Regular Trial.ttf"); */
 }

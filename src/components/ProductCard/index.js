@@ -8,12 +8,14 @@ import { Card, Button } from 'react-bootstrap';
 import roosterProductA from "../../imgs/product/sculptures/A.png"
 import roosterProductB from "../../imgs/product/sculptures/I.png"
 import roosterProductC from "../../imgs/product/sculptures/G.png"
-
+ 
 
 // ENTIRE CONTAINER THAT WILL HOLD PRODUCT CARDS
 const ProductCardContainer = styled('div')`
     /* width: 325px;
     height: 400px; */
+    /* font-family:"cardFont" */
+    font-size: 20px;
  
 
 `
@@ -99,8 +101,8 @@ const ProductCard = () => {
                         </div>
                     </Card.Body>
                     <Card.Footer >
-                        <small className="text-muted" style={{ marginLeft: "20px", marginBottom: "24px" }}>$80.00 </small>
-                        <Button variant="success" style={{ marginLeft: "20px", marginBottom: "24px", float: "right" }}>Add to Cart</Button>
+                        <small className="text-muted" style={{ marginLeft: "50px", marginBottom: "24px", fontSize:"24px" }}>$80.00 </small>
+                        <Button variant="success" style={{ marginLeft: "20px", marginBottom: "24px", float: "right", fontSize:"26px" }}>Add to Cart</Button>
                     </Card.Footer>
                 </ProductCardElement>
 
@@ -120,15 +122,15 @@ const ProductCard = () => {
                                     <Card.Title>Paint: <small style={{ color: "grey" }}> Acrylic</small></Card.Title>
                                     <Card.Title>Batch # :  <small style={{ color: "grey" }}> OP251LX</small> </Card.Title>
                                     <Card.Text>
-                                        Classic, rural, farm-raised rooster. This sculpture is simple in design but sitll captures the eyes. 
+                                        Classic, rural, farm-raised rooster. This sculpture is simple in design but still captures the eyes. 
                                     </Card.Text>
                                 </div>
                             </div>
                         </div>
                     </Card.Body>
                     <Card.Footer >
-                        <small className="text-muted" style={{ marginLeft: "20px", marginBottom: "24px" }}>$80.00 </small>
-                        <Button variant="success" style={{ marginLeft: "20px", marginBottom: "24px", float: "right" }}>Add to Cart</Button>
+                        <small className="text-muted" style={{ marginLeft: "50px", marginBottom: "24px", fontSize:"24px" }}>$80.00 </small>
+                        <Button variant="success" style={{ marginLeft: "20px", marginBottom: "24px", float: "right", fontSize:"26px" }}>Add to Cart</Button>
                     </Card.Footer>
                 </ProductCardElement>
 
@@ -155,8 +157,8 @@ const ProductCard = () => {
                         </div>
                     </Card.Body>
                     <Card.Footer >
-                        <small className="text-muted" style={{ marginLeft: "20px", marginBottom: "24px" }}>$80.00 </small>
-                        <Button variant="success" style={{ marginLeft: "20px", marginBottom: "24px", float: "right" }}>Add to Cart</Button>
+                        <small className="text-muted" style={{ marginLeft: "50px", marginBottom: "24px", fontSize:"24px" }}>$80.00 </small>
+                        <Button variant="success" style={{ marginLeft: "20px", marginBottom: "24px", float: "right", fontSize:"26px" }}>Add to Cart</Button>
                     </Card.Footer>
                 </ProductCardElement>
             </div>
