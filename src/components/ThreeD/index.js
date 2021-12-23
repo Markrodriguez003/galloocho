@@ -21,10 +21,11 @@ function ThreeD(props) {
   return (
     <div style={{
       position: "relative",
-      marginTop: "-255px",
-      width: "24vw", // INCREASE THIS WHEN QMEDIA SCREEN BECOMES SMALLER
-      height: "90vh",
-      backgroundColor: "transparent",
+      marginTop: "-105px",
+      width: "34vw", // INCREASE THIS WHEN QMEDIA SCREEN BECOMES SMALLER
+      height: "110vh",
+      /* backgroundColor: "transparent", */
+      backgroundColor: "green",
       transform: "rotate(180deg)",
       overflow: "visible"
 

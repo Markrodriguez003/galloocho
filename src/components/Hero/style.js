@@ -58,7 +58,7 @@ export const HeroText = styled("span")`
 
 
   @media (max-width: 860px) {
-    font-size: 2.4em;
+    font-size: 2.2em;
   }
 
   @media (max-width: 606px) {
@@ -281,15 +281,19 @@ export const MiamiText = styled("span")`
   position: relative;
   background-color: #fafafa;
   color: black;
-  font-size: 78px;
+  font-size: 64px;
   font-family: "heroFont";
   -webkit-animation: vibrate-2 2.3s linear infinite both;
   animation: vibrate-2 2.3s linear infinite both;
   -webkit-animation: vibrate-2 2.3s linear infinite both;
   animation: vibrate-2 2.3s linear infinite both;
 
-  @media (max-width: 860px) {
-    font-size: 3.6em;
+/*   @media (max-width: 860px) {
+    font-size: 3.15em;
+  }
+ */
+  @media (max-width: 1240px) {
+    font-size: 3.15em;
   }
 
   @media (max-width: 606px) {

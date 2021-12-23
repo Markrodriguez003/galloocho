@@ -71,7 +71,7 @@ function FrontPageShop() {
         </Form.Select> */}
         <FrontPageShopHeader>LATEST ARRIVALS <AiOutlineCaretDown/></FrontPageShopHeader>
         <ProductCard></ProductCard>
-        <FrontPageArtists></FrontPageArtists>
+     {/*    <FrontPageArtists></FrontPageArtists> */}
       </FrontPageShopContainer>
 
     </>
