@@ -20,29 +20,31 @@ function Model() {
 function ThreeD(props) {
   return (
     <div style={{
-        position:"relative",
-        marginTop:"225px"
+      position: "relative",
+      marginTop: "-255px",
+      width: "24vw", // INCREASE THIS WHEN QMEDIA SCREEN BECOMES SMALLER
+      height: "90vh",
+      backgroundColor: "transparent",
+      transform: "rotate(180deg)",
+      overflow: "visible"
+
     }}>
       <Canvas
-        camera={{ position: [200, 65, 140], fov: 3 }}
+        camera={{ position: [200, 65, 140], fov: -5.585 }}
         style={{
-          position: "flex",
-          alignContent: "center",
-          alignItems: "center",
-          justifyContent:"center",
-          width: "24vw", // INCREASE THIS WHEN QMEDIA SCREEN BECOMES SMALLER
-          height: "60vh",
-          top: "20vh",
-          backgroundColor: "pink",
-          paddingTop: "100px"
-         
+          position: "absolute",
+          backgroundColor: "transparent",
+          overflow: "visible",
+          paddingBottom: "200px",
+          top: "-300px"
+
         }}
       >
         <ambientLight intensity={1.5} color="white" />
         <directionalLight intensity={1.7} color="azure" />
         <Suspense fallback={null}>
-          <Model/>
-          <OrbitControls />
+          <Model />
+          <OrbitControls  enablePan={false} enableZoom={false}  />
         </Suspense>
       </Canvas>
     </div>
