@@ -6,7 +6,7 @@ import ProductCard from "./components/ProductCard";
 import FrontPageShop from "./components/FrontPageShop";
 import SimpleReactLightbox from 'simple-react-lightbox'
 
-
+import 'bootstrap/dist/css/bootstrap.min.css';
 function App() {
   return (
     <>
@@ -15,7 +15,7 @@ function App() {
         <MainHeader />
             <Hero />
         <FrontPageShop />
-        {/*       <MainFooter /> */}
+        {      <MainFooter />}
 
       </SimpleReactLightbox>
     </>

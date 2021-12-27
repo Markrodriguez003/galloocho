@@ -1,5 +1,6 @@
 import { useState } from "react";
 import styled from "styled-components";
+import {ModelContainer} from "./design"
 import { OrbitControls } from "@react-three/drei";
 
 import React, { Suspense } from "react";
@@ -19,17 +20,7 @@ function Model() {
 
 function ThreeD(props) {
   return (
-    <div style={{
-      position: "relative",
-      marginTop: "-105px",
-      width: "34vw", // INCREASE THIS WHEN QMEDIA SCREEN BECOMES SMALLER
-      height: "110vh",
-      /* backgroundColor: "transparent", */
-      backgroundColor: "green",
-      transform: "rotate(180deg)",
-      overflow: "visible"
-
-    }}>
+    <ModelContainer>
       <Canvas
         camera={{ position: [200, 65, 140], fov: -5.585 }}
         style={{
@@ -48,7 +39,7 @@ function ThreeD(props) {
           <OrbitControls  enablePan={false} enableZoom={false}  />
         </Suspense>
       </Canvas>
-    </div>
+    </ModelContainer>
   );
 }
 

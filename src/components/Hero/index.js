@@ -24,7 +24,7 @@ function Hero() {
         {/* FLEX (ROW) CONTAINER - HOLDS TEXT CONTAINER (L) + 3D MODEL (R)*/}
         <HeroFlex>
           {/* FLEX TEXT CONTAINER - COLUMN  */}
-          <HeroTextContainer>
+    {      <HeroTextContainer>
             <HeroText second>
               Limited-Edition 
             </HeroText>
@@ -35,7 +35,7 @@ function Hero() {
               Artist Painted  
             </HeroText>
             <ShopNowButton>Shop Now</ShopNowButton>{" "}
-          </HeroTextContainer>
+          </HeroTextContainer>}
 
           {/* 3D MODEL */}
           <div>

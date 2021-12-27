@@ -176,7 +176,7 @@ function MainHeader() {
               />
               Checkout
             </Button>{" "}
-            <Button
+      {/*       <Button
               variant="primary"
               style={{ fontSize: "15px", marginLeft: "10px" }}
             >
@@ -184,7 +184,7 @@ function MainHeader() {
                 style={{ marginBottom: "4.5px", paddingRight: "3px" }}
               />
               Add More Items
-            </Button>{" "}
+            </Button>{" "} */}
             <Button
               variant="outline-danger"
               style={{ fontSize: "15px", marginLeft: "10px" }}

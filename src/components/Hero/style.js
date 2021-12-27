@@ -26,11 +26,11 @@ export const HeroFlex = styled("div")`
   /* background-color: green; */
   text-align: center;
   
-
+/* 
   & * {
     margin: 12px;
 
-  }
+  } */
 
 `;
 
@@ -61,12 +61,16 @@ export const HeroText = styled("span")`
     font-size: 2.2em;
   }
 
-  @media (max-width: 606px) {
-    font-size: 2em;
+  @media (max-width: 775px) {
+    font-size: 1.4em;
   }
 
   @media (max-width: 480px) {
-    font-size: 1.4em;
+    font-size: 1.2em;
+  }
+
+  @media (max-width: 290px) {
+    font-size: 0.8em;
   }
 
 
@@ -296,12 +300,18 @@ export const MiamiText = styled("span")`
     font-size: 3.15em;
   }
 
-  @media (max-width: 606px) {
-    font-size: 3em;
+
+
+  @media (max-width: 775px) {
+    font-size: 1.4em;
   }
 
   @media (max-width: 480px) {
-    font-size: 2.2em;
+    font-size: 1.2em;
+  }
+
+  @media (max-width: 290px) {
+    font-size: 0.8em;
   }
 
  /*  @-webkit-keyframes vibrate-2 {
@@ -384,6 +394,21 @@ export const ShopNowButton = styled(Button)`
   font-family: "heroFont";
   border: none;
   margin-top: 35px;
+
+
+  @media (max-width: 860px) {
+    font-size: 2.2em;
+  }
+
+  @media (max-width: 775px) {
+    font-size: 1.4em;
+  }
+
+  @media (max-width: 480px) {
+    font-size: 1.2em;
+  }
+
+
   /* margin-top: 900px;
 margin-left: 700px; */
 
