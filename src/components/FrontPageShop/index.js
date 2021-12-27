@@ -20,7 +20,8 @@ import { Button, Container, Carousel, CarouselItem } from "react-bootstrap";
 
 const FrontPageShopContainer = styled('div')`
 /* background-color: transparent; */
-padding: 45px;
+/* margin-left: 20px;
+margin-right: 20px; */
 display: block;
 position: relative;
   width: 100%;

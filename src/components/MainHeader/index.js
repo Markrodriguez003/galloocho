@@ -23,7 +23,7 @@ import { Button, Offcanvas } from "react-bootstrap";
 
 // LOGO CHOICES
 import rosterLogo2 from "../../imgs/logo/roosterE.png";
-import rosterLogo from "../../imgs/logo/roosterG.png";
+import rosterLogo from "../../imgs/logo/roosterG-BLK.png";
 
 // ICONS
 

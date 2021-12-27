@@ -1,0 +1,60 @@
+/* .carousel .carousel-indicators li {
+    background-color: rgb(248, 0, 0) !important;
+    background-color: rgba(70, 70, 70, 0.25) !important;
+  } */
+
+.carousel-control-next-icon {
+  background-color: rgba(70, 70, 70, 0.25) !important;
+  transform: scale(0.5) !important;
+}
+
+.carousel-control-prev-icon {
+  background-color: rgba(70, 70, 70, 0.25) !important;
+  transform: scale(0.5) !important;
+}
+
+.carousel .carousel-indicators .active {
+  background-color: rgb(122, 122, 122) !important;
+}
+
+.carousel .carousel-indicators {
+  background-color: rgba(70, 70, 70, 0.10) !important;
+  transform: scale(0.7) !important;
+  margin-bottom: 4px !important;
+}
+
+.custom-modal {
+  /* width: 100vw !important; */
+  /* height: 100vh !important; */
+  background-color: transparent !important;
+}
+
+.fade.modal.show {
+
+  background-color: rgb(72, 255, 0) !important;
+}
+
+
+.cardHeader {
+  background-color: rgba(0, 0, 0, 0.675) !important;
+  color: white;
+  font-size: 1.6rem;
+  font-weight: bold;
+  font-family: "menuFont";
+}
+
+.cardImgContainer {
+  /* border: red 4px dotted; */
+}
+
+
+
+.cardImg {
+  /* width: 345px;
+  height: 320px; */
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
