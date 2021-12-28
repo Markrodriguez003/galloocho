@@ -93,6 +93,9 @@ function MainHeader() {
               <FooterAnchor href="#">INVESTOR PORTAL</FooterAnchor>
             </Col>
             <Col>
+              <FooterAnchor href="#">NFT</FooterAnchor>
+            </Col>
+            <Col>
               <FooterAnchor href="#">SUPPORT</FooterAnchor>
             </Col>
           </Col>
