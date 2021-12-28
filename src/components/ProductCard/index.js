@@ -18,7 +18,7 @@ import {
 } from "react-bootstrap";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
-
+// 
 // ICONS
 import { BsCircleFill, BsCircle } from "react-icons/bs";
 // 

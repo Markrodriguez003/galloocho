@@ -29,7 +29,7 @@ export const ProductCardElement = styled(Card)`
     )
     26;
   `}
-  
+  /*  */
   -webkit-box-shadow: 1px 4px 45px -12px rgba(0,0,0,0.45); 
 box-shadow: 1px 4px 45px -12px rgba(0,0,0,0.45);
 `;

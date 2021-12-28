@@ -26,7 +26,7 @@ export const HeroFlex = styled("div")`
   height: 100%;
   /* background-color: green; */
   text-align: center;
-
+/*  */
   /* border-width: 14px;
   border-bottom-style: solid;
   border-image: repeating-radial-gradient(
