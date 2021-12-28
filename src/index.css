@@ -19,12 +19,18 @@ code {
     monospace;
 }
 
+@font-face {
+  font-family: "brandFont";
+  /* src: url("./fonts/brandText/MACCOS_DOUBLE_Demo.otf") format("opentype"); */
+  src: url("./fonts/brandText/Loce.ttf") format("opentype");
+}
+
+
 
 @font-face {
   font-family: "brandFont";
-  src: url("./fonts/Glaschu-Inline.ttf");
-  /* src: url("./fonts/Kiona-Regular.ttf"); */
-  /* src: url("./fonts/telegrafico.ttf"); */
+  /* src: url("./fonts/Glaschu-Inline.ttf"); */
+ 
 }
 
 @font-face {

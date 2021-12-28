@@ -1,25 +1,30 @@
 import styled from "styled-components";
-import {Navbar } from 'react-bootstrap';
-
+import { Navbar } from 'react-bootstrap';
 
 // CSS
-export const Footer = styled(Navbar)`
- display: flex;
- position:"relative";
-  background-color:#2f3030;
-  padding: 33px;
-  position: relative;
-  left: 0;
-  /* bottom: -500px; */
-  bottom: 0;
-  padding-top: "200px";
-  margin-left:auto;
-  margin-right:auto;
-  text-align:"center";
-  align-content:"center";
-  justify-content:"center";
-  align-items:"center";
-
+export const Footer = styled('div')`
+ display:block;
+ position:relative;
+  background-color:#1f1f1f;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  padding-left: 20px;
+ margin-top: 80px;
+ text-align: center;
+ /* border-top: dotted white 6px;
+ box-sizing: border-box; */
+  border-width: 14px;
+  border-top-style: solid;
+  border-image: repeating-radial-gradient(
+      circle at -12px,
+      white,
+      transparent 2px,
+      white 8px,
+      white 2px
+    )
+    26;
+ 
 `;
 
 export const FooterAnchor = styled('a')`
@@ -33,11 +38,8 @@ text-decoration: none;
     -o-transition: all 0.5s ease; /* Opera */
     transition: all 0.5s ease;
   
-
   &:hover {
-  /* color: lightpink; */
-  color: #fc6a6a;
-   
+  color: #fc6a6a;  
   }
 `
 
@@ -56,33 +58,26 @@ export const SocialMediaItem = styled("a")`
   padding: 12px;
   font-size: 30px;
   color: white;
-  /* -webkit-transition: all 0.3s ease;  
-    -moz-transition: all 0.3s ease;  
-    -ms-transition: all 0.3s ease;  
-    -o-transition: all 0.3s ease;  
-    transition: all 0.3s ease; */
   &:hover {
-  /* color: lightpink; */
   color: #fc6a6a;
-  /* font-size: 38px; */
+ 
 }
 `;
 
 export const MenuHeaderIcon = styled("img")`
-  width: 160px;
-  height: 195px;
+  width: 100px;
+  height: 125px;
   background-color: transparent;
   color: white;
-  padding: 4px;
-  margin-top: 40px;
-  margin-left: 220px;
-  margin-right: 45px;
+  /* padding: 4px; */
+  margin-top: 10px;
   margin-bottom: 8px;
+  margin-left: 25px;
 `;
 
 export const SmallText = styled('small')`
 color:"grey";
-background-color:#2f3030;
+background-color:#1f1f1f;
 text-align:"center";
 padding:22px;
 

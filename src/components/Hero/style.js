@@ -25,6 +25,17 @@ export const HeroFlex = styled("div")`
   height: 100%;
   /* background-color: green; */
   text-align: center;
+
+  /* border-width: 14px;
+  border-bottom-style: solid;
+  border-image: repeating-radial-gradient(
+      circle at -12px,
+      white,
+      black 2px,
+      white 8px,
+      white 2px
+    )
+    26; */
   
 /* 
   & * {

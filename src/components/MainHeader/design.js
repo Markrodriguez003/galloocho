@@ -25,6 +25,7 @@ export const Header = styled(Navbar)`
   justify-content: space-between;
   background-color: #FAFAFA;
   padding: 13px;
+  
   -webkit-box-shadow: 1px 7px 27px 3px rgba(0, 0, 0, 0.53);
   box-shadow: 1px 7px 27px 3px rgba(0, 0, 0, 0.53);
 
@@ -98,6 +99,10 @@ export const BrandIcon = styled("img")`
     width: 40px;
     height: 45px;
   }
+  @media (max-width: 290px) {
+    width: 30px;
+  height: 35px;
+  }
 `;
 export const MenuHeaderIcon = styled("img")`
   width: 160px;
@@ -108,37 +113,43 @@ export const MenuHeaderIcon = styled("img")`
   margin-top: 40px;
   margin-left: 68px;
   margin-bottom: 8px;
+ 
 `;
 
 export const BrandText = styled("h1")`
   font-family: "brandFont";
   color: black;
-  letter-spacing: 2px;
+  letter-spacing: 2.5px;
   border: black 4.2px dotted;
   padding: 6px 6px 0px 6px;
   margin-right: 6px;
   margin-top: 8px;
-  font-size: 52px;
+  font-size: 62px;
 
   @media (max-width: 725px) {
     font-size: 38px;
   }
 
-  @media (max-width: 675px) {
+  /* @media (max-width: 675px) {
     font-size: 28px;
-  }
+  } */
 
-  @media (max-width: 550px) {
+  /* @media (max-width: 550px) {
     font-size: 24px;
-  }
+  } */
 
   @media (max-width: 455px) {
-    font-size: 18px;
+    font-size: 26px;
+    border: black 3.2px dotted;
+  }
+  @media (max-width: 290px) {
+    font-size: 14px;
+    border: black 3.2px dotted;
   }
 `;
 
 export const SlideMenuContainer = styled(Offcanvas)`
-  background-color: black;
+  background-color:#1f1f1f;
   color: #FAFAFA;
 
   &: * {

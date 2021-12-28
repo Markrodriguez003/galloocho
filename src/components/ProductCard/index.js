@@ -12,10 +12,9 @@ import {
   Card,
   Button,
   Carousel,
-  Modal,
-  Container,
   Row,
   Col,
+  Form,
 } from "react-bootstrap";
 import SimpleReactLightbox from "simple-react-lightbox";
 import { SRLWrapper } from "simple-react-lightbox";
@@ -42,14 +41,26 @@ const ProductCard = () => {
   return (
     <>
       <ProductCardsContainer>
-        <Row className="justify-content-md-center">
+        <Row>
           <Col xs="12" sm="12" md="12" lg="4">
-            <ProductCardElement>
-              <Card.Header className="cardHeader">MIDNIGHT - CAW</Card.Header>
+            <ProductCardElement zanyBorder>
+              <Card.Header className="cardHeader">MIDNIGHT - CAW
+                <small
+                  style={{
+                    color: "black",
+                    float: "right",
+                    fontSize: "14px",
+                    paddingTop: "18px",
+                    paddingRight: "6px"
+                  }}
+                >
+                  <BsCircleFill />
+                </small>
+              </Card.Header>
               <Card.Body>
-                <CardBodyFlex style={{ display: "flex" }}>
+                <CardBodyFlex>
                   <SRLWrapper>
-                    <Carousel>
+                    <Carousel interval={null}>
                       <Carousel.Item>
                         <img
                           src={roosterProductA1}
@@ -88,41 +99,156 @@ const ProductCard = () => {
                     </Carousel>
                   </SRLWrapper>
                   {/* </div> */}
-                  <Card.Title style={{ cursor: "pointer" }}>
+                  <Card.Title style={{ cursor: "pointer", marginTop: "10px" }}>
                     Artist:
-                    <small style={{ color: "grey" }}> Jose Suarez Jr.</small>
+                    <small style={{ color: "grey" }}> Jose Oso</small>
+                    <p style={{ float: "right" }}>  Production #  <small style={{ color: "grey" }}> F19G37  </small> </p>
+
                   </Card.Title>
-         {/*          <Card.Text>
+                  <Card.Text>
                     This uniquely striking rooster is painted onxy black, with
                     notes of dark purple and crimson. Coated in epoxy and burred
                     for ultimate shine and smoothness.
-                  </Card.Text> */}
+                  </Card.Text>
                 </CardBodyFlex>
               </Card.Body>
               <Card.Footer>
-                <CardFooterFlex>
+
+
+                <div
+                  className="text-muted"
+                  style={{
+                    float: "left",
+                    backgroundColor:"#1f1f1f",
+                    padding: "8px",
+                    borderTopLeftRadius:"20px"
+               
+                  }}
+                >
                   <small
+                    // className="text-muted"
                     style={{
-                      color: "red",
-                    }}
-                  >
-                    <BsCircleFill />
-                  </small>
-                  <small
-                    className="text-muted"
-                    style={{
-                      marginLeft: "50px",
-                      marginBottom: "24px",
+                      color: "white",
                       fontSize: "18px",
+                      fontWeight: "bold"
                     }}
                   >
                     $80.00{" "}
                   </small>
+                </div>
 
+                <Button
+                  variant="outline-dark"
+                  style={{
+                    marginLeft: "20px",
+                    marginBottom: "24px",
+                    float: "right",
+                    fontSize: "14px",
+                  }}
+                >
+                  Add to Cart
+                </Button>
+
+              </Card.Footer>
+            </ProductCardElement>
+          </Col>
+
+          <Col xs="12" sm="12" md="6" lg="4">
+            <ProductCardElement>
+              <Card.Header className="cardHeader-plain">MIDNIGHT - CAW
+                <small
+                  style={{
+                    color: "red",
+                    float: "right",
+                    fontSize: "14px",
+                    paddingTop: "18px",
+                    paddingRight: "6px"
+                  }}
+                >
+                  <BsCircleFill />
+                </small>
+              </Card.Header>
+              <Card.Body>
+                <CardBodyFlex style={{ display: "flex" }}>
+                  <SRLWrapper>
+                    <Carousel interval={null}>
+                      <Carousel.Item>
+                        <img
+                          src={roosterProductA1}
+                          alt="First slide"
+                          className="cardImg"
+                        />
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <img
+                          src={roosterProductA2}
+                          alt="Second slide"
+                          className="cardImg"
+                        />
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <img
+                          src={roosterProductA3}
+                          alt="Third slide"
+                          className="cardImg"
+                        />
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <img
+                          src={roosterProductA4}
+                          alt="Third slide"
+                          className="cardImg"
+                        />
+                      </Carousel.Item>
+                      <Carousel.Item>
+                        <img
+                          src={roosterProductA5}
+                          alt="Third slide"
+                          className="cardImg"
+                        />
+                      </Carousel.Item>
+                    </Carousel>
+                  </SRLWrapper>
+                  {/* </div> */}
+                  <Card.Title style={{ cursor: "pointer", marginTop: "10px" }}>
+                    Artist:
+                    <small style={{ color: "grey" }}> Jose Oso</small>
+                    <p style={{ float: "right" }}>  Production #  <small style={{ color: "grey" }}> F19G37 </small> </p>
+
+                  </Card.Title>
+                  <Card.Text>
+                    This uniquely striking rooster is painted onxy black, with
+                    notes of dark purple and crimson. Coated in epoxy and burred
+                    for ultimate shine and smoothness.
+                  </Card.Text>
+                </CardBodyFlex>
+              </Card.Body>
+              <Card.Footer>
+                <CardFooterFlex>
+
+                <div
+                  className="text-muted"
+                  style={{
+                    float: "left",
+                  }}
+                >
+                  <small
+                    // className="text-muted"
+                    style={{
+                      // color: "black",
+                      fontSize: "18px",
+                      fontWeight: "bold",
+                      // marginRight:"50px",
+                      float: "left",
+                    }}
+                  >
+                    $80.00{" "}
+                  </small>
+                </div>
                   <Button
                     variant="outline-dark"
                     style={{
-                      marginLeft: "20px",
+                      marginLeft: "240px",
                       marginBottom: "24px",
                       float: "right",
                       fontSize: "14px",
@@ -130,6 +256,7 @@ const ProductCard = () => {
                   >
                     Add to Cart
                   </Button>
+
                 </CardFooterFlex>
               </Card.Footer>
             </ProductCardElement>
@@ -137,11 +264,23 @@ const ProductCard = () => {
 
           <Col xs="12" sm="12" md="6" lg="4">
             <ProductCardElement>
-              <Card.Header className="cardHeader">MIDNIGHT - CAW</Card.Header>
+              <Card.Header className="cardHeader">MIDNIGHT - CAW
+                <small
+                  style={{
+                    color: "black",
+                    float: "right",
+                    fontSize: "14px",
+                    paddingTop: "18px",
+                    paddingRight: "6px"
+                  }}
+                >
+                  <BsCircle />
+                </small>
+              </Card.Header>
               <Card.Body>
                 <CardBodyFlex style={{ display: "flex" }}>
                   <SRLWrapper>
-                    <Carousel>
+                    <Carousel interval={null}>
                       <Carousel.Item>
                         <img
                           src={roosterProductA1}
@@ -180,122 +319,26 @@ const ProductCard = () => {
                     </Carousel>
                   </SRLWrapper>
                   {/* </div> */}
-                  <Card.Title style={{ cursor: "pointer" }}>
+                  <Card.Title style={{ cursor: "pointer", marginTop: "10px" }}>
                     Artist:
-                    <small style={{ color: "grey" }}> Jose Suarez Jr.</small>
+                    <small style={{ color: "grey" }}> Jose Oso</small>
+                    <p style={{ float: "right" }}>  Production #  <small style={{ color: "grey" }}> F19G37</small> </p>
+
                   </Card.Title>
-            {/*       <Card.Text>
+                  <Card.Text>
                     This uniquely striking rooster is painted onxy black, with
                     notes of dark purple and crimson. Coated in epoxy and burred
                     for ultimate shine and smoothness.
-                  </Card.Text> */}
-                </CardBodyFlex>
-              </Card.Body>
-              <Card.Footer>
-                <CardFooterFlex>
-                  <small
-                    style={{
-                      color: "red",
-                    }}
-                  >
-                    <BsCircleFill />
-                  </small>
-                  <small
-                    className="text-muted"
-                    style={{
-                      marginLeft: "50px",
-                      marginBottom: "24px",
-                      fontSize: "18px",
-                    }}
-                  >
-                    $80.00{" "}
-                  </small>
-
-                  <Button
-                    variant="outline-dark"
-                    style={{
-                      marginLeft: "20px",
-                      marginBottom: "24px",
-                      float: "right",
-                      fontSize: "14px",
-                    }}
-                  >
-                    Add to Cart
-                  </Button>
-                </CardFooterFlex>
-              </Card.Footer>
-            </ProductCardElement>
-          </Col>
-
-          <Col xs="12" sm="12" md="6" lg="4">
-            <ProductCardElement>
-              <Card.Header className="cardHeader">MIDNIGHT - CAW</Card.Header>
-              <Card.Body>
-                <CardBodyFlex style={{ display: "flex" }}>
-                  <SRLWrapper>
-                    <Carousel>
-                      <Carousel.Item>
-                        <img
-                          src={roosterProductA1}
-                          alt="First slide"
-                          className="cardImg"
-                        />
-                      </Carousel.Item>
-                      <Carousel.Item>
-                        <img
-                          src={roosterProductA2}
-                          alt="Second slide"
-                          className="cardImg"
-                        />
-                      </Carousel.Item>
-                      <Carousel.Item>
-                        <img
-                          src={roosterProductA3}
-                          alt="Third slide"
-                          className="cardImg"
-                        />
-                      </Carousel.Item>
-                      <Carousel.Item>
-                        <img
-                          src={roosterProductA4}
-                          alt="Third slide"
-                          className="cardImg"
-                        />
-                      </Carousel.Item>
-                      <Carousel.Item>
-                        <img
-                          src={roosterProductA5}
-                          alt="Third slide"
-                          className="cardImg"
-                        />
-                      </Carousel.Item>
-                    </Carousel>
-                  </SRLWrapper>
-                  {/* </div> */}
-                  <Card.Title style={{ cursor: "pointer" }}>
-                    Artist:
-                    <small style={{ color: "grey" }}> Jose Suarez Jr.</small>
-                  </Card.Title>
-               {/*    <Card.Text>
-                    This uniquely striking rooster is painted onxy black, with
-                    notes of dark purple and crimson. Coated in epoxy and burred
-                    for ultimate shine and smoothness.
-                  </Card.Text> */}
+                  </Card.Text>
                 </CardBodyFlex>
               </Card.Body>
               <Card.Footer className="cardFooter">
                 <CardFooterFlex>
-                  <small
-                    style={{
-                      color: "red",
-                    }}
-                  >
-                    <BsCircleFill />
-                  </small>
+
                   <small
                     className="text-muted"
                     style={{
-                      marginLeft: "50px",
+                      marginLeft: "10px",
                       marginBottom: "24px",
                       fontSize: "18px",
                     }}
@@ -304,13 +347,13 @@ const ProductCard = () => {
                   </small>
 
                   <Button
-                   variant="outline-dark"
-                   style={{
-                     marginLeft: "20px",
-                     marginBottom: "24px",
-                     float: "right",
-                     fontSize: "14px",
-                   }}
+                    variant="outline-dark"
+                    style={{
+                      marginLeft: "240px",
+                      marginBottom: "22px",
+                      float: "right",
+                      fontSize: "14px",
+                    }}
                   >
                     Add to Cart
                   </Button>
@@ -320,6 +363,7 @@ const ProductCard = () => {
           </Col>
         </Row>
       </ProductCardsContainer>
+
     </>
   );
 };

@@ -13,11 +13,12 @@ function App() {
       <SimpleReactLightbox>
 
         <MainHeader />
-            <Hero />
+        <Hero />
         <FrontPageShop />
-        {      <MainFooter />}
-
+  
+        {<MainFooter />}
       </SimpleReactLightbox>
+
     </>
   );
 }
