@@ -23,6 +23,7 @@ import "../Hero/styles.css"
 function Hero() {
   return (
     <>
+    {/*  */}
       {/* ENTIRE CONTAINER FOR HERO-SPLASH PAGE - ABSTRACT ART BG */}
       <HeroContainer>
         {/* FLEX (ROW) CONTAINER - HOLDS TEXT CONTAINER (L) + 3D MODEL (R)*/}

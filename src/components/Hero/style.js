@@ -20,6 +20,7 @@ export const HeroFlex = styled("div")`
   padding-top: 45px;
  /*  top: 5vh;
   left: 20vw; */
+  /*  */
   flex-wrap: wrap;
   width: 100%;
   height: 100%;

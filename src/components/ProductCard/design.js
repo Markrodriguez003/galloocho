@@ -7,7 +7,7 @@ export const ProductCardsContainer = styled("div")`
   position:relative;
   margin-top: 42px;
  margin-left: auto;
- margin-right: auto;
+ margin-right: auto; 
 `;
 
 // INDIVIDUAL PRODUCT CARD
@@ -15,7 +15,7 @@ export const ProductCardElement = styled(Card)`
   position: relative !important;
   margin-bottom: 10px;
   height: auto;
- 
+ /*  */
 
   ${props => props.zanyBorder && css`
   border-width: 14px;
@@ -25,7 +25,7 @@ export const ProductCardElement = styled(Card)`
       grey,
       transparent 2px,
       #454545 8px,
-      gainsboro 2px
+      gainsboro 2px 
     )
     26;
   `}

@@ -21,7 +21,7 @@ import { SRLWrapper } from "simple-react-lightbox";
 
 // ICONS
 import { BsCircleFill, BsCircle } from "react-icons/bs";
-
+// 
 // IMAGES
 import roosterProductA1 from "../../imgs/product/sculpture-main/Product-A/1-A.jpg";
 import roosterProductA2 from "../../imgs/product/sculpture-main/Product-A/2-A.jpg";
