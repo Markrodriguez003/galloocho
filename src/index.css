@@ -25,6 +25,18 @@ code {
   src: url("./fonts/brandText/Loce.ttf") format("opentype");
 }
 
+@font-face {
+  font-family: "cursiveFont";
+  /* src: url("./fonts/brandText/MACCOS_DOUBLE_Demo.otf") format("opentype"); */
+  src: url("./fonts/cursive/Havana.ttf");
+}
+
+@font-face {
+  font-family: "aboutFont";
+  /* src: url("./fonts/brandText/MACCOS_DOUBLE_Demo.otf") format("opentype"); */
+  src: url("./fonts/about/Good\ Mood.ttf");
+}
+
 
 
 @font-face {

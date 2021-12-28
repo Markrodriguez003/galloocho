@@ -23,6 +23,7 @@ import {
 
 export const Header = styled(Navbar)`
   display: flex;
+  position: relative;
   flex-direction: row;
   justify-content: space-between;
   background-color: #FAFAFA;

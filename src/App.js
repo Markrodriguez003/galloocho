@@ -4,21 +4,20 @@ import Hero from "./components/Hero";
 import ThreeD from "./components/ThreeD";
 import ProductCard from "./components/ProductCard";
 import FrontPageShop from "./components/FrontPageShop";
-import SimpleReactLightbox from 'simple-react-lightbox'
+import ShopPage from "./components/ShopPage";
+import SimpleReactLightbox from "simple-react-lightbox";
 
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
       <SimpleReactLightbox>
-
         <MainHeader />
-        <Hero />
-        <FrontPageShop />
-  
-        {<MainFooter />}
+        {/*   <Hero />
+        <FrontPageShop /> */}
+        <ShopPage />
+   {/*      {<MainFooter />} */}
       </SimpleReactLightbox>
-
     </>
   );
 }
