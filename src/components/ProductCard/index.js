@@ -35,6 +35,8 @@ import roosterProductB3 from "../../imgs/product/sculpture-main/Product-B/3-B.jp
 import roosterProductB4 from "../../imgs/product/sculpture-main/Product-B/4-B.jpg";
 import roosterProductB5 from "../../imgs/product/sculpture-main/Product-B/5-B.jpg";
 
+// ! https://alvarotrigo.com/blog/css-animations-scroll/ <<animation for productcards
+
 const ProductCard = () => {
   const [show, setShow] = useState(false);
 
@@ -119,10 +121,10 @@ const ProductCard = () => {
                   className="text-muted"
                   style={{
                     float: "left",
-                    backgroundColor:"#1f1f1f",
+                    backgroundColor: "#1f1f1f",
                     padding: "8px",
-                    borderTopLeftRadius:"20px"
-               
+                    borderTopLeftRadius: "20px"
+
                   }}
                 >
                   <small
@@ -224,40 +226,43 @@ const ProductCard = () => {
                 </CardBodyFlex>
               </Card.Body>
               <Card.Footer>
-                <CardFooterFlex>
+
 
                 <div
                   className="text-muted"
                   style={{
                     float: "left",
+                    backgroundColor: "grey",
+                    padding: "8px",
+                    borderTopLeftRadius: "20px",
+                    borderBottomLeftRadius: "20px"
+
                   }}
                 >
                   <small
                     // className="text-muted"
                     style={{
-                      // color: "black",
+                      color: "white",
                       fontSize: "18px",
-                      fontWeight: "bold",
-                      // marginRight:"50px",
-                      float: "left",
+                      fontWeight: "bold"
                     }}
                   >
                     $80.00{" "}
                   </small>
                 </div>
-                  <Button
-                    variant="outline-dark"
-                    style={{
-                      marginLeft: "240px",
-                      marginBottom: "24px",
-                      float: "right",
-                      fontSize: "14px",
-                    }}
-                  >
-                    Add to Cart
-                  </Button>
 
-                </CardFooterFlex>
+                <Button
+                  variant="outline-dark"
+                  style={{
+                    marginLeft: "20px",
+                    marginBottom: "24px",
+                    float: "right",
+                    fontSize: "14px",
+                  }}
+                >
+                  Add to Cart
+                </Button>
+
               </Card.Footer>
             </ProductCardElement>
           </Col>
@@ -332,32 +337,44 @@ const ProductCard = () => {
                   </Card.Text>
                 </CardBodyFlex>
               </Card.Body>
-              <Card.Footer className="cardFooter">
-                <CardFooterFlex>
+              <Card.Footer>
 
+
+                <div
+                  className="text-muted"
+                  style={{
+                    float: "left",
+                    backgroundColor: "gainsboro",
+                    padding: "8px",
+                    borderTopLeftRadius: "20px",
+                    borderBottomRightRadius: "20px"
+
+                  }}
+                >
                   <small
-                    className="text-muted"
+                    // className="text-muted"
                     style={{
-                      marginLeft: "10px",
-                      marginBottom: "24px",
+                      color: "black",
                       fontSize: "18px",
+                      fontWeight: "bold"
                     }}
                   >
                     $80.00{" "}
                   </small>
+                </div>
 
-                  <Button
-                    variant="outline-dark"
-                    style={{
-                      marginLeft: "240px",
-                      marginBottom: "22px",
-                      float: "right",
-                      fontSize: "14px",
-                    }}
-                  >
-                    Add to Cart
-                  </Button>
-                </CardFooterFlex>
+                <Button
+                  variant="outline-dark"
+                  style={{
+                    marginLeft: "20px",
+                    marginBottom: "24px",
+                    float: "right",
+                    fontSize: "14px",
+                  }}
+                >
+                  Add to Cart
+                </Button>
+
               </Card.Footer>
             </ProductCardElement>
           </Col>

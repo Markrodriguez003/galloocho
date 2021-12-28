@@ -66,6 +66,7 @@ export const HeroText = styled("span")`
   font-size: 3em;
   font-family: "heroFont";
   text-align: center;
+  margin-bottom: 20px;
 
 
   @media (max-width: 860px) {
@@ -402,7 +403,8 @@ export const ShopNowButton = styled(Button)`
   background-color: #fafafa;
   color: black;
   font-size: 36px;
-  font-family: "heroFont";
+  font-family: "menuFont";
+  font-weight:bold;
   border: none;
   margin-top: 35px;
 

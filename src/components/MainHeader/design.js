@@ -18,7 +18,9 @@ import {
   BsXOctagonFill,
   BsFillBagPlusFill,
 } from "react-icons/bs";
-// CSS
+
+ 
+
 export const Header = styled(Navbar)`
   display: flex;
   flex-direction: row;
@@ -232,3 +234,7 @@ export const SocialMediaItem = styled("a")`
     font-size: 38px;
   }
 `;
+
+
+
+// WORD ANIMATION!

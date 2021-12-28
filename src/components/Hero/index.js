@@ -16,6 +16,10 @@ import {
   ShopNowButton,
 } from "./style";
 
+
+// CSS
+import "../Hero/styles.css"
+
 function Hero() {
   return (
     <>
@@ -25,15 +29,20 @@ function Hero() {
         <HeroFlex>
           {/* FLEX TEXT CONTAINER - COLUMN  */}
     {      <HeroTextContainer>
-            <HeroText second>
-              Limited-Edition 
+            <HeroText className="wordCarousel">
+            <div >
+              <ul className="flip4">
+                <li>Artist Painted</li>
+                <li>Limited Edition</li>
+                <li>Cuban-Styled</li>
+                <li>Ceramic-Sculpture</li>
+              </ul>
+            </div>
             </HeroText>
             <MiamiText>
               Own a Unique <br /> Piece of Miami
             </MiamiText>
-            <HeroText three>
-              Artist Painted  
-            </HeroText>
+             
             <ShopNowButton>Shop Now</ShopNowButton>{" "}
           </HeroTextContainer>}
 
