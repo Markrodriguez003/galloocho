@@ -1,5 +1,9 @@
 // import '../MainHeader/MainHeader.css'
 import { useState } from "react";
+import {
+Link,
+NavLink
+} from "react-router-dom";
 
 // DESIGN
 import {
@@ -81,7 +85,7 @@ function MainHeader() {
               <MenuItem href="">SHOP</MenuItem>
               <MenuItem href="#">ARTISTS</MenuItem>
               <MenuItem href="#">CART</MenuItem>
-              <MenuItem href="#">ABOUT</MenuItem>
+              <MenuItem href="/about"> ABOUT  </MenuItem>
               <MenuItem href="#">SUPPORT</MenuItem>
             </MenuFlex>
             <SocialMediaBar>
@@ -203,7 +207,7 @@ function MainHeader() {
 
         {/*** DIFFERENT LOGO IDEAS */}
         {/* <BrandLink href="https://www.nhl.com/"><BrandText>GALLO-OCHO</BrandText></BrandLink> */}
-        <BrandLink href="https://www.nhl.com/">
+        <BrandLink href="/">
           <BrandText>
             GALLO
             <BrandIcon src={rosterLogo} />

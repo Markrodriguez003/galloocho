@@ -1,4 +1,5 @@
 import styled, { css } from "styled-components";
+import parallax1 from "../../imgs/splash/1.jpg"
 
 export const AboutFirstSection = styled("div")`
   display: block;
@@ -24,7 +25,7 @@ export const AboutHeaderContainer = styled("div")`
 `;
 
 export const AboutHeader = styled("h1")`
-  font-size: 88px;
+  font-size: 68px;
   text-shadow: 8px 8px 0 black, 8px 8px 0 white;
   font-weight: bold;
   color: white;
@@ -42,7 +43,7 @@ box-shadow: 0px 10px 13px -7px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 export const MiamiText = styled("span")`
   font-family: "cursiveFont";
   color: hotpink;
-  font-size: 145px;
+  font-size: 135px;
 `;
 
 export const WhoAreWeContainer = styled("div")`
@@ -79,3 +80,55 @@ export const WhoAreWeContainer = styled("div")`
     font-size: 40px;
   }
 `;
+
+
+export const ParallaxImg = styled('div')`
+  /* background-color: yellowgreen; */
+  /* The image used */
+  background-image: url(${parallax1});
+
+  /* Set a specific height */
+  min-height: 800px;
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
+`
+
+export const ParallaxHeader = styled('div')`
+  
+ color:white;
+ font-family: "aboutFont";
+ font-weight: bold;
+ font-size: 105px;
+  text-shadow: 8px 8px 0 black, 8px 8px 0 slategrey;
+  text-align:center;
+  margin-left:auto;
+  margin-right:auto;
+  padding-top: 150px;
+  /* background-color: rgba(0, 0, 0, 0.48);
+  padding: 20px; */
+ 
+  @keyframes waviy {
+  0%,40%,100% {
+    transform: translateY(0)
+  }
+  20% {
+    transform: translateY(-20px)
+  }
+}
+  text-transform: uppercase;
+  animation: waviy 1s infinite;
+  animation-delay: calc(.1s * var(--i));
+
+  & p {
+    padding-bottom: 40px;
+    font-family: "aboutFont";
+    font-size: 40px;
+    text-shadow: 2px 2px 0 black, 2px 2px 0 slategrey;
+  }
+ `
+

@@ -1,25 +1,38 @@
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+  Link,
+  Outlet
+} from "react-router-dom";
+
 import MainHeader from "./components/MainHeader";
 import MainFooter from "./components/MainFooter";
-import Hero from "./components/Hero";
-import ThreeD from "./components/ThreeD";
-import ProductCard from "./components/ProductCard";
-import FrontPageShop from "./components/FrontPageShop";
-import ShopPage from "./components/ShopPage";
+import Home from "./components/Home"
+import AboutPage from "./components/AboutPage";
 import SimpleReactLightbox from "simple-react-lightbox";
+
+
 
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-      <SimpleReactLightbox>
-        <MainHeader />
-        {/*   <Hero />
-        <FrontPageShop /> */}
-        <ShopPage />
-   {/*      {<MainFooter />} */}
-      </SimpleReactLightbox>
+      <BrowserRouter>
+        <SimpleReactLightbox>
+          <MainHeader />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<AboutPage />} />
+          </Routes>
+          <MainFooter />
+        </SimpleReactLightbox>
+      </BrowserRouter>
     </>
   );
 }
 
 export default App;
+
+
+ 
