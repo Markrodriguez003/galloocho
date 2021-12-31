@@ -11,6 +11,7 @@ import MainFooter from "./components/MainFooter";
 import Home from "./components/Home"
 import AboutPage from "./components/AboutPage";
 import SimpleReactLightbox from "simple-react-lightbox";
+import ThreeD from "./components/ThreeD";
 
 
 
@@ -19,14 +20,16 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        <SimpleReactLightbox>
+        {/* <SimpleReactLightbox>
           <MainHeader />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
           </Routes>
           <MainFooter />
-        </SimpleReactLightbox>
+        </SimpleReactLightbox> */}
+
+        <ThreeD />
       </BrowserRouter>
     </>
   );
@@ -35,4 +38,3 @@ function App() {
 export default App;
 
 
- 

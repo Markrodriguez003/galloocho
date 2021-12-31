@@ -55,7 +55,7 @@ function AboutPage() {
           <MiamiText> Miami </MiamiText>
           <br /> <span className="animate__animated animate__bounce">STRIAGHT TO YOU</span>
           <br /> <span className="animate__animated animate__bounce">FROM <span style={{ fontStyle: "italic" }}>US</span></span>
-          <br />  
+          <br />
         </AboutHeader>
 
       </AboutHeaderContainer>
