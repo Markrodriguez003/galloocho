@@ -2,6 +2,9 @@
 import { useState } from "react";
 import styled, { css } from "styled-components";
 
+// CSS-DESIGN
+import "./style.css"
+
 // COMPONENTS
 import ProductCard from "../ProductCard";
 import FrontPageArtists from "../FrontPageArtists";
@@ -32,18 +35,38 @@ background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/s
 `;
 
 // FRONT PAGE SHOP HEADER
-const FrontPageShopHeader = styled("span")`
-  display:inline;
-  position: relative;
-  font-family: "menuFont";
-  font-size: 38px;
-  font-weight: bold;
-  letter-spacing: 3px;
-  border: 4px black dotted;
-  padding: 12px;
-  background-color: white;
+const FrontPageShopHeader = styled("h1")`
+  /* display:inline; */
+  position: relative !important;
+  display:block !important; 
+
+
+ 
+    font-family: "brandFont";
+ font-size: 72px !important;
+ /* font-weight: bold !important; */
+ letter-spacing: 3px !important;
+ /* margin-top: 60px; */
+ padding: 32px;
+ border-width: 14px;
+ border-top-style: solid;
+ border-bottom-style: solid;
+ border-image: repeating-radial-gradient(
+      circle at -12px,
+      grey,
+      transparent 2px,
+      black 8px,
+      slategrey 2px
+    )
+    26;
+ 
+
+ 
   margin-bottom: 30px;
+  text-align:center;
   text-shadow: 2px 2px 0 gainsboro, 2px 1.2px 0 grey;
+ 
+   
 
   @media (max-width: 879px) {
     font-size: 28px;
@@ -54,53 +77,12 @@ const FrontPageShopHeader = styled("span")`
 function FrontPageShop() {
   return (
     <>
+      {/* <FrontPageShopHeader>*** LATEST ARRIVALS ***</FrontPageShopHeader> */}
+      <div className="wrapper">
+        <h1 className="title">LATEST ARRIVALS</h1>
+
+      </div>
       <FrontPageShopContainer>
-        <Row>
-          <Col sm={6}>
-            <FrontPageShopHeader>
-              LATEST ARRIVALS
-            </FrontPageShopHeader>
-          </Col>
-
-
-          <Col sm={6} style={{
-            marginRight:"100px",
-            marginTop: "12px"
-          }}>
-
-            <small> <small
-              style={{
-                color: "red",
-                fontSize: "14px",
-                marginLeft:"10px"
-              }}
-            > <BsCircleFill />
-            </small> - Sold Out </small>
-
-
-            <small> <small
-              style={{
-                color: "black",
-                fontSize: "14px",
-                marginLeft:"10px"
-              }}
-            > <BsCircleFill /> 
-            </small> - Limited Stock </small>
-
-
-            <small> <small
-              style={{
-                color: "black",
-                fontSize: "14px",
-                marginLeft:"10px"
-              }}
-            > <BsCircle />
-            </small> - In Stock </small>
-
-
-          </Col>
-
-        </Row>
         <ProductCard></ProductCard>
       </FrontPageShopContainer>
     </>
@@ -109,3 +91,39 @@ function FrontPageShop() {
 
 export default FrontPageShop;
 
+/*
+
+      <FrontPageShopContainer>
+        <Row>
+          <Col sm={6}>
+            <h1
+            style={{
+              textAlign:"center"
+            }}
+            
+            >LATEST ARRIVALS</h1>
+          </Col>
+
+
+          <Col sm={6} style={{
+            marginRight: "100px",
+            marginTop: "12px"
+          }}>
+
+            <small> <small
+              style={{
+                color: "red",
+                fontSize: "14px",
+                marginLeft: "10px"
+              }}
+            > <BsCircleFill />
+            </small> - Sold Out </small>
+
+
+          </Col>
+
+        </Row>
+        <ProductCard></ProductCard>
+      </FrontPageShopContainer>
+
+*/

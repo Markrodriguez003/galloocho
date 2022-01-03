@@ -1,0 +1,46 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+ 
+.wrapper {
+    animation: sliding-background 40s linear infinite;
+    background: url("../../imgs/textures/TextureA.jpg") no-repeat left / 120%;
+    height: 49vh;
+    text-align: center;
+    width: 100vw;
+    margin-top:0200px;
+}
+
+.title {
+    background: white;
+    color: black;
+    font-family: "Montserrat", sans-serif;
+    font-size: 3.5vw;
+    letter-spacing: 1vw;
+    line-height: 50vh;
+    margin: 0;
+    mix-blend-mode: lighten;
+    text-transform: uppercase;
+ 
+    text-shadow: 5 6 2px, 35;
+
+
+}
+
+.title:before {
+    color: white;
+    content: attr(data-text);
+    margin-left: -1%;
+    margin-top: -1%;
+    position: absolute;
+}
+
+@keyframes sliding-background {
+
+    0%,
+    100% {
+        background-position: 0 40%;
+    }
+
+    50% {
+        background-position: 100% 40%;
+    }
+}

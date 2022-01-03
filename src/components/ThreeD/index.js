@@ -2,18 +2,86 @@ import { useState, useRef } from "react";
 import styled from "styled-components";
 import { ModelContainer } from "./design"
 
-
-// import ModelDemo from "../../models/RoosterTest.glb"
+// MODELS
 import ModelDemo from "../../models/Rooster1.glb"
+
+// COMPONENTS
 import React, { Suspense } from "react";
 import "@google/model-viewer/dist/model-viewer";
 
+// ICONS
+import { BsArrowRepeat } from "react-icons/bs"
+
+// SCRIPTS
 import "./script";
  
+
 
 function ThreeD(props) {
 
   
+window.onload = function () {
+
+  // THIS SETS A VARIABLE TO ROOSTER MODEL
+  const modelVariants = document.querySelector("model-viewer#rooster");
+  const modelRandomizer = document.querySelector("ModelContainer#randomTextureBtn")
+
+  // THIS TESTS TO SEE IF MODEL IS DOWNLOADED.
+  modelVariants.addEventListener("load", function () {
+
+    // MESSAGE CONFIRMING DOWNLOADED MODEL
+    console.log("MODEL HAS FINISHED DOWNLOADING!");
+
+    // PRINTS TO SEE IF MODEL HAS BEEN LOADED ONTO PAGE
+    modelVariants.addEventListener("model-visibility", function () {
+
+      // MESSAGE CONFIRMING MODEL LOADED ONTO PAGE
+      console.log("MODEL HAS FINISHED LOADING TO SITE!");
+
+      if (modelVariants.modelIsVisible === true) {
+
+        console.log("HAS MODEL BEEN LOADED? -> " + modelVariants.modelIsVisible);
+
+        // PRINTS OUT MODEL ELEMENT HTML
+        console.log("MODAL HTML -> " + modelVariants);
+
+        // LISTS TOTAL AMOUNT OF VARIANTS
+        console.log("TOTAL AMOUNT OF MODEL TEXTURE VARIANTS -> " + modelVariants.availableVariants.length);
+
+        // LISTS ALL VARIANTS (ARRAY)
+        console.log("LIST OF MODEL TEXTURE VARIANTS -> " + modelVariants.availableVariants);
+
+        // EXAMPLE - PRINTS OUT THE 2 ELEMENT WITHIN VARIANT ARRAY ABOVE
+        console.log(modelVariants.availableVariants[2]);
+
+        // PRINTS OUT RANDOM NUMBER
+        let x = Math.floor(Math.random() * 10);
+        console.log("RANDOM NUM --> " + x);
+
+        // SETS NEW TEXTURE TO MODEL
+        modelVariants.variantName = modelVariants.availableVariants[x];
+
+        // THIS WILL PRINT ERROR MESSAGE WHEN MODEL FAILED TO LOAD (SETUP POSTER) 
+      } else if (modelVariants.modelIsVisible === null) {
+        console.log("what the fuck");
+      }
+
+    })
+
+  });
+}
+const [texture, setTexture] = useState(0);
+
+
+  // function changeTexture() {
+  //   let x = Math.floor(Math.random() * 10);
+
+
+  // setTexture(modelVariants.variantName[x])
+
+
+  // }
+
   return (
     <>
       < ModelContainer >
@@ -34,6 +102,8 @@ function ThreeD(props) {
             rotation-per-second="30deg"
             auto-rotate-delay="1000"
             disable-zoom
+            interaction-prompt
+            // environment-image="aircraft_workshop_01_1k.hdr"
             ar
             id="rooster"
 
@@ -42,10 +112,38 @@ function ThreeD(props) {
               display: "inline",
               position: "absolute",
               width: "450px",
-              height: "600px"
+              height: "600px",
+              zIndex: "0"
             }}
           />
+
         </div>
+        <BsArrowRepeat
+          id="randomTextureBtn"
+          style={{
+            display: "inline",
+            position: "absolute",
+            float: "right",
+
+            color:"white",
+            cursor: "pointer",
+            fontSize: "29px",
+            zIndex: "9",
+          }}
+          onClick={() => {
+
+            console.log("you clicked.");
+            // PRINTS OUT RANDOM NUMBER
+            let x = Math.floor(Math.random() * 10);
+            console.log("RANDOM NUM --> " + x);
+            
+      
+
+
+          }
+          }
+
+        />
       </ModelContainer>
     </>
   );

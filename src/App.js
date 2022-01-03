@@ -20,16 +20,16 @@ function App() {
   return (
     <>
       <BrowserRouter>
-        {/* <SimpleReactLightbox>
+        <SimpleReactLightbox>
           <MainHeader />
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
           </Routes>
           <MainFooter />
-        </SimpleReactLightbox> */}
+        </SimpleReactLightbox>
 
-        <ThreeD />
+        {/* <ThreeD /> */}
       </BrowserRouter>
     </>
   );
