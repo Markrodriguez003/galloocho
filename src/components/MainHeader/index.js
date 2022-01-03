@@ -26,7 +26,8 @@ import {
 import { Button, Offcanvas } from "react-bootstrap";
 
 // LOGO CHOICES
-import rosterLogo2 from "../../imgs/logo/roosterE.png";
+// import rosterLogo2 from "../../imgs/logo/roosterE.png";
+import rosterLogo2 from "../../imgs/logo/logo2-white-reduced.png";
 import rosterLogo from "../../imgs/logo/roosterG-BLK.png";
 
 // ICONS
@@ -82,6 +83,7 @@ function MainHeader() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <p>__________</p>
+              <MenuItem href="">HOME</MenuItem>
               <MenuItem href="">SHOP</MenuItem>
               <MenuItem href="#">ARTISTS</MenuItem>
               <MenuItem href="#">CART</MenuItem>

@@ -1,0 +1,38 @@
+0 info it worked if it ends with ok
+1 verbose cli [
+1 verbose cli   'C:\\Program Files\\nodejs\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   'gltfjsx@latest',
+1 verbose cli   '--global',
+1 verbose cli   '--prefix',
+1 verbose cli   'C:\\Users\\Mark',
+1 verbose cli   '-',
+1 verbose cli   'Main\\Desktop\\MAINCODINGHUB\\galloocho\\public\\UsersMark-MainAppDataRoamingnpm-cache\\_npx\\20988',
+1 verbose cli   '--loglevel',
+1 verbose cli   'error',
+1 verbose cli   '--json'
+1 verbose cli ]
+2 info using npm@6.14.4
+3 info using node@v13.12.0
+4 verbose npm-session 0dd876cc37833f77
+5 silly install loadCurrentTree
+6 silly install readGlobalPackageData
+7 silly fetchPackageMetaData error for file:Main\Desktop\MAINCODINGHUB\galloocho\public\UsersMark-MainAppDataRoamingnpm-cache\_npx\20988 Could not install from "Main\Desktop\MAINCODINGHUB\galloocho\public\UsersMark-MainAppDataRoamingnpm-cache\_npx\20988" as it does not contain a package.json file.
+8 http fetch GET 200 https://registry.npmjs.org/- 626ms
+9 http fetch GET 200 https://registry.npmjs.org/gltfjsx 649ms
+10 http fetch GET 200 https://registry.npmjs.org/-/-/--0.0.1.tgz 67ms
+11 http fetch GET 200 https://registry.npmjs.org/gltfjsx/-/gltfjsx-4.5.2.tgz 68ms
+12 silly pacote tag manifest for -@latest fetched in 705ms
+13 silly pacote tag manifest for gltfjsx@latest fetched in 732ms
+14 timing stage:rollbackFailedOptional Completed in 0ms
+15 timing stage:runTopLevelLifecycles Completed in 742ms
+16 verbose stack Error: ENOENT: no such file or directory, open 'C:\Users\Mark - Main\desktop\maincodinghub\galloocho\public\Main\Desktop\MAINCODINGHUB\galloocho\public\UsersMark-MainAppDataRoamingnpm-cache\_npx\20988\package.json'
+17 verbose cwd C:\Users\Mark - Main\desktop\maincodinghub\galloocho\public
+18 verbose Windows_NT 10.0.19043
+19 verbose argv "C:\\Program Files\\nodejs\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "gltfjsx@latest" "--global" "--prefix" "C:\\Users\\Mark" "-" "Main\\Desktop\\MAINCODINGHUB\\galloocho\\public\\UsersMark-MainAppDataRoamingnpm-cache\\_npx\\20988" "--loglevel" "error" "--json"
+20 verbose node v13.12.0
+21 verbose npm  v6.14.4
+22 error code ENOLOCAL
+23 error Could not install from "Main\Desktop\MAINCODINGHUB\galloocho\public\UsersMark-MainAppDataRoamingnpm-cache\_npx\20988" as it does not contain a package.json file.
+24 verbose exit [ 1, true ]

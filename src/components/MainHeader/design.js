@@ -108,14 +108,28 @@ export const BrandIcon = styled("img")`
   }
 `;
 export const MenuHeaderIcon = styled("img")`
-  width: 160px;
+ 
+ /* FOR OLDER/BETTER ICON */
+ /* width: 160px;
   height: 195px;
   background-color: transparent;
   color: black;
   padding: 4px;
   margin-top: 40px;
   margin-left: 68px;
-  margin-bottom: 8px;
+  margin-bottom: 8px; */
+
+/* FOR ERNIE LOGO */
+  width: 285px;
+  height: 305px;
+  background-color: transparent;
+  color: white;
+  padding: 4px;
+  margin-top: 40px;
+  margin-left: 28px;
+  margin-bottom: -22px; 
+
+
  
 `;
 
