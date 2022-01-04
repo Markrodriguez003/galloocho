@@ -3,6 +3,8 @@ import styled, { css } from "styled-components";
 // IMAGES
 import heroTextureBG from "../../imgs/textures/TextureA.jpg";
 
+// FONTS
+
 //COMPONENTS
 import { Button } from "react-bootstrap";
 
@@ -16,9 +18,9 @@ export const HeroFlex = styled("div")`
   flex-direction: row;
   align-content: center;
   align-items: center;
-  justify-content:center;
+  justify-content: center;
   padding-top: 45px;
- /*  top: 5vh;
+  /*  top: 5vh;
   left: 20vw; */
   /*  */
   flex-wrap: wrap;
@@ -26,7 +28,7 @@ export const HeroFlex = styled("div")`
   height: 100%;
   /* background-color: green; */
   text-align: center;
-/*  */
+  /*  */
   /* border-width: 14px;
   border-bottom-style: solid;
   border-image: repeating-radial-gradient(
@@ -37,13 +39,12 @@ export const HeroFlex = styled("div")`
       white 2px
     )
     26; */
-  
-/* 
+
+  /* 
   & * {
     margin: 12px;
 
   } */
-
 `;
 
 // FLEX BOX CONTAINER THAT HOLDS ALL INDIVIDUAL HERO TEXT CONTAINER
@@ -53,9 +54,6 @@ export const HeroTextContainer = styled("div")`
   flex-direction: column;
   align-content: center;
   align-items: center;
- 
-
- 
 `;
 
 // INDIVIDUAL HERO TEXT CONTAINER
@@ -65,10 +63,10 @@ export const HeroText = styled("span")`
   background-color: #fafafa;
   color: black;
   font-size: 3em;
-  font-family: "heroFont";
+  /* font-family: "heroFont"; */
+  font-family: "Montserrat", sans-serif;
   text-align: center;
   margin-bottom: 20px;
-
 
   @media (max-width: 860px) {
     font-size: 2.2em;
@@ -86,9 +84,8 @@ export const HeroText = styled("span")`
     font-size: 0.8em;
   }
 
-
   // ** STYLING FOR EACH INDIVIDUAL HERO SPLASH TEXT CONTAINER
-/*   ${(props) =>
+  /*   ${(props) =>
     props.first &&
     css`
       border-radius: 5%;
@@ -222,7 +219,7 @@ export const HeroText = styled("span")`
       }
     `}; */
 
- /*  ${(props) =>
+  /*  ${(props) =>
     props.three &&
     css`
       border-radius: 5%;
@@ -296,24 +293,34 @@ export const HeroText = styled("span")`
 export const MiamiText = styled("span")`
   display: inline;
   position: relative;
-  background-color: #fafafa;
-  color: black;
-  font-size: 64px;
-  font-family: "heroFont";
+  /* background-color: transparent; */
+  background-color: rgba(0,0,0,0.28);
+  /* color: rgba(0,0,0,0.6); */
+  border-radius: 44px;
+  padding: 2px;
+  color:transparent;
+  font-size: 92px;
+/*   font-family: "Montserrat", sans-serif; */
+  font-family: "menuFont", sans-serif;
+ 
+    -webkit-text-stroke: 4px white;
+ 
+ 
+
+
+  letter-spacing: 4.5px;
   -webkit-animation: vibrate-2 2.3s linear infinite both;
   animation: vibrate-2 2.3s linear infinite both;
   -webkit-animation: vibrate-2 2.3s linear infinite both;
   animation: vibrate-2 2.3s linear infinite both;
 
-/*   @media (max-width: 860px) {
+  /*   @media (max-width: 860px) {
     font-size: 3.15em;
   }
  */
   @media (max-width: 1240px) {
     font-size: 3.15em;
   }
-
-
 
   @media (max-width: 775px) {
     font-size: 1.4em;
@@ -327,7 +334,7 @@ export const MiamiText = styled("span")`
     font-size: 0.8em;
   }
 
- /*  @-webkit-keyframes vibrate-2 {
+  /*  @-webkit-keyframes vibrate-2 {
     0% {
       -webkit-transform: translate(0);
       transform: translate(0);
@@ -381,8 +388,6 @@ export const MiamiText = styled("span")`
   } */
 `;
 
- 
-
 // ENTIRE HERO SPLASH PAGE CONTAINER (SPLATTER PAINT GRAPHIC)
 export const HeroContainer = styled("div")`
   display: block;
@@ -403,12 +408,11 @@ export const ShopNowButton = styled(Button)`
   /* position: absolute; */
   background-color: #fafafa;
   color: black;
-  font-size: 36px;
+  font-size: 26px;
   font-family: "menuFont";
-  font-weight:bold;
+  font-weight: bold;
   border: none;
   margin-top: 35px;
-
 
   @media (max-width: 860px) {
     font-size: 2.2em;
@@ -421,7 +425,6 @@ export const ShopNowButton = styled(Button)`
   @media (max-width: 480px) {
     font-size: 1.2em;
   }
-
 
   /* margin-top: 900px;
 margin-left: 700px; */

@@ -31,7 +31,7 @@ function Hero() {
         <HeroFlex>
           {/* FLEX TEXT CONTAINER - COLUMN  */}
     {      <HeroTextContainer>
-            <HeroText className="wordCarousel">
+            {/* <HeroText className="wordCarousel">
             <div >
               <ul className="flip4">
                 <li>Artist Painted</li>
@@ -40,7 +40,7 @@ function Hero() {
                 <li>Ceramic-Sculpture</li>
               </ul>
             </div>
-            </HeroText>
+            </HeroText> */}
             <MiamiText>
               Own a Unique <br /> Piece of Miami
             </MiamiText>
