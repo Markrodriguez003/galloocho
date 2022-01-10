@@ -13,7 +13,7 @@ import "@google/model-viewer/dist/model-viewer";
 import { BsArrowRepeat } from "react-icons/bs"
 
 // SCRIPTS
-import "./script";
+// import "./script";
  
 
 
