@@ -3,27 +3,23 @@ import styled from "styled-components";
 // COMPONENTS
 import { Button, Navbar, Offcanvas } from "react-bootstrap";
 
-// ICONS
-import {
-  BsFillArrowRightCircleFill,
-  BsFillCartFill,
-  BsFacebook,
-  BsInstagram,
-  BsYoutube,
-  BsFillEnvelopeFill,
-  BsTwitter,
-  BsFillQuestionCircleFill,
-  BsFillBagXFill,
-  BsFillBagCheckFill,
-  BsXOctagonFill,
-  BsFillBagPlusFill,
-} from "react-icons/bs";
+// SCRIPT TO SLIDE OUT HEADER WHEN SCROLLING
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-150px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 
- 
-
+// CSS COMPONENTS
 export const Header = styled(Navbar)`
   display: flex;
-  position: relative;
+  position: fixed; /* Make it stick/fixed */
+  top: 0; /* Stay on top */
   flex-direction: row;
   justify-content: space-between;
   background-color: #FAFAFA;
@@ -33,27 +29,14 @@ export const Header = styled(Navbar)`
   box-shadow: 1px 7px 27px 3px rgba(0, 0, 0, 0.53);
 
   & img:hover {
-    /* transform: scale(1.07); */
-    /* transform: rotateX(10deg); */
     transform: rotate(1turn);
-    /* transform: translateX(10px);   */
     -webkit-transition: all 1s ease; /* Safari and Chrome */
     -moz-transition: all 1s ease; /* Firefox */
     -ms-transition: all 1s ease; /* IE 9 */
     -o-transition: all 1s ease; /* Opera */
     transition: all 1s ease;
   }
-
-  /* & h1:hover {
- 
- text-decoration: wavy;
- -webkit-transition: all 0.5s ease;  
-    -moz-transition: all 0.5s ease;  
-    -ms-transition: all 0.5s ease;  
-    -o-transition: all 0.5s ease;  
-    transition: all 0.5s ease;
-  }
-     */
+  transition: top 0.4s;
 `;
 
 export const Menu = styled("h2")`
@@ -120,17 +103,14 @@ export const MenuHeaderIcon = styled("img")`
   margin-bottom: 8px; */
 
 /* FOR ERNIE LOGO */
-  width: 285px;
-  height: 305px;
+  width: 195px;
+  height: 205px;
   background-color: transparent;
   color: white;
   padding: 4px;
   margin-top: 40px;
   margin-left: 28px;
   margin-bottom: -22px; 
-
-
- 
 `;
 
 export const BrandText = styled("h1")`

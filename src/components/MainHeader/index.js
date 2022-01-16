@@ -30,8 +30,10 @@ import { Button, Offcanvas } from "react-bootstrap";
 import rosterLogo2 from "../../imgs/logo/logo2-white-reduced.png";
 import rosterLogo from "../../imgs/logo/roosterG-BLK.png";
 
-// ICONS
-
+// SCRIPT
+// SCRIPT
+/* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
+ 
 // ICONS
 import {
   BsFillArrowRightCircleFill,
@@ -61,7 +63,7 @@ function MainHeader() {
 
   return (
     <>
-      <Header fixed="top">
+      <Header fixed="top" id="navbar">
         {/* Maybe put a menu Icon - Roster's Head at the end of the "Menu" Left btton */}
         <SubSideMenu>
           <Menu onClick={handleShow}>

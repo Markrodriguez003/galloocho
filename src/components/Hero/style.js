@@ -24,6 +24,8 @@ export const HeroFlex = styled("div")`
   height: 100%;
   text-align: center;
   padding-bottom: 150px;
+  padding-top: 250px;
+
 `;
 
 // FLEX BOX CONTAINER THAT HOLDS ALL INDIVIDUAL HERO TEXT CONTAINER

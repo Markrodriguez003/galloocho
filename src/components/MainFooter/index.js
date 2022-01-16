@@ -60,6 +60,9 @@ function MainHeader() {
                 <FooterAnchor href="#">NEWS</FooterAnchor>
               </Col>
               <Col lg={12}>
+                <FooterAnchor href="#">ABOUT</FooterAnchor>
+              </Col>
+              <Col lg={12}>
                 <FooterAnchor href="#">FUTURE PROJECTS</FooterAnchor>
               </Col>
               <Col lg={12}>

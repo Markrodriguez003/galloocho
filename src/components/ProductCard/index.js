@@ -6,7 +6,6 @@ import {
   ProductCardsContainer,
   ProductCardElement,
   CardBodyFlex,
-  CardFooterFlex,
   ProductHeaderTitle
 } from "./design";
 import {
@@ -15,9 +14,8 @@ import {
   Carousel,
   Row,
   Col,
-  Form,
 } from "react-bootstrap";
-import SimpleReactLightbox from "simple-react-lightbox";
+ 
 import { SRLWrapper } from "simple-react-lightbox";
 
 // ICONS
@@ -28,17 +26,12 @@ import { BsCircleFill, BsCircle } from "react-icons/bs";
 import headerImg from "../../imgs/product/names/lilJavi-black.png"
 
 //* Product Card images
-import roosterProductA1 from "../../imgs/product/sculpture-main/Product-A/1-A.jpg";
-import roosterProductA2 from "../../imgs/product/sculpture-main/Product-A/2-A.jpg";
-import roosterProductA3 from "../../imgs/product/sculpture-main/Product-A/3-A.jpg";
-import roosterProductA4 from "../../imgs/product/sculpture-main/Product-A/4-A.jpg";
-import roosterProductA5 from "../../imgs/product/sculpture-main/Product-A/5-A.jpg";
-
-import roosterProductB1 from "../../imgs/product/sculpture-main/Product-B/1-B.jpg";
-import roosterProductB2 from "../../imgs/product/sculpture-main/Product-B/2-B.jpg";
-import roosterProductB3 from "../../imgs/product/sculpture-main/Product-B/3-B.jpg";
-import roosterProductB4 from "../../imgs/product/sculpture-main/Product-B/4-B.jpg";
-import roosterProductB5 from "../../imgs/product/sculpture-main/Product-B/5-B.jpg";
+import roosterProductA1 from "../../imgs/product/sculptures/Product-1/1A.png";
+import roosterProductA2 from "../../imgs/product/sculptures/Product-1/2B.png";
+import roosterProductA3 from "../../imgs/product/sculptures/Product-1/3C.png";
+import roosterProductA4 from "../../imgs/product/sculptures/Product-1/4D.png";
+import roosterProductA5 from "../../imgs/product/sculptures/Product-1/5E.png";
+ 
 
 // ! https://alvarotrigo.com/blog/css-animations-scroll/ <<animation for productcards
 
@@ -67,8 +60,8 @@ const ProductCard = () => {
               </Card.Header>
               <Card.Body>
                 <CardBodyFlex style={{ display: "flex" }}>
-                  <SRLWrapper>
-                    <Carousel interval={null}>
+                  <SRLWrapper >
+                    <Carousel interval={null} id="carousel-image-container">
                       <Carousel.Item>
                         <img
                           src={roosterProductA1}
@@ -93,14 +86,14 @@ const ProductCard = () => {
                       <Carousel.Item>
                         <img
                           src={roosterProductA4}
-                          alt="Third slide"
+                          alt="Fourth slide"
                           className="cardImg"
                         />
                       </Carousel.Item>
                       <Carousel.Item>
                         <img
                           src={roosterProductA5}
-                          alt="Third slide"
+                          alt="Fifth slide"
                           className="cardImg"
                         />
                       </Carousel.Item>

@@ -8,6 +8,8 @@ export const ProductCardsContainer = styled("div")`
   margin-top: 42px;
  margin-left: auto;
  margin-right: auto; 
+ overflow: hidden; 
+ 
 `;
 
 // INDIVIDUAL PRODUCT CARD

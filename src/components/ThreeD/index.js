@@ -12,65 +12,67 @@ import "@google/model-viewer/dist/model-viewer";
 // ICONS
 import { BsArrowRepeat } from "react-icons/bs"
 
+// IMAGES
+import poster from "../../imgs/gif/loading.gif"
+
 // SCRIPTS
-// import "./script";
- 
 
-
+// CSS
+import "./style.css"
 function ThreeD(props) {
 
-  
-window.onload = function () {
 
-  // THIS SETS A VARIABLE TO ROOSTER MODEL
-  const modelVariants = document.querySelector("model-viewer#rooster");
-  const modelRandomizer = document.querySelector("ModelContainer#randomTextureBtn")
+  window.onload = function () {
 
-  // THIS TESTS TO SEE IF MODEL IS DOWNLOADED.
-  modelVariants.addEventListener("load", function () {
+    // THIS SETS A VARIABLE TO ROOSTER MODEL
+    const modelVariants = document.querySelector("model-viewer#rooster");
+    const modelRandomizer = document.querySelector("ModelContainer#randomTextureBtn")
 
-    // MESSAGE CONFIRMING DOWNLOADED MODEL
-    console.log("MODEL HAS FINISHED DOWNLOADING!");
+    // THIS TESTS TO SEE IF MODEL IS DOWNLOADED.
+    modelVariants.addEventListener("load", function () {
 
-    // PRINTS TO SEE IF MODEL HAS BEEN LOADED ONTO PAGE
-    modelVariants.addEventListener("model-visibility", function () {
+      // MESSAGE CONFIRMING DOWNLOADED MODEL
+      console.log("MODEL HAS FINISHED DOWNLOADING!");
 
-      // MESSAGE CONFIRMING MODEL LOADED ONTO PAGE
-      console.log("MODEL HAS FINISHED LOADING TO SITE!");
+      // PRINTS TO SEE IF MODEL HAS BEEN LOADED ONTO PAGE
+      modelVariants.addEventListener("model-visibility", function () {
 
-      if (modelVariants.modelIsVisible === true) {
+        // MESSAGE CONFIRMING MODEL LOADED ONTO PAGE
+        console.log("MODEL HAS FINISHED LOADING TO SITE!");
 
-        console.log("HAS MODEL BEEN LOADED? -> " + modelVariants.modelIsVisible);
+        if (modelVariants.modelIsVisible === true) {
 
-        // PRINTS OUT MODEL ELEMENT HTML
-        console.log("MODAL HTML -> " + modelVariants);
+          console.log("HAS MODEL BEEN LOADED? -> " + modelVariants.modelIsVisible);
 
-        // LISTS TOTAL AMOUNT OF VARIANTS
-        console.log("TOTAL AMOUNT OF MODEL TEXTURE VARIANTS -> " + modelVariants.availableVariants.length);
+          // PRINTS OUT MODEL ELEMENT HTML
+          console.log("MODAL HTML -> " + modelVariants);
 
-        // LISTS ALL VARIANTS (ARRAY)
-        console.log("LIST OF MODEL TEXTURE VARIANTS -> " + modelVariants.availableVariants);
+          // LISTS TOTAL AMOUNT OF VARIANTS
+          console.log("TOTAL AMOUNT OF MODEL TEXTURE VARIANTS -> " + modelVariants.availableVariants.length);
 
-        // EXAMPLE - PRINTS OUT THE 2 ELEMENT WITHIN VARIANT ARRAY ABOVE
-        console.log(modelVariants.availableVariants[2]);
+          // LISTS ALL VARIANTS (ARRAY)
+          console.log("LIST OF MODEL TEXTURE VARIANTS -> " + modelVariants.availableVariants);
 
-        // PRINTS OUT RANDOM NUMBER
-        let x = Math.floor(Math.random() * 10);
-        console.log("RANDOM NUM --> " + x);
+          // EXAMPLE - PRINTS OUT THE 2 ELEMENT WITHIN VARIANT ARRAY ABOVE
+          console.log(modelVariants.availableVariants[2]);
 
-        // SETS NEW TEXTURE TO MODEL
-        modelVariants.variantName = modelVariants.availableVariants[x];
+          // PRINTS OUT RANDOM NUMBER
+          let x = Math.floor(Math.random() * 10);
+          console.log("RANDOM NUM --> " + x);
 
-        // THIS WILL PRINT ERROR MESSAGE WHEN MODEL FAILED TO LOAD (SETUP POSTER) 
-      } else if (modelVariants.modelIsVisible === null) {
-        console.log("what the fuck");
-      }
+          // SETS NEW TEXTURE TO MODEL
+          modelVariants.variantName = modelVariants.availableVariants[x];
 
-    })
+          // THIS WILL PRINT ERROR MESSAGE WHEN MODEL FAILED TO LOAD (SETUP POSTER) 
+        } else if (modelVariants.modelIsVisible === null) {
+          console.log("what the fuck");
+        }
 
-  });
-}
-const [texture, setTexture] = useState(0);
+      })
+
+    });
+  }
+  const [texture, setTexture] = useState(0);
 
 
   // function changeTexture() {
@@ -84,31 +86,37 @@ const [texture, setTexture] = useState(0);
 
   return (
     <>
+
       < ModelContainer >
         <div style={{
           display: "flex",
           justifyContent: "center",
           alignContent: "center",
-          backgroundColor: "black",
+          backgroundColor: "transparent",
 
 
         }}>
           <model-viewer
             src={ModelDemo}
+  
             seamless-poster
             shadow-intensity="1"
             camera-controls
             auto-rotate
+            camera-orbit="-65.39deg 80.94deg auto" 
             rotation-per-second="30deg"
             auto-rotate-delay="1000"
+            poster={poster}
+            seamless-poster shadow-intensity="1"
             disable-zoom
             interaction-prompt
+
             // environment-image="aircraft_workshop_01_1k.hdr"
             ar
             id="rooster"
 
             style={{
-              backgroundColor: "transparent",
+         
               display: "inline",
               position: "absolute",
               width: "450px",
@@ -124,8 +132,9 @@ const [texture, setTexture] = useState(0);
             display: "inline",
             position: "absolute",
             float: "right",
-
-            color:"white",
+            right: "20px",
+            top: "40px",
+            color: "white",
             cursor: "pointer",
             fontSize: "29px",
             zIndex: "9",
@@ -136,8 +145,8 @@ const [texture, setTexture] = useState(0);
             // PRINTS OUT RANDOM NUMBER
             let x = Math.floor(Math.random() * 10);
             console.log("RANDOM NUM --> " + x);
-            
-      
+
+
 
 
           }

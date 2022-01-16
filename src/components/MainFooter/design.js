@@ -1,6 +1,8 @@
 import styled from "styled-components";
 import { Navbar } from 'react-bootstrap';
 
+
+
 // CSS
 export const Footer = styled('div')`
  display:block;
