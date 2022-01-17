@@ -2,3 +2,8 @@
     position:absolute !important;
     /* display: block !important; */
 }
+
+#btnNavGroup {
+    background-color: transparent !important ;
+}
+

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // COMPONENTS
-import { Carousel } from "react-bootstrap";
+import { Row, Col, Carousel } from "react-bootstrap";
 import {
   AboutFirstSection,
   CarouselImage,
@@ -9,14 +9,20 @@ import {
   AboutHeaderContainer,
   WhoAreWeContainer,
   ParallaxImg,
-  ParallaxHeader
+  ParallaxHeader,
+  WhoAreWeContainerFlex,
 } from "./design";
 
 // IMAGES
 import splash1 from "../../imgs/splash/11.jpg";
 import splash2 from "../../imgs/splash/6.jpg";
 import splash3 from "../../imgs/splash/14.jpg";
-import roosterImage from "../../imgs/misc/black.png";
+
+import roosterImage from "../../imgs/gif/loading.gif";
+import roosterSplash from "../../imgs/splash/10.png";
+
+// SCRIPT
+import "./script";
 
 // CSS
 import 'animate.css';
@@ -57,21 +63,68 @@ function AboutPage() {
           <br /> <span className="animate__animated animate__bounce">FROM <span style={{ fontStyle: "italic" }}>US</span></span>
           <br />
         </AboutHeader>
-
       </AboutHeaderContainer>
 
-      <WhoAreWeContainer>
 
-        <h1> WHO ARE WE?</h1>
-        <p>Gallo Ocho is part of an art movement called SMITHEREENS &trade;. <br></br>
+
+
+      <WhoAreWeContainerFlex>
+
+        <Row>
+
+          <Col>
+            <Row>
+              <img src={roosterImage} style={{ width: "490px", height: "525px", paddingLeft: "40px", backgroundColor:"green" }}></img>
+            </Row>
+          </Col>
+
+          <Col>
+            <Row>
+              <h1>ABOUT US</h1>
+            </Row>
+            <Row>
+              <p>Hello this is text</p>
+            </Row>
+          </Col>
+        </Row>
+
+
+
+      </WhoAreWeContainerFlex>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+      {/* <WhoAreWeContainer>
+
+        <h1> ABOUT</h1>
+        <p>Gallo Ocho is part of an art movement called 
+          
+          
+          <span> <a href="#" style={{color:"yellow", textDecoration:"none"}}> SMITHEREENS </a></span> . <br></br>
+
+          
           We are a Miami based art collective that offers unique, rooster sculptures for grabs. <br></br>
           Each rooster sculpture will be individually painted, batched with a serial number and certificate of
           authenticity.  <br />We will be expanding our art offerings in the near future so stay tuned and subscribe <br />
           for more news!
         </p>
-        <img src={roosterImage} style={{ width: "240px", height: "325px", paddingLeft: "40px" }}></img>
+        <img src={roosterImage} style={{ width: "290px", height: "325px", paddingLeft: "40px" }}></img>
 
-      </WhoAreWeContainer>
+      </WhoAreWeContainer> */}
 
 
       <ParallaxImg>
@@ -86,20 +139,11 @@ function AboutPage() {
         </ParallaxHeader>
 
       </ParallaxImg>
+      {/*      <h1> CURRENT & FUTURE PROJECTS</h1> */}
 
 
-      <WhoAreWeContainer>
 
-        <h1> Our CURRENT & FUTURE PROJECTS</h1>
-        <p>Gallo Ocho is part of an art movement called SMITHEREENS &trade;. <br></br>
-          We are a Miami based art collective that offers unique, rooster sculptures for grabs. <br></br>
-          Each rooster sculpture will be individually painted, batched with a serial number and certificate of
-          authenticity.  <br />We will be expanding our art offerings in the near future so stay tuned and subscribe <br />
-          for more news!
-        </p>
-        <img src={roosterImage} style={{ width: "240px", height: "325px", paddingLeft: "40px" }}></img>
 
-      </WhoAreWeContainer>
 
 
     </>

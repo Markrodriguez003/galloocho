@@ -5,10 +5,11 @@ import { Card, Button } from "react-bootstrap";
 export const ProductCardsContainer = styled("div")`
   display: block;
   position:relative;
-  margin-top: 42px;
+  margin-top: 5px;
  margin-left: auto;
  margin-right: auto; 
  overflow: hidden; 
+ 
  
 `;
 
@@ -17,11 +18,14 @@ export const ProductCardElement = styled(Card)`
   position: relative !important;
   background-color: transparent !important ;
   margin-bottom: 10px;
+  width: 36%; // This was added to make it a solo centered card. Take out when creating grid
   height: auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 220px;
   border: white 2px solid !important; 
- 
-  -webkit-box-shadow: 1px 4px 45px -12px rgba(0,0,0,0.45); 
-  box-shadow: 1px 4px 45px -12px rgba(0,0,0,0.45);
+  -webkit-box-shadow: 4px 4px 45px -12px rgba(0,0,0,0.45); 
+  box-shadow: 4px 4px 45px -12px rgba(0,0,0,0.45);
 `;
 
 // CONTAINER FOR CARD BODY - FLEX - COL
@@ -40,7 +44,7 @@ export const CardFooterFlex = styled("div")`
 `;
 
 export const ProductHeaderTitle=styled('img')`
-width: 220px;
+width: 300px;
 height: auto;
 text-align:center;
 

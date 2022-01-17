@@ -5,7 +5,7 @@ import { useState } from "react";
 import ThreeD from "../ThreeD/index";
 
 // CSS
-import { BsCaretRight } from "react-icons/bs";
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 import {
   HeroContainer,
@@ -23,16 +23,16 @@ import "../Hero/styles.css"
 function Hero() {
   return (
     <>
-
+  
       <HeroContainer>
         <HeroFlex>
-          <div>
+          <div id="headerText">
             <MiamiText>
               Own a Unique <br /> Piece of Miami
+              <br /> 
+            <ShopNowButton href="#frontshop">See Concept <BsFillArrowDownCircleFill/></ShopNowButton>{" "}
             </MiamiText>
-            {/* <ShopNowButton>Shop Now</ShopNowButton>{" "} */}
           </div>
-
           <div className="model">
             <ThreeD />
           </div>

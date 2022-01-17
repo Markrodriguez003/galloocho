@@ -48,7 +48,7 @@ function MainHeader() {
                 fontSize: "20px",
               }}>________________________</p>
               <Col lg={12}>
-                <FooterAnchor href="#">HOME</FooterAnchor>
+                <FooterAnchor href="/">HOME</FooterAnchor>
               </Col>
               <Col lg={12}>
                 <FooterAnchor href="#">SHOP</FooterAnchor>
@@ -60,7 +60,7 @@ function MainHeader() {
                 <FooterAnchor href="#">NEWS</FooterAnchor>
               </Col>
               <Col lg={12}>
-                <FooterAnchor href="#">ABOUT</FooterAnchor>
+                <FooterAnchor href="/about">ABOUT</FooterAnchor>
               </Col>
               <Col lg={12}>
                 <FooterAnchor href="#">FUTURE PROJECTS</FooterAnchor>

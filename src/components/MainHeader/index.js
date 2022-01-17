@@ -85,7 +85,7 @@ function MainHeader() {
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <p>__________</p>
-              <MenuItem href="">HOME</MenuItem>
+              <MenuItem href="/">HOME</MenuItem>
               <MenuItem href="">SHOP</MenuItem>
               <MenuItem href="#">ARTISTS</MenuItem>
               <MenuItem href="#">CART</MenuItem>
