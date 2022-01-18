@@ -11,7 +11,7 @@ import MainFooter from "./components/MainFooter";
 import Home from "./components/Home"
 import AboutPage from "./components/AboutPage";
 import SimpleReactLightbox from "simple-react-lightbox";
-import ThreeD from "./components/ThreeD";
+import UnderConstruction from "./components/UnderConstruction";
 
 
 
@@ -25,6 +25,11 @@ function App() {
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/shop" element={<UnderConstruction />} />
+            <Route path="/artists" element={<UnderConstruction />} />
+            <Route path="/cart" element={<UnderConstruction />} />
+            <Route path="/support" element={<UnderConstruction />} />
+            <Route path="/newsletter" element={<UnderConstruction />} />
           </Routes>
           <MainFooter />
         </SimpleReactLightbox>

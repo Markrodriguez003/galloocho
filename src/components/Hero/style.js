@@ -1,4 +1,4 @@
-import styled,   { css, keyframes } from "styled-components";
+import styled, { css, keyframes } from "styled-components";
 
 // IMAGES
 import heroTextureBG from "../../imgs/textures/TextureA.jpg";
@@ -77,19 +77,14 @@ const slidingBackground = keyframes`
 `;
 
 // MIAMI BACKGROUND
-export const MiamiText = styled("span")`
+export const HeaderText = styled("span")`
   display: inline;
   position: relative;
- 
-  border-radius: 44px;
   padding: 2px;
   color:black;
- 
   font-size: 96px;
   font-family: "menuFont", sans-serif;
   letter-spacing: 4.5px;
-
-
   animation: ${slidingBackground} 70s linear infinite;
     background: url("../../imgs/textures/TextureA.jpg") no-repeat left / 120%;
     /* background: url("../../imgs/textures/background-6793839_1920.jpg") no-repeat left / 120%; */
@@ -98,9 +93,7 @@ export const MiamiText = styled("span")`
     width: 100vw;
     margin-top: 0px;
     margin-bottom: -80px;
-
-   
-
+ 
     @media (max-width: 1000px) {
       order: 2;
 
@@ -112,13 +105,47 @@ export const MiamiText = styled("span")`
  
 `;
 
+export const MiamiText = styled('span')`
+ background-color:hotpink; 
+                  color:white;
+                  border:pink 2px solid;
+                  /* padding: 12px; */
+                  padding-bottom:18px;
+                  padding-right: 16px;
+                  padding-left: 15px;
+                  /* font-style:italic; */
+                  /* -webkit-text-fill-color: transparent; */
+  -webkit-text-stroke-width: 3px;
+  -webkit-text-stroke-color: white;
+  text-shadow: 
+						6px 6px #ff1f8f,
+						/* 7px 7px rgba(0,0,0,0.22); */
+						7px 7px white;
+
+            border-bottom-right-radius: 25px;
+
+
+            /* OTHER IDEA */
+            /* background-image: url(${heroTextureBG});
+ background-color: #ff1d8e;
+ background-blend-mode: screen;
+ background-position: center;
+ background-size: cover; */
+ 
+`
+
 // ENTIRE HERO SPLASH PAGE CONTAINER (SPLATTER PAINT GRAPHIC)
 export const HeroContainer = styled("div")`
   display: block;
   position: relative;
   width: 100%;
   height: 110vh;
-  background-color: rgba(0,0,0,0.07)
+  background-color: rgba(0,0,0,0.05);
+background: -moz-linear-gradient(top,  rgba(0,0,0,0.05) 0%, #FFFFFF 100%);
+background: -webkit-linear-gradient(top,  rgba(0,0,0,0.05) 0%, #FFFFFF 100%);
+background: linear-gradient(to bottom,  rgba(0,0,0,0.05); 0%, #FFFFFF 100%);
+
+
 `;
 
 /* SHOP NOW BUTTON LOCATED AT THE BOTTOM */
@@ -131,12 +158,21 @@ export const ShopNowButton = styled(Button)`
   border: none;
   margin-top: -25px;
 
+  &:hover{
+    background-color: black !important;
+  }
+
  /* @media (max-width: 860px) {
     font-size: 2.2em;
   } */
  
  
 `;
+
+
+
+
+
 
 
 

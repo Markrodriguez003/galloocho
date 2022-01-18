@@ -86,11 +86,11 @@ function MainHeader() {
               </Offcanvas.Header>
               <p>__________</p>
               <MenuItem href="/">HOME</MenuItem>
-              <MenuItem href="">SHOP</MenuItem>
-              <MenuItem href="#">ARTISTS</MenuItem>
-              <MenuItem href="#">CART</MenuItem>
+              <MenuItem href="/shop">SHOP</MenuItem>
+              <MenuItem href="/artists">ARTISTS</MenuItem>
+              <MenuItem href="/cart">CART</MenuItem>
               <MenuItem href="/about"> ABOUT  </MenuItem>
-              <MenuItem href="#">SUPPORT</MenuItem>
+              <MenuItem href="/support">SUPPORT</MenuItem>
             </MenuFlex>
             <SocialMediaBar>
               <SocialMediaItem href="#">

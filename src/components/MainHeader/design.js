@@ -15,6 +15,7 @@ window.onscroll = function() {
   prevScrollpos = currentScrollPos;
 }
 
+
 // CSS COMPONENTS
 export const Header = styled(Navbar)`
   display: flex;
@@ -36,8 +37,10 @@ export const Header = styled(Navbar)`
     )
     26; */
  
-  /* -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53); */
+  -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53);
   box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);
+
+  
 
   & img:hover {
     transform: rotate(1turn);

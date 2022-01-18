@@ -14,6 +14,7 @@ import {
   HeroText,
   MiamiText,
   ShopNowButton,
+  HeaderText
 } from "./style";
 
 
@@ -27,11 +28,11 @@ function Hero() {
       <HeroContainer>
         <HeroFlex>
           <div id="headerText">
-            <MiamiText>
-              Own a Unique <br /> Piece of Miami
+            <HeaderText>
+              Own a Unique <br /> Piece of  <MiamiText>Miami</MiamiText>
               <br /> 
             <ShopNowButton href="#frontshop">See Concept <BsFillArrowDownCircleFill/></ShopNowButton>{" "}
-            </MiamiText>
+            </HeaderText>
           </div>
           <div className="model">
             <ThreeD />

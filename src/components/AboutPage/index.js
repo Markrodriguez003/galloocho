@@ -65,9 +65,6 @@ function AboutPage() {
         </AboutHeader>
       </AboutHeaderContainer>
 
-
-
-
       <WhoAreWeContainerFlex>
 
         <Row>
@@ -88,44 +85,7 @@ function AboutPage() {
           </Col>
         </Row>
 
-
-
       </WhoAreWeContainerFlex>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-      {/* <WhoAreWeContainer>
-
-        <h1> ABOUT</h1>
-        <p>Gallo Ocho is part of an art movement called 
-          
-          
-          <span> <a href="#" style={{color:"yellow", textDecoration:"none"}}> SMITHEREENS </a></span> . <br></br>
-
-          
-          We are a Miami based art collective that offers unique, rooster sculptures for grabs. <br></br>
-          Each rooster sculpture will be individually painted, batched with a serial number and certificate of
-          authenticity.  <br />We will be expanding our art offerings in the near future so stay tuned and subscribe <br />
-          for more news!
-        </p>
-        <img src={roosterImage} style={{ width: "290px", height: "325px", paddingLeft: "40px" }}></img>
-
-      </WhoAreWeContainer> */}
-
 
       <ParallaxImg>
         <ParallaxHeader>ART FROM THE STREETS & BEYOND
@@ -139,7 +99,7 @@ function AboutPage() {
         </ParallaxHeader>
 
       </ParallaxImg>
-      {/*      <h1> CURRENT & FUTURE PROJECTS</h1> */}
+ 
 
 
 

@@ -13,6 +13,9 @@ import {
   SmallText,
 } from "./design";
 
+
+import "./style.css";
+
 // IMAGES
 import rosterLogo2 from "../../imgs/logo/roosterE.png";
 // ICONS
@@ -111,7 +114,17 @@ function MainHeader() {
               color: "white",
               fontSize: "20px",
             }}>________________________</p>
-            <FooterAnchor href="#">SUBSCRIBE TO OUR NEWSLETTER</FooterAnchor>
+            {/* <FooterAnchor href="#">SUBSCRIBE TO OUR NEWSLETTER</FooterAnchor> */}
+            {/* <a href="/newsletter">
+              <div class="box">
+                <div class="inner">
+                  <span>Subscribe to Our Newsletter</span>
+                </div>
+                <div class="inner">
+                  <span>Subscribe to Our Newsletter</span>
+                </div>
+              </div>
+            </a> */}
             <Form>
               <Form.Group
                 className="mb-3"
@@ -148,7 +161,7 @@ function MainHeader() {
             </SocialMediaBar>
           </Col>
           <Col lg={12}>
-           
+
             <SmallText
               style={{
                 display: "block",
