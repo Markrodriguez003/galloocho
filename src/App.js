@@ -1,19 +1,13 @@
-import {
-  BrowserRouter,
-  Routes,
-  Route,
-  Link,
-  Outlet
-} from "react-router-dom";
+import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 
 import MainHeader from "./components/MainHeader";
 import MainFooter from "./components/MainFooter";
-import Home from "./components/Home"
+import Home from "./components/Home";
 import AboutPage from "./components/AboutPage";
 import SimpleReactLightbox from "simple-react-lightbox";
 import UnderConstruction from "./components/UnderConstruction";
 
-
+import { Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
@@ -22,9 +16,11 @@ function App() {
       <BrowserRouter>
         <SimpleReactLightbox>
           <MainHeader />
+
           <Routes>
             <Route path="/" element={<Home />} />
             <Route path="/about" element={<AboutPage />} />
+            <Route path="/news" element={<UnderConstruction />} />
             <Route path="/shop" element={<UnderConstruction />} />
             <Route path="/artists" element={<UnderConstruction />} />
             <Route path="/cart" element={<UnderConstruction />} />
@@ -39,5 +35,3 @@ function App() {
 }
 
 export default App;
-
-

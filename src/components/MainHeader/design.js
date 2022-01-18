@@ -3,9 +3,12 @@ import styled from "styled-components";
 // COMPONENTS
 import { Button, Navbar, Offcanvas } from "react-bootstrap";
 
+// IMAGES
+import border from "../../imgs/logo/borderart.PNG";
+
 // SCRIPT TO SLIDE OUT HEADER WHEN SCROLLING
 let prevScrollpos = window.pageYOffset;
-window.onscroll = function() {
+window.onscroll = function () {
   let currentScrollPos = window.pageYOffset;
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
@@ -13,8 +16,7 @@ window.onscroll = function() {
     document.getElementById("navbar").style.top = "-150px";
   }
   prevScrollpos = currentScrollPos;
-}
-
+};
 
 // CSS COMPONENTS
 export const Header = styled(Navbar)`
@@ -23,9 +25,17 @@ export const Header = styled(Navbar)`
   top: 0; /* Stay on top */
   flex-direction: row;
   justify-content: space-between;
-  background-color:white;
+  background-color: white;
   padding: 13px;
-  border-bottom: solid rgba(0,0,0,0.3) 2px;
+
+  -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53);
+  box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);  
+
+  /*  ORIGINAL PLAIN BORDER */
+    border-bottom: solid rgba(0, 0, 0, 0.3) 2px; 
+  
+  
+  /* STRIPED (APPLIED TO FOOTER) BORDER IDEA */
   /* border-width: 14px;
   border-bottom-style: solid;
   border-image: repeating-radial-gradient(
@@ -35,12 +45,33 @@ export const Header = styled(Navbar)`
       black 8px,
       grey 2px
     )
-    26; */
+    26;  */
  
-  -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53);
-  box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);
 
-  
+  /* ORIGINAL DARKER BORDER IDEA */
+  /*   border-image-slice: 26 16 144 13;
+  border-image-width: 0px 0px 24px 0px;
+  border-image-outset: 0px 0px 20px 0px;
+  border-image-repeat: repeat repeat;
+  border-image-source: url(${border}); */
+
+  /* LIGHTER BORDER IDEA */
+  /*   &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    border: 5px solid transparent;
+    border-image-slice: 26 16 144 13;
+    border-image-width: 0px 0px 24px 0px;
+    border-image-outset: 0px 0px 20px 0px;
+    border-image-repeat: repeat repeat;
+    border-image-source: url(${border});
+    transform: translate(-5px, -1px);
+    opacity: 0.18;
+  } */
 
   & img:hover {
     transform: rotate(1turn);
@@ -101,13 +132,12 @@ export const BrandIcon = styled("img")`
   }
   @media (max-width: 290px) {
     width: 30px;
-  height: 35px;
+    height: 35px;
   }
 `;
 export const MenuHeaderIcon = styled("img")`
- 
- /* FOR OLDER/BETTER ICON */
- /* width: 160px;
+  /* FOR OLDER/BETTER ICON */
+  /* width: 160px;
   height: 195px;
   background-color: transparent;
   color: black;
@@ -116,7 +146,7 @@ export const MenuHeaderIcon = styled("img")`
   margin-left: 68px;
   margin-bottom: 8px; */
 
-/* FOR ERNIE LOGO */
+  /* FOR ERNIE LOGO */
   width: 195px;
   height: 205px;
   background-color: transparent;
@@ -124,7 +154,7 @@ export const MenuHeaderIcon = styled("img")`
   padding: 4px;
   margin-top: 40px;
   margin-left: 28px;
-  margin-bottom: -22px; 
+  margin-bottom: -22px;
 `;
 
 export const BrandText = styled("h1")`
@@ -160,8 +190,8 @@ export const BrandText = styled("h1")`
 `;
 
 export const SlideMenuContainer = styled(Offcanvas)`
-  background-color:#1f1f1f;
-  color: #FAFAFA;
+  background-color: #1f1f1f;
+  color: #fafafa;
 
   &: * {
     color: white;
@@ -169,7 +199,7 @@ export const SlideMenuContainer = styled(Offcanvas)`
 `;
 
 export const SiteButton = styled(Button)`
-  background-color: #FAFAFA;
+  background-color: #fafafa;
   color: #2f3030;
   border: none;
   display: "inline";
@@ -201,7 +231,7 @@ export const MenuFlex = styled("div")`
 
 export const MenuItem = styled("a")`
   text-decoration: none;
-  color: #FAFAFA;
+  color: #fafafa;
   font-size: 28px;
   padding-top: 10.5px;
   -webkit-transition: all 0.5s ease; /* Safari and Chrome */
@@ -218,7 +248,7 @@ export const MenuItem = styled("a")`
 `;
 
 export const SocialMediaBar = styled("div")`
-  color: #FAFAFA;
+  color: #fafafa;
   /* background-color:red; */
   display: flex;
   justify-content: center;
@@ -231,7 +261,7 @@ export const SocialMediaItem = styled("a")`
   text-decoration: none;
   padding: 12px;
   font-size: 30px;
-  color: #FAFAFA;
+  color: #fafafa;
   /* -webkit-transition: all 0.3s ease;  
     -moz-transition: all 0.3s ease;  
     -ms-transition: all 0.3s ease;  
@@ -244,9 +274,7 @@ export const SocialMediaItem = styled("a")`
   }
 `;
 
-
-
- /*
+/*
 
 import styled from "styled-components";
 

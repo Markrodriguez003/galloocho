@@ -1,0 +1,4 @@
+-- Reusable Components --
+-- > Footer/Header Border
+--> Buttons (Splash page)
+--> Social media bar (props --> column or row)

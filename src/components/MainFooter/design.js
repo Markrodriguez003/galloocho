@@ -1,20 +1,18 @@
 import styled from "styled-components";
-import { Navbar } from 'react-bootstrap';
-
-
+import { Navbar } from "react-bootstrap";
 
 // CSS
-export const Footer = styled('div')`
- display:block;
- position:relative;
-  background-color:#1f1f1f;
+export const Footer = styled("div")`
+  display: block;
+  position: relative;
+  background-color: #1f1f1f;
   width: 100%;
   height: 100%;
   padding: 10px;
   padding-left: 20px;
   margin-bottom: 10px;
- margin-top: 0px;
- text-align: center;
+  margin-top: 0px;
+  text-align: center;
   border-width: 14px;
   border-top-style: solid;
   border-image: repeating-radial-gradient(
@@ -25,24 +23,23 @@ export const Footer = styled('div')`
       white 2px
     )
     26;
- 
 `;
 
-export const FooterAnchor = styled('a')`
-text-decoration: none;
+export const FooterAnchor = styled("a")`
+  text-decoration: none;
   color: white;
   font-size: 28px;
   padding-top: 10.5px;
   -webkit-transition: all 0.5s ease; /* Safari and Chrome */
-    -moz-transition: all 0.5s ease; /* Firefox */
-    -ms-transition: all 0.5s ease; /* IE 9 */
-    -o-transition: all 0.5s ease; /* Opera */
-    transition: all 0.5s ease;
-  
+  -moz-transition: all 0.5s ease; /* Firefox */
+  -ms-transition: all 0.5s ease; /* IE 9 */
+  -o-transition: all 0.5s ease; /* Opera */
+  transition: all 0.5s ease;
+
   &:hover {
-  color: #fc6a6a;  
+    color: #fc6a6a;
   }
-`
+`;
 
 export const SocialMediaBar = styled("div")`
   color: white;
@@ -60,9 +57,8 @@ export const SocialMediaItem = styled("a")`
   font-size: 30px;
   color: white;
   &:hover {
-  color: #fc6a6a;
- 
-}
+    color: #fc6a6a;
+  }
 `;
 
 export const MenuHeaderIcon = styled("img")`
@@ -76,11 +72,9 @@ export const MenuHeaderIcon = styled("img")`
   margin-left: 25px;
 `;
 
-export const SmallText = styled('small')`
-color:"grey";
-background-color:#1f1f1f;
-text-align:"center";
-padding:22px;
-
-
-`
+export const SmallText = styled("small")`
+  color: "grey";
+  background-color: #1f1f1f;
+  text-align: "center";
+  padding: 22px;
+`;

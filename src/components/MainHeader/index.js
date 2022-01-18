@@ -1,9 +1,6 @@
 // import '../MainHeader/MainHeader.css'
 import { useState } from "react";
-import {
-Link,
-NavLink
-} from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 // DESIGN
 import {
@@ -29,11 +26,12 @@ import { Button, Offcanvas } from "react-bootstrap";
 // import rosterLogo2 from "../../imgs/logo/roosterE.png";
 import rosterLogo2 from "../../imgs/logo/logo2-white-reduced.png";
 import rosterLogo from "../../imgs/logo/roosterG-BLK.png";
+/* import rosterLogo from "../../imgs/logo/RosterLogoA.png"; */
 
 // SCRIPT
 // SCRIPT
 /* When the user scrolls down, hide the navbar. When the user scrolls up, show the navbar */
- 
+
 // ICONS
 import {
   BsFillArrowRightCircleFill,
@@ -86,10 +84,11 @@ function MainHeader() {
               </Offcanvas.Header>
               <p>__________</p>
               <MenuItem href="/">HOME</MenuItem>
+              <MenuItem href="/News">NEWS</MenuItem>
               <MenuItem href="/shop">SHOP</MenuItem>
               <MenuItem href="/artists">ARTISTS</MenuItem>
               <MenuItem href="/cart">CART</MenuItem>
-              <MenuItem href="/about"> ABOUT  </MenuItem>
+              <MenuItem href="/about"> ABOUT </MenuItem>
               <MenuItem href="/support">SUPPORT</MenuItem>
             </MenuFlex>
             <SocialMediaBar>
@@ -184,7 +183,7 @@ function MainHeader() {
               />
               Checkout
             </Button>{" "}
-      {/*       <Button
+            {/*       <Button
               variant="primary"
               style={{ fontSize: "15px", marginLeft: "10px" }}
             >
