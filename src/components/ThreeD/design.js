@@ -17,21 +17,26 @@ import styled from "styled-components";
 //   }
 // `;
 
-
 export const ModelContainer = styled("div")`
   position: relative;
-  margin-top: -125px;
+  display: block;
   width: 18vw; // INCREASE THIS WHEN QMEDIA SCREEN BECOMES SMALLER
-  height: 60vh;
+  height: 62vh;
+  margin-left: 120px;
+  margin-top: -125px;
   background-color: transparent;
-  /* background-color: green; */
+/*    background-color: green; */
   /* transform: rotate(180deg); */
   overflow: visible;
-  margin-left:120px;
+  padding-left: auto;
+  padding-right: auto;
 
-  @media (max-width: 758px) {
-    margin-top: -395px;
-    height: 60vh;
+  @media (max-width: 1108px) {
+    margin-top: -55px;
+  /*   padding-right: 80px; */
+/*     margin-bottom: 1200px; */
+    height: 50vh;
     width: 42vw;
   }
 `;
+ 

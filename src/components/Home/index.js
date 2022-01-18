@@ -4,8 +4,8 @@ import FrontPageShop from "../FrontPageShop";
 function Home() {
   return (
     <>
-     { <Hero />}
-      {<FrontPageShop />}
+      {<Hero />}
+      <FrontPageShop />
     </>
   );
 }

@@ -100,6 +100,9 @@ function MainHeader() {
             <Col>
               <FooterAnchor href="#">SUPPORT</FooterAnchor>
             </Col>
+            <Col>
+              <FooterAnchor href="#">AFFILIATE SITES</FooterAnchor>
+            </Col>
           </Col>
 
           <Col lg={4}>

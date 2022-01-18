@@ -24,16 +24,16 @@ export const HeroFlex = styled("div")`
   height: 100%;
   text-align: center;
   padding-bottom: 150px;
-  padding-top: 250px;
+  padding-top: 220px;
 
-  @media (max-width: 1028px) {
-            margin-top: 80px;  
-    }
-  @media (max-width: 760px) {
+  @media (max-width: 1108px) {
+ /*    padding-top: 1950px; */
+/*     padding-bottom: 420px; */
+  }
+
+  /*   @media (max-width: 760px) {
             margin-top: 20px;  
-    }
- 
-
+    } */
 `;
 
 // FLEX BOX CONTAINER THAT HOLDS ALL INDIVIDUAL HERO TEXT CONTAINER
@@ -43,6 +43,7 @@ export const HeroTextContainer = styled("div")`
   flex-direction: column;
   align-content: center;
   align-items: center;
+ 
 `;
 
 // INDIVIDUAL HERO TEXT CONTAINER
@@ -60,8 +61,6 @@ export const HeroText = styled("span")`
   /* @media (max-width: 860px) {
     font-size: 2.2em;
   } */
-
-  
 `;
 
 const slidingBackground = keyframes`
@@ -81,58 +80,50 @@ export const HeaderText = styled("span")`
   display: inline;
   position: relative;
   padding: 2px;
-  color:black;
+  color: black;
   font-size: 96px;
   font-family: "menuFont", sans-serif;
   letter-spacing: 4.5px;
   animation: ${slidingBackground} 70s linear infinite;
-    background: url("../../imgs/textures/TextureA.jpg") no-repeat left / 120%;
-    /* background: url("../../imgs/textures/background-6793839_1920.jpg") no-repeat left / 120%; */
-    height: 49vh;
-    text-align: center;
-    width: 100vw;
-    margin-top: 0px;
-    margin-bottom: -80px;
- 
-    @media (max-width: 1000px) {
-      order: 2;
+  background: url("../../imgs/textures/TextureA.jpg") no-repeat left / 120%;
+  /* background: url("../../imgs/textures/background-6793839_1920.jpg") no-repeat left / 120%; */
+  height: 49vh;
+  text-align: center;
+  width: 100vw;
+  margin-top: 0px;
+  margin-bottom: -80px;
 
+  @media (max-width: 1000px) {
+    order: 2;
   }
   @media (max-width: 760px) {
-            font-size: 55px;  
-    }
- 
- 
+    font-size: 55px;
+  }
 `;
 
-export const MiamiText = styled('span')`
- background-color:hotpink; 
-                  color:white;
-                  border:pink 2px solid;
-                  /* padding: 12px; */
-                  padding-bottom:18px;
-                  padding-right: 16px;
-                  padding-left: 15px;
-                  /* font-style:italic; */
-                  /* -webkit-text-fill-color: transparent; */
+export const MiamiText = styled("span")`
+  background-color: hotpink;
+  color: white;
+  border: pink 2px solid;
+  /* padding: 12px; */
+  padding-bottom: 18px;
+  padding-right: 16px;
+  padding-left: 15px;
+  /* font-style:italic; */
+  /* -webkit-text-fill-color: transparent; */
   -webkit-text-stroke-width: 3px;
   -webkit-text-stroke-color: white;
-  text-shadow: 
-						6px 6px #ff1f8f,
-						/* 7px 7px rgba(0,0,0,0.22); */
-						7px 7px white;
+  text-shadow: 6px 6px #ff1f8f, /* 7px 7px rgba(0,0,0,0.22); */ 7px 7px white;
 
-            border-bottom-right-radius: 25px;
+  border-bottom-right-radius: 25px;
 
-
-            /* OTHER IDEA */
-            /* background-image: url(${heroTextureBG});
+  /* OTHER IDEA */
+  /* background-image: url(${heroTextureBG});
  background-color: #ff1d8e;
  background-blend-mode: screen;
  background-position: center;
  background-size: cover; */
- 
-`
+`;
 
 // ENTIRE HERO SPLASH PAGE CONTAINER (SPLATTER PAINT GRAPHIC)
 export const HeroContainer = styled("div")`
@@ -140,12 +131,18 @@ export const HeroContainer = styled("div")`
   position: relative;
   width: 100%;
   height: 110vh;
-  background-color: rgba(0,0,0,0.05);
-background: -moz-linear-gradient(top,  rgba(0,0,0,0.05) 0%, #FFFFFF 100%);
-background: -webkit-linear-gradient(top,  rgba(0,0,0,0.05) 0%, #FFFFFF 100%);
-background: linear-gradient(to bottom,  rgba(0,0,0,0.05); 0%, #FFFFFF 100%);
-
-
+  background-color: rgba(0, 0, 0, 0.05);
+  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, #ffffff 100%);
+  background: -webkit-linear-gradient(
+    top,
+    rgba(0, 0, 0, 0.05) 0%,
+    #ffffff 100%
+  );
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.05) ; 0%,
+    #ffffff 100%
+  );
 `;
 
 /* SHOP NOW BUTTON LOCATED AT THE BOTTOM */
@@ -158,23 +155,24 @@ export const ShopNowButton = styled(Button)`
   border: none;
   margin-top: -25px;
 
-  &:hover{
+  &:hover {
     background-color: black !important;
   }
 
- /* @media (max-width: 860px) {
+  /* @media (max-width: 860px) {
     font-size: 2.2em;
   } */
- 
- 
 `;
 
-
-
-
-
-
-
+export const SpacerBlock = styled("div")`
+  display: block;
+  background-color: green;
+  width: 100%;
+  height: 120px;
+  @media (max-width: 1108px) {
+    margin-top: 1550px;
+  }
+`;
 
 /*
  

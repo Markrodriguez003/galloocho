@@ -14,31 +14,33 @@ import {
   HeroText,
   MiamiText,
   ShopNowButton,
-  HeaderText
+  HeaderText,
+  SpacerBlock
 } from "./style";
 
-
 // CSS
-import "../Hero/styles.css"
+import "../Hero/styles.css";
 
 function Hero() {
   return (
     <>
-  
-      <HeroContainer>
+     {/*  <HeroContainer> */}
         <HeroFlex>
           <div id="headerText">
             <HeaderText>
-              Own a Unique <br /> Piece of  <MiamiText>Miami</MiamiText>
-              <br /> 
-            <ShopNowButton href="#frontshop">See Concept <BsFillArrowDownCircleFill/></ShopNowButton>{" "}
+              Own a Unique <br /> Piece of <MiamiText>Miami</MiamiText>
+              <br />
+              <ShopNowButton href="#frontshop">
+                See Concept <BsFillArrowDownCircleFill />
+              </ShopNowButton>{" "}
             </HeaderText>
           </div>
           <div className="model">
             <ThreeD />
           </div>
+        {/*     <SpacerBlock /> */}
         </HeroFlex>
-      </HeroContainer>
+ {/*      </HeroContainer> */}
     </>
   );
 }
