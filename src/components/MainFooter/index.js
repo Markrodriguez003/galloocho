@@ -77,7 +77,7 @@ function MainHeader() {
                 ________________________
               </p>
               <Col lg={12}>
-                <FooterAnchor href="#">CONTACT</FooterAnchor>
+                <FooterAnchor href="/Contact">CONTACT</FooterAnchor>
               </Col>
               <Col lg={12} style={{ marginBottom: "10px" }}>
                 <FooterAnchor

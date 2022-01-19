@@ -6,8 +6,8 @@ import Home from "./components/Home";
 import AboutPage from "./components/AboutPage";
 import SimpleReactLightbox from "simple-react-lightbox";
 import UnderConstruction from "./components/UnderConstruction";
+import Contact from "./components/Contact"
 
-import { Container } from "react-bootstrap";
 
 import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
@@ -29,7 +29,7 @@ function App() {
             <Route path="/nft" element={<UnderConstruction />} />
             <Route path="/investor" element={<UnderConstruction />} />
             <Route path="/artist-sign-up" element={<UnderConstruction />} />
-            <Route path="/contact" element={<UnderConstruction />} />
+            <Route path="/contact" element={<Contact />} />
             <Route path="/future" element={<UnderConstruction />} />
             <Route path="/refund" element={<UnderConstruction />} />
             <Route path="/affiliates" element={<UnderConstruction />} />

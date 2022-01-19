@@ -25,7 +25,7 @@ import roosterSplash from "../../imgs/splash/10.png";
 import "./script";
 
 // CSS
-import 'animate.css';
+ 
 /* import "./styles.css"; */
 
 function AboutPage() {
@@ -59,8 +59,8 @@ function AboutPage() {
       <AboutHeaderContainer>
         <AboutHeader>
           <MiamiText> Miami </MiamiText>
-          <br /> <span className="animate__animated animate__bounce">STRIAGHT TO YOU</span>
-          <br /> <span className="animate__animated animate__bounce">FROM <span style={{ fontStyle: "italic" }}>US</span></span>
+          <br /> <span  >STRIAGHT TO YOU</span>
+          <br /> <span  >FROM <span style={{ fontStyle: "italic" }}>US</span></span>
           <br />
         </AboutHeader>
       </AboutHeaderContainer>

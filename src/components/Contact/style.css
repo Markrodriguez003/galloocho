@@ -1,0 +1,4 @@
+.form-check-input:checked{
+    background-color: gray !important;
+    border-color: white  !important;
+}
