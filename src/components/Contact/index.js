@@ -1,23 +1,65 @@
 import React, { useState } from "react";
 // COMPONENTS
-import {
-  Row,
-  Col,
-  Form,
-  Button,
-  ToggleButton,
-  ButtonGroup,
-} from "react-bootstrap";
+import { Row, Col, Form, Button, Modal } from "react-bootstrap";
+
+//! Interesting Ideas
+// https://www.w3schools.com/howto/howto_js_animate_icons.asp
 
 // IMAGES
+//ICONS
+// ! Animate envelope change when user submits + slight pause and modal
+import {
+  BsFillEnvelopeFill,
+  BsFillEnvelopeOpenFill,
+  BsArrowRight,
+  BsFillPersonFill,
+  BsPencilSquare,
+} from "react-icons/bs";
+import { MdAlternateEmail } from "react-icons/md";
 
 // CSS
-import { ContactContainer, ContactFormHeader } from "./design";
+import { ContactContainer, FormContainer, ContactFormHeader } from "./design";
 import "./style.css";
 
+/* MODAL FUNCTION */
+function MessageSentModal(props) {
+  return (
+    <Modal
+      {...props}
+      size="lg"
+      aria-labelledby="contained-modal-title-vcenter"
+      centered
+    >
+      <Modal.Header closeButton>
+        <Modal.Title id="contained-modal-title-vcenter">
+          <BsFillEnvelopeOpenFill
+            className="mb-2"
+            style={{ textAlign: "center" }}
+          />{" "}
+          Message Sent!
+        </Modal.Title>
+      </Modal.Header>
+      <Modal.Body>
+        <p>
+          Give us some time to review your message before we get back to you!
+        </p>
+      </Modal.Body>
+      <Modal.Footer>
+        <Button variant="outline-dark" onClick={props.onHide}>
+          Close
+        </Button>
+      </Modal.Footer>
+    </Modal>
+  );
+}
+
 function Contact() {
+  /* CHECKBOX */
   const [checked, setChecked] = useState(false);
   const [radioValue, setRadioValue] = useState("1");
+
+  /* MODAL */
+  const [modalShow, setModalShow] = React.useState(false);
 
   const radioOptions = [
     { name: "Sign-up", value: "1" },
@@ -27,96 +69,110 @@ function Contact() {
   return (
     <>
       <ContactContainer>
-        <ContactFormHeader>
-          CONTACT: <br /> <hr />
-        </ContactFormHeader>
-        <Form>
-          <Form.Text id="contact-help" style={{ color: "white" }}>
-            If you have any requests, opinions or complaints please submit it
-            using the form below.
+        <FormContainer>
+          <ContactFormHeader>
+            <span id="animIcon">
+              <BsFillEnvelopeFill /> CONTACT US: <br /> <hr />
+            </span>
+          </ContactFormHeader>
+          <Form.Text id="contact-help" style={{ color: "black", fontStyle:"italic" }}>
+            If you have any requests or opinions please let us know!
           </Form.Text>
-          <p> </p>
-          <Form.Group as={Row} className="mb-3" controlId="contact-form">
-            <Form.Label column sm={2}>
-              Name:
-            </Form.Label>
-            <Col sm={10}>
-              <Form.Control type="name" placeholder="Name" />
-            </Col>
+          <Form>
+            <br />
             <p> </p>
+            <Form.Group as={Row} className="mb-3" controlId="contact-form">
+              <Col sm={12}>
+                <span style={{ display: "flex" }}>
+                  <BsFillPersonFill
+                    style={{
+                      color: "white",
+                      backgroundColor: "rgba(0, 0, 0, 0.85)",
+                      fontSize: "38.8px",
+                      padding: "6px",
+                    }}
+                  />
+                  <Form.Control type="name" placeholder="Name" />
+                </span>
+              </Col>
 
-            <Form.Label column sm={2}>
-              Email:
-            </Form.Label>
-            <Col sm={10}>
-              <Form.Control type="email" placeholder="Email" />
-            </Col>
-          </Form.Group>
+              <p> </p>
+              <br />
+              <span style={{ display: "flex" }}>
+        
+                <MdAlternateEmail
+                  style={{
+                    color: "white",
+                    backgroundColor: "rgba(0, 0, 0, 0.85)",
+                    fontSize: "38.8px",
+                    padding: "7px",
+                  }}
+                />
+                <Form.Control type="Email" placeholder="Email" />
+              </span>
+            </Form.Group>
+      
+            <span style={{ display: "flex" }}>
+            <  BsPencilSquare
+                  style={{
+                    color: "white",
+                    backgroundColor: "rgba(0, 0, 0, 0.85)",
+                    fontSize: "38.8px",
+                    padding: "7px",
+                    height: "145px"
+                  }}
+                />
+              <Form.Control
+                as="textarea"
+                id="contactTextArea"
+                placeholder="Leave a comment here"
+                style={{ height: "145px" }}
+              />
+            </span>
+            <br />
+            <div key={"checkbox"} className="mb-3">
+              <Form.Check
+                type={"checkbox"}
+                id={`contact-form-receipt-checkbox`}
+                label={`Send a copy to my email`}
+              />
+            </div>
+            <Form.Text id="newsletter-inquiry" style={{ color: "black" }}>
+              Would you like to sign up to our newsletter?
+            </Form.Text>{" "}
+            <br />
+            <span style={{ display: "flex" }}>
+              <small muted style={{ marginRight: "8px", marginTop: "2px" }}>
+                No{" "}
+              </small>
+              <Form.Check type="switch" id="custom-switch" label="Yes" />
+            </span>
+            <hr />
+            <Form.Group as={Row} className="mb-3">
+              <Col className="d-grid gap-2">
+                <Button
+                  type="submit"
+                  size="lg"
+                  variant="outline-dark"
+                  style={{ marginLeft: "8px" }}
+                  onClick={() => setModalShow(true)}
+                >
+                  Submit <BsArrowRight className="mb-1" />
+                </Button>
 
-          <br />
-          <Form.Control
-            as="textarea"
-            placeholder="Leave a comment here"
-            style={{ height: "120px" }}
-          />
-
-          <br />
-          <div key={"checkbox"} className="mb-3">
-            <Form.Check
-              type={"checkbox"}
-              id={`contact-form-receipt-checkbox`}
-              label={`Send a copy of message to email above.`}
-           
-            />
-          </div>
-
-          <Form.Text id="newsletter-inquiry" style={{ color: "white " }}>
-            Would you like to sign up to our newsletter?
-          </Form.Text>
-          <br />
-          <br />
-          <ButtonGroup>
-            {radioOptions.map((radio, idx) => (
-              <ToggleButton
-                key={idx}
-                id={`radio-${idx}`}
-                type="radio"
-                variant={"outline-light"}
-                name="radio"
-                value={radio.value}
-                size="sm"
-                checked={radioValue === radio.value}
-                onChange={(e) => setRadioValue(e.currentTarget.value)}
-              >
-                {radio.name}
-              </ToggleButton>
-            ))}
-          </ButtonGroup>
-          <br />
-          <br />
-          <hr />
-          <Form.Group as={Row} className="mb-3">
-            <Col>
-              <Button
-                type="submit"
-                size="lg"
-                variant="outline-light"
-                style={{ float: "right", marginLeft: "8px" }}
-              >
-                Submit
-              </Button>
-
-              <Button
-                type="submit"
-                size="lg"
-                variant="outline-danger"
-                style={{ float: "right", marginLeft: "8px" }}
-              >
-                Clear Form
-              </Button>
-            </Col>
-          </Form.Group>
-        </Form>
+                {/*  <Button
+                  type="submit"
+                  size="lg"
+                  variant="danger"
+                  style={{ float: "right", marginLeft: "8px" }}
+                >
+                  Clear Form
+                </Button> */}
+              </Col>
+            </Form.Group>
+          </Form>
+        </FormContainer>
+        <MessageSentModal show={modalShow} onHide={() => setModalShow(false)} />
       </ContactContainer>
     </>
   );

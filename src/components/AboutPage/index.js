@@ -25,7 +25,7 @@ import roosterSplash from "../../imgs/splash/10.png";
 import "./script";
 
 // CSS
- 
+
 /* import "./styles.css"; */
 
 function AboutPage() {
@@ -59,19 +59,28 @@ function AboutPage() {
       <AboutHeaderContainer>
         <AboutHeader>
           <MiamiText> Miami </MiamiText>
-          <br /> <span  >STRIAGHT TO YOU</span>
-          <br /> <span  >FROM <span style={{ fontStyle: "italic" }}>US</span></span>
+          <br /> <span>STRIAGHT TO YOU</span>
+          <br />{" "}
+          <span>
+            FROM <span style={{ fontStyle: "italic" }}>US</span>
+          </span>
           <br />
         </AboutHeader>
       </AboutHeaderContainer>
 
       <WhoAreWeContainerFlex>
-
         <Row>
-
           <Col>
             <Row>
-              <img src={roosterImage} style={{ width: "490px", height: "525px", paddingLeft: "40px", backgroundColor:"green" }}></img>
+              <img
+                src={roosterImage}
+                style={{
+                  width: "490px",
+                  height: "525px",
+                  paddingLeft: "40px",
+                  backgroundColor: "green",
+                }}
+              ></img>
             </Row>
           </Col>
 
@@ -84,28 +93,24 @@ function AboutPage() {
             </Row>
           </Col>
         </Row>
-
       </WhoAreWeContainerFlex>
 
       <ParallaxImg>
-        <ParallaxHeader>ART FROM THE STREETS & BEYOND
-          <p>Gallo Ocho is part of an art movement called SMITHEREENS &trade;. <br></br>
-            We are a Miami based art collective that offers unique, rooster sculptures for grabs. <br></br>
-            Each rooster sculpture will be individually painted, batched with a serial number and certificate of
-            authenticity.  <br />We will be expanding our art offerings in the near future so stay tuned and subscribe <br />
+        <ParallaxHeader>
+          ART FROM THE STREETS & BEYOND
+          <p>
+            Gallo Ocho is part of an art movement called SMITHEREENS &trade;.{" "}
+            <br></br>
+            We are a Miami based art collective that offers unique, rooster
+            sculptures for grabs. <br></br>
+            Each rooster sculpture will be individually painted, batched with a
+            serial number and certificate of authenticity. <br />
+            We will be expanding our art offerings in the near future so stay
+            tuned and subscribe <br />
             for more news!
           </p>
-
         </ParallaxHeader>
-
       </ParallaxImg>
- 
-
-
-
-
-
-
     </>
   );
 }

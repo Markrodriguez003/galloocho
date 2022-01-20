@@ -1,4 +1,25 @@
-.form-check-input:checked{
-    background-color: gray !important;
-    border-color: white  !important;
+.form-check-input:checked {
+  background-color: black !important;
+  border-color: white !important;
+}
+
+input#contact-form.form-control {
+  border-bottom: lightgrey 2px solid;
+  border-top: transparent 2px solid;
+  border-left: transparent 2px solid;
+  border-right: transparent 2px solid;
+}
+
+textarea.form-control:focus {
+  box-shadow: 0 0 0 0.05rem rgba(0, 0, 0, 0.25) !important;
+  border: 2px transparent solid;
+}
+
+.form-control:focus {
+  box-shadow: 0 0 0 0.02rem rgba(0, 0, 0, 0.25) !important;
+}
+
+input#custom-switch.form-check-input:focus{
+  color:rgba(0, 0, 0, 0.25) !important;
+ 
 }

@@ -114,13 +114,13 @@ export const BrandLink = styled("a")`
 `;
 
 export const BrandIcon = styled("img")`
-  width: 70px;
+  width: 65px;
   height: 75px;
   background-color: transparent;
   border-radius: 50%;
-  padding: 7px;
-  margin-bottom: 8px;
-  margin-right: 3px;
+  padding: 5px;
+  margin-bottom: 24px;
+  margin-right: 0px;
   @media (max-width: 675px) {
     width: 50px;
     height: 55px;
@@ -154,7 +154,7 @@ export const MenuHeaderIcon = styled("img")`
   padding: 4px;
   margin-top: 40px;
   margin-left: 28px;
-  margin-bottom: -22px;
+  margin-bottom: -32px;
 `;
 
 export const BrandText = styled("h1")`
@@ -181,11 +181,11 @@ export const BrandText = styled("h1")`
 
   @media (max-width: 455px) {
     font-size: 26px;
-    border: black 3.2px dotted;
+ 
   }
   @media (max-width: 290px) {
     font-size: 14px;
-    border: black 3.2px dotted;
+  
   }
 `;
 
