@@ -24,7 +24,7 @@ export const HeroFlex = styled("div")`
   height: 100%;
   text-align: center;
   padding-bottom: 150px;
-  padding-top: 220px;
+  padding-top: 320px;
 
   @media (max-width: 1108px) {
  /*    padding-top: 1950px; */

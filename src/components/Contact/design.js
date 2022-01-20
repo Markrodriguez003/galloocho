@@ -33,8 +33,8 @@ export const FormContainer = styled("div")`
   align-items: center;
   align-content: center;
   justify-content: stretch;
-  margin-left: 30%;
-  margin-right: 30%;
+  margin-left: 28%;
+  margin-right: 28%;
   margin-top: 2px;
   color: black !important;
   padding: 20px;
