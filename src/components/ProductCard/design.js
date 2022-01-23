@@ -22,7 +22,7 @@ export const ProductCardElement = styled(Card)`
   height: auto;
   margin-left: auto;
   margin-right: auto;
-  margin-bottom: 220px;
+  margin-bottom: 140px;
   margin-top: 40px;
   border: white 2px solid !important; 
   /* -webkit-box-shadow: 4px 4px 45px -12px rgba(0,0,0,0.45); 

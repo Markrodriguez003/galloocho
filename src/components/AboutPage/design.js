@@ -62,12 +62,29 @@ export const MiamiText = styled("h1")`
   }
 `;
 
-export const WhoAreWeContainerFlex = styled("div")`
-  position: block;
-  /* display: flex; */
-  color: white;
-  background-color: rgb(14, 14, 14);
-`;
+
+
+
+export const RotatedH1 = styled('h1')`
+  display: inline;
+  font-size: 90px;
+  margin: 0;
+  writing-mode: vertical-lr;
+  line-height: .8;
+  text-align: center;
+  margin-top:35px;
+  font-family: "aboutFont";
+  text-shadow: 4px 3px 0 rgba(0,255,255,0.3);
+  ${props => props.rotatedR && css`
+  transform: rotate(180deg);
+  
+  `}
+
+  ${props => props.rotatedL && css`
+ 
+  `}
+
+`
 
 export const WhoAreWeContainer = styled("div")`
   width: 100%;
@@ -75,8 +92,7 @@ export const WhoAreWeContainer = styled("div")`
   padding-top: 80px;
   color: white;
 
-  background-color: rgb(14, 14, 14);
-
+  background-color: rgb(14, 14, 14); 
   text-align: center;
   padding-bottom: 80px;
 
@@ -102,10 +118,10 @@ export const WhoAreWeContainer = styled("div")`
 `;
 
 export const ParallaxImg = styled("div")`
-  /* background-color: yellowgreen; */
+  background-color: rgba(0,0,0,0.2 );
   /* The image used */
   background-image: url(${parallax1});
-
+  background-blend-mode:multiply;
   /* Set a specific height */
   min-height: 800px;
 
@@ -174,5 +190,29 @@ export const NavCircle = styled("div")`
 
   &:hover {
     background: rgba(0, 0, 0, 0.6);
+  }
+`;
+
+
+export const SocialMediaBar = styled("div")`
+  color: white;
+  /* background-color:red; */
+  display: flex;
+  flex-direction:row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin-bottom:15px;
+  /* background-color:rgba(0,255,255,0.15) */
+ 
+`;
+
+export const SocialMediaItem = styled("a")`
+  text-decoration: none;
+  padding:8px;
+  font-size: 30px;
+  color: white;
+  &:hover {
+    color: #fc6a6a;
   }
 `;
