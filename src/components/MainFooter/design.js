@@ -10,7 +10,7 @@ export const Footer = styled("div")`
   height: 100%;
   padding: 10px;
   padding-left: 20px;
-  margin-top: 0px;
+  margin-top: -90px;
   text-align: center;
   border-width: 14px;
   border-top-style: solid;

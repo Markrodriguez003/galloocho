@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 // COMPONENTS
 import { Button, Navbar, Offcanvas } from "react-bootstrap";
@@ -72,26 +72,49 @@ export const Header = styled(Navbar)`
     transform: translate(-5px, -1px);
     opacity: 0.18;
   } */
-
+/* 
   & img:hover {
     transform: rotate(1turn);
-    -webkit-transition: all 1s ease; /* Safari and Chrome */
-    -moz-transition: all 1s ease; /* Firefox */
-    -ms-transition: all 1s ease; /* IE 9 */
-    -o-transition: all 1s ease; /* Opera */
+    -webkit-transition: all 1s ease;  
+    -moz-transition: all 1s ease;  
+    -ms-transition: all 1s ease;  
+    -o-transition: all 1s ease;  
     transition: all 1s ease;
   }
-  transition: top 0.4s;
+  transition: top 0.4s; */
 `;
 
-export const Menu = styled("h2")`
+export const Menu = styled("a")`
   color: black;
   background-color: transparent;
   cursor: pointer;
   text-decoration: none;
   font-family: "menuFont";
   font-size: 30px;
-  margin-left: 6px;
+  margin-left: 20px;
+  transition:  2s linear 1s;
+
+
+  &:link  {
+    color: black;
+    text-decoration: none;
+}
+  &:visited  {
+    color: black;
+    text-decoration: none;
+}
+  &:hover  {
+    color: black;
+    text-decoration:underline;
+    transition:  2s linear 1s;
+
+}
+  &:active  {
+    color: black;
+    text-decoration: none;
+}
+
+ 
 
   @media (max-width: 675px) {
     font-size: 22px;
@@ -101,6 +124,26 @@ export const Menu = styled("h2")`
     font-size: 13.5px;
   }
 `;
+
+
+// OLD MENU
+// export const Menu = styled("h2")`
+//   color: black;
+//   background-color: transparent;
+//   cursor: pointer;
+//   text-decoration: none;
+//   font-family: "menuFont";
+//   font-size: 30px;
+//   margin-left: 6px;
+
+//   @media (max-width: 675px) {
+//     font-size: 22px;
+//   }
+
+//   @media (max-width: 455px) {
+//     font-size: 13.5px;
+//   }
+// `;
 
 export const SubSideMenu = styled("div")`
   display: flex;
@@ -167,6 +210,11 @@ export const BrandText = styled("h1")`
   margin-top: 8px;
   font-size: 62px;
 
+  ${props => props.image && css`
+    width: 105px;
+    height: auto;
+  `}
+ 
   @media (max-width: 725px) {
     font-size: 38px;
   }

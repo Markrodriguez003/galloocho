@@ -137,7 +137,7 @@ const ProductCard = () => {
                       fontWeight: "bold"
                     }}
                   >
-                    $80.00{" "}
+                    $--.--{" "}
                   </small>
                 </div>
 
@@ -150,7 +150,7 @@ const ProductCard = () => {
                     fontSize: "14px",
                   }}
                 >
-                  Add to Cart
+                  Coming Soon
                 </Button>
 
               </Card.Footer>

@@ -38,7 +38,7 @@ import "./script";
 function AboutPage() {
   return (
     <>
-      <Container fluid>
+      {/* <Container fluid>
         <AboutFirstSection>
           <Carousel controls={false} indicators={false} fade={true}>
             <Carousel.Item>
@@ -75,7 +75,43 @@ function AboutPage() {
             <br />
           </AboutHeader>
         </AboutHeaderContainer>
-      </Container>
+        <AboutFirstSection>
+          <Carousel controls={false} indicators={false} fade={true}>
+            <Carousel.Item>
+              <CarouselImage
+                className="d-block w-100"
+                src={splash1}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CarouselImage
+                className="d-block w-100"
+                src={splash2}
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CarouselImage
+                className="d-block w-100"
+                src={splash3}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+        </AboutFirstSection>
+        <AboutHeaderContainer>
+          <AboutHeader>
+            <MiamiText> Miami </MiamiText>
+            <br /> <span>STRIAGHT TO YOU</span>
+            <br />{" "}
+            <span>
+              FROM <span style={{ fontStyle: "italic" }}>US</span>
+            </span>
+            <br />
+          </AboutHeader>
+        </AboutHeaderContainer>
+      </Container> */}
 
 
 

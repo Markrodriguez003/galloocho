@@ -35,7 +35,7 @@ function Home() {
       {<Hero />}
       <FrontPageShop />
       <div style={{marginBottom:"80px", textAlign:"center"}}>
-        <ShopNowButton href="/about"> Learn More <BsFillArrowRightCircleFill /></ShopNowButton>
+       
       </div>
     </>
   );

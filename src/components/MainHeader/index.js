@@ -31,7 +31,10 @@ import rosterLogo2 from "../../imgs/logo/logo2-white-reduced.png";
 
 import rosterLogo from "../../imgs/logo/RosterLogoA.png";
 //import rosterLogo from "../../imgs/logo/HeaderLogoB.png";
-// SCRIPT
+
+import Gallo from "../../imgs/logo/Gallo.png";
+import Ocho from "../../imgs/logo/Ocho.png";
+ 
 
 // ICONS
 import {
@@ -65,13 +68,20 @@ function MainHeader() {
       <Header fixed="top" id="navbar">
         {/* Maybe put a menu Icon - Roster's Head at the end of the "Menu" Left btton */}
         <SubSideMenu>
-          <Menu onClick={handleShow}>
+        <Menu href="#navbar">Home</Menu> 
+        <Menu href="#frontshop">Concept</Menu> 
+        <Menu href="#aboutId">About</Menu> 
+        <Menu href="#newsletterId">Newsletter</Menu> 
+
+
+          {/* OLD MENU */}
+          {/* <Menu onClick={handleShow}>
             Menu <BsFillArrowRightCircleFill style={{ marginRight: "2px" }} />
           </Menu>
 
           <Menu onClick={handleShowB}>
             | Cart <BsFillCartFill />
-          </Menu>
+          </Menu> */}
         </SubSideMenu>
 
         {/* OFFSIDE-LEFT-SLIDE-MENU */}
@@ -213,9 +223,10 @@ function MainHeader() {
         {/* <BrandLink href="https://www.nhl.com/"><BrandText>GALLO-OCHO</BrandText></BrandLink> */}
         <BrandLink href="/">
           <BrandText>
-            GALLO
+            <img src={Gallo} style={{width:"128px", height:"auto"}} />
             <BrandIcon src={rosterLogo} />
-            OCHO
+            <img src={Ocho} style={{width:"128px", height:"auto"}} />
+
           </BrandText>
         </BrandLink>
       </Header>

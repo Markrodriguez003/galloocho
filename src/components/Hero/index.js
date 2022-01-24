@@ -16,7 +16,7 @@ import {
   ShopNowButton,
   HeaderText,
   SpacerBlock
-} from "./style";
+} from "./design";
 
 // CSS
 import "../Hero/styles.css";
@@ -24,7 +24,7 @@ import "../Hero/styles.css";
 function Hero() {
   return (
     <>
-     {/*  <HeroContainer> */}
+      <HeroContainer>
         <HeroFlex>
           <div id="headerText">
             <HeaderText>
@@ -40,7 +40,7 @@ function Hero() {
           </div>
         {/*     <SpacerBlock /> */}
         </HeroFlex>
- {/*      </HeroContainer> */}
+      </HeroContainer>
     </>
   );
 }

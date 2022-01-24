@@ -8,6 +8,34 @@ import "./style.css"
 // COMPONENTS
 import ProductCard from "../ProductCard";
 import FrontPageArtists from "../FrontPageArtists";
+import AboutPage from "../AboutPage";
+import Newsletter from "../Newsletter";
+
+import { Button } from "react-bootstrap";
+import { BsFillArrowDownCircleFill } from "react-icons/bs"
+
+/* SHOP NOW BUTTON LOCATED AT THE BOTTOM */
+export const ShopNowButton = styled(Button)`
+  background-color: #fafafa;
+  color: black;
+  font-size: 30px;
+  font-family: "menuFont";
+  font-weight: bold;
+  border: none;
+  margin-top: -25px;
+  transition: 0.19s linear;
+  text-align:center;
+
+
+  &:hover {
+    background-color: black !important;
+ 
+  }
+
+  /* @media (max-width: 860px) {
+    font-size: 2.2em;
+  } */
+`;
 
 const FrontPageShopContainer = styled("div")`
   display: block;
@@ -59,6 +87,12 @@ function FrontPageShop() {
       <FrontPageShopContainer>
         <ProductCard></ProductCard>
       </FrontPageShopContainer>
+      <div style={{ display: "flex", justifyContent: "center", justifyItems: "center", alignItems: "center", alignContent: "center" }}>
+        <ShopNowButton href="#aboutId"> About Us <BsFillArrowDownCircleFill /></ShopNowButton>
+      </div>
+      <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+      <AboutPage id="aboutId" />
+      <Newsletter id="contactId" />
     </>
   );
 }
