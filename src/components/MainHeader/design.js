@@ -22,6 +22,7 @@ window.onscroll = function () {
 export const Header = styled(Navbar)`
   display: flex;
   position: fixed; /* Make it stick/fixed */
+  flex-wrap: wrap;
   top: 0; /* Stay on top */
   flex-direction: row;
   justify-content: space-between;
@@ -29,12 +30,11 @@ export const Header = styled(Navbar)`
   padding: 13px;
 
   -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53);
-  box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);  
+  box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);
 
   /*  ORIGINAL PLAIN BORDER */
-    border-bottom: solid rgba(0, 0, 0, 0.3) 2px; 
-  
-  
+  border-bottom: solid rgba(0, 0, 0, 0.3) 2px;
+
   /* STRIPED (APPLIED TO FOOTER) BORDER IDEA */
   /* border-width: 14px;
   border-bottom-style: solid;
@@ -46,7 +46,6 @@ export const Header = styled(Navbar)`
       grey 2px
     )
     26;  */
- 
 
   /* ORIGINAL DARKER BORDER IDEA */
   /*   border-image-slice: 26 16 144 13;
@@ -72,7 +71,7 @@ export const Header = styled(Navbar)`
     transform: translate(-5px, -1px);
     opacity: 0.18;
   } */
-/* 
+  /* 
   & img:hover {
     transform: rotate(1turn);
     -webkit-transition: all 1s ease;  
@@ -92,39 +91,43 @@ export const Menu = styled("a")`
   font-family: "menuFont";
   font-size: 30px;
   margin-left: 20px;
-  transition:  2s linear 1s;
+  /*   transition:  2s linear 1s; */
 
-
-  &:link  {
+  &:link {
     color: black;
     text-decoration: none;
-}
-  &:visited  {
+  }
+  &:visited {
     color: black;
     text-decoration: none;
-}
-  &:hover  {
+  }
+  &:hover {
     color: black;
-    text-decoration:underline;
-    transition:  2s linear 1s;
-
-}
-  &:active  {
+    text-decoration: underline;
+  }
+  &:active {
     color: black;
     text-decoration: none;
-}
+  }
 
- 
-
-  @media (max-width: 675px) {
+  @media (max-width: 975px) {
     font-size: 22px;
   }
 
-  @media (max-width: 455px) {
-    font-size: 13.5px;
+  @media (max-width: 840px) {
+    font-size: 18.5px;
+  }
+
+  @media (max-width: 695px) {
+    font-size: 15.5px;
+  }
+
+  @media (max-width: 290px) {
+    font-size: 12px;
+    margin-left:auto;
+    margin-right:auto;
   }
 `;
-
 
 // OLD MENU
 // export const Menu = styled("h2")`
@@ -150,10 +153,52 @@ export const SubSideMenu = styled("div")`
   justify-content: center;
   align-items: center;
   align-content: space-around;
+  @media (max-width: 555px) {
+    order:2;
+    flex-grow: 12;
+  }
+
+  
 `;
 
 export const BrandLink = styled("a")`
   text-decoration: none;
+  @media (max-width: 555px) {
+    order:1;
+    margin-left:auto;
+    margin-right: auto;
+  }
+`;
+
+export const BrandText = styled("img")`
+    width: 128px;
+    height: "auto";
+
+  @media (max-width: 845px) {
+    width: 110px;
+    height: "auto";
+  }
+  @media (max-width: 745px) {
+    width: 95px;
+    height: "auto";
+  }
+
+  @media (max-width: 625px) {
+    width: 75px;
+    height: "auto";
+  }
+
+  @media (max-width: 585px) {
+    width: 65px;
+    height: "auto";
+  }
+
+  @media (max-width: 585px) {
+    width: 95px;
+    height: "auto";
+  }
+
+ 
 `;
 
 export const BrandIcon = styled("img")`
@@ -169,13 +214,13 @@ export const BrandIcon = styled("img")`
     height: 55px;
   }
 
-  @media (max-width: 455px) {
+/*   @media (max-width: 455px) {
     width: 40px;
     height: 45px;
-  }
+  } */
   @media (max-width: 290px) {
-    width: 30px;
-    height: 35px;
+    width: 50px;
+    height: auto;
   }
 `;
 export const MenuHeaderIcon = styled("img")`
@@ -198,43 +243,6 @@ export const MenuHeaderIcon = styled("img")`
   margin-top: 40px;
   margin-left: 28px;
   margin-bottom: -32px;
-`;
-
-export const BrandText = styled("h1")`
-  font-family: "brandFont";
-  color: black;
-  letter-spacing: 2.5px;
-  /* border: black 4.2px dotted; */
-  padding: 6px 6px 0px 6px;
-  margin-right: 6px;
-  margin-top: 8px;
-  font-size: 62px;
-
-  ${props => props.image && css`
-    width: 105px;
-    height: auto;
-  `}
- 
-  @media (max-width: 725px) {
-    font-size: 38px;
-  }
-
-  /* @media (max-width: 675px) {
-    font-size: 28px;
-  } */
-
-  /* @media (max-width: 550px) {
-    font-size: 24px;
-  } */
-
-  @media (max-width: 455px) {
-    font-size: 26px;
- 
-  }
-  @media (max-width: 290px) {
-    font-size: 14px;
-  
-  }
 `;
 
 export const SlideMenuContainer = styled(Offcanvas)`
@@ -282,11 +290,6 @@ export const MenuItem = styled("a")`
   color: #fafafa;
   font-size: 28px;
   padding-top: 10.5px;
-  -webkit-transition: all 0.5s ease; /* Safari and Chrome */
-  -moz-transition: all 0.5s ease; /* Firefox */
-  -ms-transition: all 0.5s ease; /* IE 9 */
-  -o-transition: all 0.5s ease; /* Opera */
-  transition: all 0.5s ease;
 
   &:hover {
     /* color: lightpink; */

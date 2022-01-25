@@ -27,8 +27,8 @@ export const HeroFlex = styled("div")`
   padding-top: 320px;
 
   @media (max-width: 1108px) {
- /*    padding-top: 1950px; */
-/*     padding-bottom: 420px; */
+    padding-top: 650px;
+    padding-bottom: 420px;
   }
 
   /*   @media (max-width: 760px) {
@@ -79,7 +79,7 @@ const slidingBackground = keyframes`
 export const HeaderText = styled("span")`
   display: inline;
   position: relative;
-  padding: 2px;
+  padding: 10px;
   /* color: black; */
   color: black;
   font-size: 96px;
@@ -97,8 +97,16 @@ export const HeaderText = styled("span")`
   @media (max-width: 1000px) {
     order: 2;
   }
-  @media (max-width: 760px) {
-    font-size: 55px;
+  @media (max-width: 835px) {
+    font-size: 75px;
+  }
+
+  @media (max-width: 695px) {
+    font-size: 9vw;
+  }
+
+  @media (max-width: 420px) {
+    font-size: 7vw;
   }
 `;
 
@@ -174,9 +182,9 @@ export const ShopNowButton = styled(Button)`
     background-color: black !important;
   }
 
-  /* @media (max-width: 860px) {
-    font-size: 2.2em;
-  } */
+  @media (max-width: 600px) {
+    margin-top: 60px;
+  }
 `;
 
 export const SpacerBlock = styled("div")`

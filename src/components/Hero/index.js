@@ -15,7 +15,7 @@ import {
   MiamiText,
   ShopNowButton,
   HeaderText,
-  SpacerBlock
+  SpacerBlock,
 } from "./design";
 
 // CSS
@@ -33,12 +33,13 @@ function Hero() {
               <ShopNowButton href="#frontshop">
                 See Concept <BsFillArrowDownCircleFill />
               </ShopNowButton>{" "}
+              
             </HeaderText>
           </div>
           <div className="model">
             <ThreeD />
           </div>
-        {/*     <SpacerBlock /> */}
+          {/*     <SpacerBlock /> */}
         </HeroFlex>
       </HeroContainer>
     </>

@@ -85,7 +85,7 @@ function MainHeader() {
         </SubSideMenu>
 
         {/* OFFSIDE-LEFT-SLIDE-MENU */}
-        <SlideMenuContainer show={show} onHide={handleClose}>
+       {/*  <SlideMenuContainer show={show} onHide={handleClose}>
           <Offcanvas.Body>
             <MenuFlex>
               <Offcanvas.Header closeButton>
@@ -128,7 +128,7 @@ function MainHeader() {
             Need Help{" "}
             <BsFillQuestionCircleFill style={{ marginBottom: "4.5px" }} />{" "}
           </SiteButton>
-        </SlideMenuContainer>
+        </SlideMenuContainer> */}
 
         {/* OFFSIDE-RIGHT-SLIDE-MENU */}
         <SlideMenuContainer
@@ -194,6 +194,7 @@ function MainHeader() {
               />
               Checkout
             </Button>{" "}
+            
             {/*       <Button
               variant="primary"
               style={{ fontSize: "15px", marginLeft: "10px" }}
@@ -222,12 +223,12 @@ function MainHeader() {
         {/*** DIFFERENT LOGO IDEAS */}
         {/* <BrandLink href="https://www.nhl.com/"><BrandText>GALLO-OCHO</BrandText></BrandLink> */}
         <BrandLink href="/">
-          <BrandText>
-            <img src={Gallo} style={{width:"128px", height:"auto"}} />
+      
+            <BrandText src={Gallo}   />
             <BrandIcon src={rosterLogo} />
-            <img src={Ocho} style={{width:"128px", height:"auto"}} />
+            <BrandText src={Ocho}   />
 
-          </BrandText>
+       
         </BrandLink>
       </Header>
     </>
