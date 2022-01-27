@@ -10,7 +10,7 @@ import ProductCard from "../ProductCard";
 import FrontPageArtists from "../FrontPageArtists";
 import AboutPage from "../AboutPage";
 import Newsletter from "../Newsletter";
-
+import OutlinedText from "../OutlinedText";
 import { Button } from "react-bootstrap";
 import { BsFillArrowDownCircleFill } from "react-icons/bs"
 
@@ -93,6 +93,7 @@ function FrontPageShop() {
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <AboutPage id="aboutId" />
       <Newsletter id="contactId" />
+      <OutlinedText/>
     </>
   );
 }

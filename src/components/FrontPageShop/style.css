@@ -30,7 +30,6 @@
 
 .title:before {
     color: white;
-    /* content: attr(data-text); */
     margin-left: -1%;
     margin-top: -1%;
     position: absolute;

@@ -43,6 +43,8 @@ export const HeroTextContainer = styled("div")`
   flex-direction: column;
   align-content: center;
   align-items: center;
+  
+  
  
 `;
 
@@ -102,11 +104,15 @@ export const HeaderText = styled("span")`
   }
 
   @media (max-width: 695px) {
+    font-size: 10vw;
+  }
+
+  @media (max-width: 490px) {
     font-size: 9vw;
   }
 
-  @media (max-width: 420px) {
-    font-size: 7vw;
+  @media (max-width: 280px) {
+    font-size: 14vw;
   }
 `;
 
