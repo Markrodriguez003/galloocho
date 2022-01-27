@@ -31,12 +31,12 @@ export const ModelContainer = styled("div")`
   padding-left: auto;
   padding-right: auto;
 
-  @media (max-width: 1108px) {
-    margin-top: -55px;
-  /*   padding-right: 80px; */
-/*     margin-bottom: 1200px; */
-    height: 50vh;
-    width: 42vw;
+  @media (max-width: 1109px) {
+    margin-top: -2255px;
+    padding-right: 820px;
+    margin-bottom: 1200px;
+    height: 520vh;
+    width: 422vw;
   }
 `;
  

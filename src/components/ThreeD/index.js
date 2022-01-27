@@ -65,7 +65,7 @@ function ThreeD(props) {
 
           // THIS WILL PRINT ERROR MESSAGE WHEN MODEL FAILED TO LOAD (SETUP POSTER) 
         } else if (modelVariants.modelIsVisible === null) {
-          console.log("what the fuck");
+          console.log("Model is visible");
         }
 
       })
@@ -114,15 +114,7 @@ function ThreeD(props) {
             // environment-image="aircraft_workshop_01_1k.hdr"
             ar
             id="rooster"
-
-            style={{
-         
-              display: "inline",
-              position: "absolute",
-              width: "450px",
-              height: "600px",
-              zIndex: "0"
-            }}
+ 
           />
 
         </div>

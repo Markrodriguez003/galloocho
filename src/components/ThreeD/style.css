@@ -1,4 +1,22 @@
+model-viewer#rooster {
+  --poster-color: transparent;
+}
 
-  model-viewer#rooster {
-    --poster-color: transparent;
+
+#rooster{
+  display: inline;
+  position: absolute;
+  width: 450px;
+  height: 600px;
+  z-index: 0;
+}
+
+@media (max-width: 1107px) {
+  #rooster {
+    margin-top: -2255px;
+    padding-right: 820px;
+    margin-bottom: 1200px;
+    height: 5520vh;
+    width: 5422vw;
   }
+}
