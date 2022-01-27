@@ -36,9 +36,9 @@ function Hero() {
               
             </HeaderText>
           </div>
-          <div className="model">
+      
             <ThreeD />
-          </div>
+   
           {/*     <SpacerBlock /> */}
         </HeroFlex>
       </HeroContainer>
