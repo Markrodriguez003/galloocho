@@ -67,13 +67,13 @@ export const MiamiText = styled("h1")`
 
 export const RotatedH1 = styled('h1')`
   display: inline;
-  font-size: 90px;
+  font-size: 50px;
   margin: 0;
   writing-mode: vertical-lr;
-  line-height: .8;
+  line-height: 1.2;
   text-align: center;
   margin-top:35px;
-  font-family: "aboutFont";
+  font-family: "heroFont";
   text-shadow: 4px 3px 0 rgba(0,255,255,0.3);
   ${props => props.rotatedR && css`
   transform: rotate(180deg);
