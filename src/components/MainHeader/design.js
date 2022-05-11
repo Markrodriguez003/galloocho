@@ -5,6 +5,7 @@ import { Button, Navbar, Offcanvas } from "react-bootstrap";
 
 // IMAGES
 import border from "../../imgs/logo/borderart.PNG";
+import roosterCursor from "../../cursor/Rooster Cursor.png";
 
 // SCRIPT TO SLIDE OUT HEADER WHEN SCROLLING
 let prevScrollpos = window.pageYOffset;
@@ -13,7 +14,7 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-150px";
+    document.getElementById("navbar").style.top = "-50px";
   }
   prevScrollpos = currentScrollPos;
 };
@@ -103,7 +104,9 @@ export const Menu = styled("a")`
   }
   &:hover {
     color: black;
-    text-decoration: underline;
+    text-decoration: none;
+    cursor: url(${roosterCursor})  -22 -22, auto;
+  
   }
   &:active {
     color: black;
