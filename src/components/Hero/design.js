@@ -18,7 +18,8 @@ export const HeroContainer = styled("div")`
   gap: 5px;
   width: 100%;
   height: 100%;
-  padding-top: 40px;
+  padding-top: 120px;
+  padding-bottom: 80px;
   /* BG COLOR */
   background-color: rgba(0, 0, 0, 0.05);
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, #ffffff 100%);

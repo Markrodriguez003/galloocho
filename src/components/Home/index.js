@@ -33,7 +33,7 @@ function Home() {
   return (
     <>
       {<Hero />}
-      {/* <FrontPageShop /> */}
+      <FrontPageShop />
    
     </>
   );

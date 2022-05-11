@@ -34,7 +34,7 @@ function App() {
             <Route path="/refund" element={<UnderConstruction />} />
             <Route path="/affiliates" element={<UnderConstruction />} />
           </Routes>
-          {/* <MainFooter /> */}
+          <MainFooter />
         </SimpleReactLightbox>
       </BrowserRouter>
     </>

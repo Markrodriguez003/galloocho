@@ -14,7 +14,7 @@ window.onscroll = function () {
   if (prevScrollpos > currentScrollPos) {
     document.getElementById("navbar").style.top = "0";
   } else {
-    document.getElementById("navbar").style.top = "-50px";
+    document.getElementById("navbar").style.top = "-150px";
   }
   prevScrollpos = currentScrollPos;
 };
@@ -32,6 +32,8 @@ export const Header = styled(Navbar)`
 
   -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53);
   box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);
+
+ 
 
   /*  ORIGINAL PLAIN BORDER */
   border-bottom: solid rgba(0, 0, 0, 0.3) 2px;
