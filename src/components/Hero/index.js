@@ -1,21 +1,17 @@
-// import '../MainHeader/MainHeader.css'
 import { useState } from "react";
 
-// REACT-ROOSTER 3D MODEL import
+// COMPONENTS
 import ThreeD from "../ThreeD/index";
-
-// CSS
+import OutlinedText from "../OutlinedText"
+// ICONS
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 import {
   HeroContainer,
   HeroFlex,
-  HeroTextContainer,
-  HeroText,
   MiamiText,
   ShopNowButton,
   HeaderText,
-  SpacerBlock,
 } from "./design";
 
 // CSS
@@ -24,24 +20,32 @@ import "../Hero/styles.css";
 function Hero() {
   return (
     <>
+
+
+
       <HeroContainer>
-        <HeroFlex>
-          <div id="headerText">
-            <HeaderText>
-              Own a Unique <br /> Piece of <MiamiText>Miami</MiamiText>
-              <br />
-              <ShopNowButton href="#frontshop">
+        <ThreeD />
+        <div style={{
+          display: "flex",
+          flexDirection: "column",
+          gap:"10px"
+
+        }}>
+          <HeaderText>
+            Own a Unique <br />Piece of Miami
+          </HeaderText>
+          <ShopNowButton href="#frontshop">
                 See Concept <BsFillArrowDownCircleFill />
               </ShopNowButton>{" "}
-              
-            </HeaderText>
-          </div>
-      
-            <ThreeD />
-   
-          {/*     <SpacerBlock /> */}
-        </HeroFlex>
+        </div>
       </HeroContainer>
+
+      {/* <OutlinedText texture={3} size="96px" stroke="0.1px">Miami</OutlinedText> */}
+
+
+
+
+
     </>
   );
 }

@@ -1,12 +1,17 @@
 import React from "react";
+import { Children } from "react";
 // COMPONENTS
 import { TextContainer } from "./design";
 
-function OutlinedText() {
+function OutlinedText(props) {
   return (
     <>
-      <TextContainer texture={3}>
-        <h1>HELLO WRLD</h1>
+      <TextContainer 
+      texture={props.texture} 
+      size ={props.size}
+      stroke ={props.stroke}
+      >
+        {props.children}
       </TextContainer>
     </>
   );

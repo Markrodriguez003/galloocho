@@ -3,149 +3,23 @@ import styled, { css, keyframes } from "styled-components";
 // IMAGES
 import heroTextureBG from "../../imgs/textures/TextureA.jpg";
 
-// FONTS
-
 //COMPONENTS
 import { Button } from "react-bootstrap";
 
-// COLOR PALLETTE
-// GHOST WHITE --> #FAFAFA
-
-// FLEX BOX THAT HOLDS TEXT CONTAINER + ROOSTER IMAGE
-export const HeroFlex = styled("div")`
-  display: inline-flex;
-  position: relative;
-  flex-direction: row;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  width: 100%;
-  height: 100%;
-  text-align: center;
-  padding-bottom: 150px;
-  padding-top: 320px;
-
-  @media (max-width: 1108px) {
-    padding-top: 650px;
-    padding-bottom: 420px;
-  }
-
-  /*   @media (max-width: 760px) {
-            margin-top: 20px;  
-    } */
-`;
-
-// FLEX BOX CONTAINER THAT HOLDS ALL INDIVIDUAL HERO TEXT CONTAINER
-export const HeroTextContainer = styled("div")`
-  display: inline-flex;
-  position: relative;
-  flex-direction: column;
-  align-content: center;
-  align-items: center;
-  
-  
- 
-`;
-
-// INDIVIDUAL HERO TEXT CONTAINER
-export const HeroText = styled("span")`
-  display: inline;
-  position: relative;
-  background-color: #fafafa;
-  color: black;
-  font-size: 3em;
-  /* font-family: "heroFont"; */
-  font-family: "Montserrat", sans-serif;
-  text-align: center;
-  margin-bottom: 20px;
-
-  /* @media (max-width: 860px) {
-    font-size: 2.2em;
-  } */
-`;
-
-const slidingBackground = keyframes`
-0%,
-100% {
-    background-position: 0 40%;
-}
-
-50% {
-    background-position: 100% 40%;
-}
-
-`;
-
-// MIAMI BACKGROUND
-export const HeaderText = styled("span")`
-  display: inline;
-  position: relative;
-  padding: 10px;
-  /* color: black; */
-  color: black;
-  font-size: 96px;
-  font-family: "menuFont", sans-serif;
-  letter-spacing: 4.5px;
-  animation: ${slidingBackground} 70s linear infinite;
-  background: url("../../imgs/textures/TextureA.jpg") no-repeat left / 120%;
-  /* background: url("../../imgs/textures/background-6793839_1920.jpg") no-repeat left / 120%; */
-  height: 49vh;
-  text-align: center;
-  width: 100vw;
-  margin-top: 0px;
-  margin-bottom: -80px;
-
-  @media (max-width: 1000px) {
-    order: 2;
-  }
-  @media (max-width: 835px) {
-    font-size: 75px;
-  }
-
-  @media (max-width: 695px) {
-    font-size: 10vw;
-  }
-
-  @media (max-width: 490px) {
-    font-size: 9vw;
-  }
-
-  @media (max-width: 280px) {
-    font-size: 14vw;
-  }
-`;
-
-export const MiamiText = styled("span")`
-  background-color: hotpink;
-  color: white;
-  border: pink 2px solid;
-  /* padding: 12px; */
-  padding-bottom: 18px;
-  padding-right: 16px;
-  padding-left: 15px;
-  /* font-style:italic; */
-  /* -webkit-text-fill-color: transparent; */
-  -webkit-text-stroke-width: 3px;
-  -webkit-text-stroke-color: white;
-  text-shadow: 6px 6px #ff1f8f, /* 7px 7px rgba(0,0,0,0.22); */ 7px 7px white;
-
-  border-bottom-right-radius: 25px;
-
-  /* OTHER IDEA */
-  /* background-image: url(${heroTextureBG});
- background-color: #ff1d8e;
- background-blend-mode: screen;
- background-position: center;
- background-size: cover; */
-`;
-
 // ENTIRE HERO SPLASH PAGE CONTAINER (SPLATTER PAINT GRAPHIC)
 export const HeroContainer = styled("div")`
-  display: block;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
   width: 100%;
-  height: 110vh;
+  height: 100%;
+  padding-top: 40px;
+  /* BG COLOR */
   background-color: rgba(0, 0, 0, 0.05);
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, #ffffff 100%);
   background: -webkit-linear-gradient(
@@ -159,20 +33,44 @@ export const HeroContainer = styled("div")`
     #ffffff 100%
   );
 
-
-  /* display: block;
- position: relative;
- width: 100%;
- height: 110vh;
- background-image: url(${heroTextureBG});
- background-color: rgba(255,200,100,0.62);
- background-blend-mode: screen;
- background-position: center;
- background-size: cover;
- background-blend-mode: multiply;
-  */
+  /* background-color: rgba(0,255,255,0.2); */
 
 `;
+
+
+// MIAMI BACKGROUND
+export const HeaderText = styled("h1")`
+  /* display: inline;
+  position: relative; */
+  padding: 10px;
+  color: black;
+  font-size: 66px;
+  font-family: "menuFont", sans-serif;
+  letter-spacing: 4.5px;
+  /* background: url("../../imgs/textures/TextureA.jpg") no-repeat left / 120%; */
+  background: url("../../imgs/textures/background-6793839_1920.jpg") no-repeat left / 120%;
+  /* height: 49vh; */
+  text-align: center;
+  @media (max-width: 280px) {
+    font-size: 14vw;
+  } */
+`;
+
+// export const MiamiText = styled("span")`
+//   background-color: hotpink;
+//   color: white;
+//   border: pink 2px solid;
+//   /* padding: 12px; */
+//   padding-bottom: 18px;
+//   padding-right: 16px;
+//   padding-left: 15px;
+//   /* font-style:italic; */
+//   /* -webkit-text-fill-color: transparent; */
+//   -webkit-text-stroke-width: 3px;
+//   -webkit-text-stroke-color: white;
+//   text-shadow: 6px 6px #ff1f8f, /* 7px 7px rgba(0,0,0,0.22); */ 7px 7px white;
+//   border-bottom-right-radius: 25px;
+// `;
 
 /* SHOP NOW BUTTON LOCATED AT THE BOTTOM */
 export const ShopNowButton = styled(Button)`
@@ -193,121 +91,6 @@ export const ShopNowButton = styled(Button)`
   }
 `;
 
-export const SpacerBlock = styled("div")`
-  display: block;
-  background-color: green;
-  width: 100%;
-  height: 120px;
-  @media (max-width: 1108px) {
-    margin-top: 1550px;
-  }
-`;
-
-/*
- 
-import styled, { css } from "styled-components";
-
-// IMAGES
-import heroTextureBG from "../../imgs/textures/TextureA.jpg";
-
-import { Button } from "react-bootstrap";
-
-
-export const HeroFlex = styled("div")`
- display: inline-flex;
- position: relative;
- flex-direction: row;
- align-content: center;
- align-items: center;
- justify-content: center;
- flex-wrap: wrap;
- width: 100%;
- height: 100%;
- text-align: center;
- padding-bottom: 150px;
- padding-top: 250px;
-
- @media (max-width: 1028px) {
-           margin-top: 80px;  
-   }
- @media (max-width: 760px) {
-           margin-top: 20px;  
-   }
- 
-
-`;
-
-export const HeroTextContainer = styled("div")`
- display: inline-flex;
- position: relative;
- flex-direction: column;
- align-content: center;
- align-items: center;
-`;
-
-export const HeroText = styled("span")`
- display: inline;
- position: relative;
- background-color: #fafafa;
- color: black;
- font-size: 3em;
- font-family: "Montserrat", sans-serif;
- text-align: center;
- margin-bottom: 20px;
-`;
-
-// MIAMI BACKGROUND
-export const MiamiText = styled("span")`
- display: inline;
- position: relative;
- background-color: rgba(0,0,0,0.28);
- border-radius: 44px;
- padding: 2px;
- color:transparent;
- font-size: 96px;
-
- font-family: "menuFont", sans-serif;
-   -webkit-text-stroke: 4px white;
- letter-spacing: 4.5px;
-
-   @media (max-width: 1000px) {
-     order: 2;
-
- }
- @media (max-width: 760px) {
-           font-size: 55px;  
-   }
  
  
-`;
-
-// ENTIRE HERO SPLASH PAGE CONTAINER (SPLATTER PAINT GRAPHIC)
-export const HeroContainer = styled("div")`
- display: block;
- position: relative;
- width: 100%;
- height: 110vh;
- background-image: url(${heroTextureBG});
- background-color: #041b42;
- background-blend-mode: screen;
- background-position: center;
- background-size: cover;
- background-blend-mode: exclusion;
-`;
-
  
-export const ShopNowButton = styled(Button)`
- background-color: #fafafa;
- color: black;
- font-size: 26px;
- font-family: "menuFont";
- font-weight: bold;
- border: none;
- margin-top: 35px;
-
- 
- 
-`;
-
- 
-*/

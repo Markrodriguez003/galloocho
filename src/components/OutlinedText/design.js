@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import react, { props } from "react";
 
 // IMAGES
 import textureA from "../../imgs/textures/outline-text/Miami-A.jpg";
@@ -10,22 +9,21 @@ import textureE from "../../imgs/textures/outline-text/Miami-E.jpg";
 import textureF from "../../imgs/textures/outline-text/Miami-F.jpg";
 
 const textureArray = [
-  textureA,
-  textureB,
-  textureC,
-  textureD,
-  textureE,
-  textureF,
+    textureA,
+    textureB,
+    textureC,
+    textureD,
+    textureE,
+    textureF,
 ];
 
-
 const textureObj = {
-    'MiamiPink-A': textureA,  
-    'MiamiPink-B': textureB,  
-    'MiamiPink-C': textureC,  
-    'MiamiPink-D': textureD,  
-    'MiamiPink-E': textureE,  
-    'MiamiPink-F': textureF,  
+    'MiamiPink-A': textureA,
+    'MiamiPink-B': textureB,
+    'MiamiPink-C': textureC,
+    'MiamiPink-D': textureD,
+    'MiamiPink-E': textureE,
+    'MiamiPink-F': textureF,
 }
 
 // ANIMATION
@@ -43,48 +41,32 @@ const slidingBG = keyframes`
 export const TextContainer = styled("div")`
 animation: ${slidingBG} 8s ease-in-out infinite;
 animation-direction: alternate;
-display: inline-block
+display: inline-block;
 position:absolute;
-/* width: 350px;
-height: auto; */
 background-color:blue;
+text-align:center;
  
 background-image: url(${textureArray[0]});
 ${(props) => {
-  if (props.texture > -1 && props.texture < 6 )
-    return `
+        if (props.texture > -1 && props.texture < 6)
+            return `
         background-image: url(${textureArray[props.texture]});
         `;
-}}
-
-
- 
+    }}
 background-repeat: no-repeat;
 background-position: center;
 background-size: cover;
 background-blend-mode: lighten ;
-
-// REMOVE AFTER TESTING
-margin: 200px;
-padding: 35px;
-
+ 
 color:white;
     text-align:center;
     letter-spacing: 2px; 
     -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
-  -webkit-text-stroke: 2.5px rgba(0,0,0,0.5);
+  -webkit-text-stroke: ${(props) => props.stroke} rgba(0,0,0,0.8) !important;
+  font-weight:bold;
+    font-size: ${(props) => props.size} !important;
     
- 
-/* 
-&:before,
-&:after{
-    position:absolute;
-    width: 350px;
-    height: 350px;
-    content:''
-} */
-
 &:before{
     z-index: -2;
     top: 0;
@@ -104,10 +86,4 @@ color:white;
     background-color: transparent;
 }
 
-
-& h1 {
-    font-weight:bold;
-  font-size: 120px;
-}
- 
 `;

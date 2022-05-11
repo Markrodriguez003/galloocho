@@ -33,10 +33,8 @@ function Home() {
   return (
     <>
       {<Hero />}
-      <FrontPageShop />
-      <div style={{marginBottom:"80px", textAlign:"center"}}>
-       
-      </div>
+      {/* <FrontPageShop /> */}
+   
     </>
   );
 }

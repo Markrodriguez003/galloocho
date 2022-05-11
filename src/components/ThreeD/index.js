@@ -1,12 +1,13 @@
-import { useState, useRef } from "react";
-import styled from "styled-components";
+import { useState } from "react";
 import { ModelContainer } from "./design"
 
 // MODELS
 import ModelDemo from "../../models/Rooster1.glb"
 
 // COMPONENTS
-import React, { Suspense } from "react";
+// SUSPENSE COULD BE CAUSING THE CSS ISSUES
+// import React, { Suspense } from "react";
+import React from "react";
 import "@google/model-viewer/dist/model-viewer";
 
 // ICONS
@@ -20,7 +21,6 @@ import poster from "../../imgs/gif/loading.gif"
 // CSS
 import "./style.css"
 function ThreeD(props) {
-
 
   window.onload = function () {
 
@@ -42,110 +42,57 @@ function ThreeD(props) {
 
         if (modelVariants.modelIsVisible === true) {
 
-          console.log("HAS MODEL BEEN LOADED? -> " + modelVariants.modelIsVisible);
+          // console.log("HAS MODEL BEEN LOADED? -> " + modelVariants.modelIsVisible);
 
           // PRINTS OUT MODEL ELEMENT HTML
-          console.log("MODAL HTML -> " + modelVariants);
+          // console.log("MODAL HTML -> " + modelVariants);
 
           // LISTS TOTAL AMOUNT OF VARIANTS
-          console.log("TOTAL AMOUNT OF MODEL TEXTURE VARIANTS -> " + modelVariants.availableVariants.length);
+          // console.log("TOTAL AMOUNT OF MODEL TEXTURE VARIANTS -> " + modelVariants.availableVariants.length);
 
           // LISTS ALL VARIANTS (ARRAY)
-          console.log("LIST OF MODEL TEXTURE VARIANTS -> " + modelVariants.availableVariants);
+          // console.log("LIST OF MODEL TEXTURE VARIANTS -> " + modelVariants.availableVariants);
 
           // EXAMPLE - PRINTS OUT THE 2 ELEMENT WITHIN VARIANT ARRAY ABOVE
-          console.log(modelVariants.availableVariants[2]);
+          // console.log(modelVariants.availableVariants[2]);
 
-          // PRINTS OUT RANDOM NUMBER
+          // PRINTS OUT RANDOM NUMBER FOR TEXTURE ARRAY
           let x = Math.floor(Math.random() * 10);
-          console.log("RANDOM NUM --> " + x);
-
-          // SETS NEW TEXTURE TO MODEL
+          
+        // SETS NEW TEXTURE TO MODEL
           modelVariants.variantName = modelVariants.availableVariants[x];
 
           // THIS WILL PRINT ERROR MESSAGE WHEN MODEL FAILED TO LOAD (SETUP POSTER) 
         } else if (modelVariants.modelIsVisible === null) {
           console.log("Model is visible");
         }
-
       })
-
     });
   }
   const [texture, setTexture] = useState(0);
 
-
   // function changeTexture() {
   //   let x = Math.floor(Math.random() * 10);
-
-
   // setTexture(modelVariants.variantName[x])
-
-
   // }
 
   return (
     <>
-
-      < ModelContainer >
-        <div style={{
-          display: "flex",
-          justifyContent: "center",
-          alignContent: "center",
-          backgroundColor: "transparent",
-
-
-        }}>
           <model-viewer
             src={ModelDemo}
-  
             seamless-poster
             shadow-intensity="1"
             camera-controls
             auto-rotate
-            camera-orbit="-65.39deg 80.94deg auto" 
+            camera-orbit="-65.39deg 80.94deg auto"
             rotation-per-second="30deg"
             auto-rotate-delay="1000"
             poster={poster}
-            seamless-poster shadow-intensity="1"
             disable-zoom
             interaction-prompt
-
-            // environment-image="aircraft_workshop_01_1k.hdr"
             ar
             id="rooster"
- 
           />
-
-        </div>
-        <BsArrowRepeat
-          id="randomTextureBtn"
-          style={{
-            display: "inline",
-            position: "absolute",
-            float: "right",
-            right: "20px",
-            top: "40px",
-            color: "white",
-            cursor: "pointer",
-            fontSize: "29px",
-            zIndex: "9",
-          }}
-          onClick={() => {
-
-            console.log("you clicked.");
-            // PRINTS OUT RANDOM NUMBER
-            let x = Math.floor(Math.random() * 10);
-            console.log("RANDOM NUM --> " + x);
-
-
-
-
-          }
-          }
-
-        />
-      </ModelContainer>
     </>
   );
 }

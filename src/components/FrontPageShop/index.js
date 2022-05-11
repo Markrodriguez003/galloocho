@@ -93,7 +93,7 @@ function FrontPageShop() {
       <br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
       <AboutPage id="aboutId" />
       <Newsletter id="contactId" />
-      <OutlinedText/>
+ 
     </>
   );
 }

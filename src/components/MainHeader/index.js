@@ -71,7 +71,7 @@ function MainHeader() {
         <Menu href="#navbar">Home</Menu> 
         <Menu href="#frontshop">Concept</Menu> 
         <Menu href="#aboutId">About</Menu> 
-        <Menu href="#newsletterId">Newsletter</Menu> 
+        {/* <Menu href="#newsletterId">Newsletter</Menu>  */}
 
 
           {/* OLD MENU */}
