@@ -230,9 +230,11 @@ function AboutPage() {
 
       </div>
 
+                  <br/>
+                  <br/>
+                  <br/>
 
-
-      <ParallaxImg>
+      {/* <ParallaxImg>
         <ParallaxHeader>
           FUTURE CONCEPTS
           <p>
@@ -247,7 +249,7 @@ function AboutPage() {
             for more news!
           </p>
         </ParallaxHeader>
-      </ParallaxImg>
+      </ParallaxImg> */}
     </>
   );
 }

@@ -51,7 +51,7 @@ const ProductCard = () => {
                     float: "right",
                     fontSize: "11px",
                     paddingTop: "18px",
-                    paddingRight: "6px"
+                    paddingRight: "6px",
                   }}
                 >
                   <BsCircleFill />

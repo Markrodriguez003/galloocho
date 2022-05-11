@@ -82,7 +82,7 @@ function FrontPageShop() {
     <>
       {/* <FrontPageShopHeader>*** LATEST ARRIVALS ***</FrontPageShopHeader> */}
       <div className="wrapper" id="frontshop">
-        <h1 className="title">PROOF OF CONCEPT</h1>
+        <h1 className="title">Meet Lil' Havi</h1>
       </div>
       <FrontPageShopContainer>
         <ProductCard></ProductCard>

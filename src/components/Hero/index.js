@@ -34,6 +34,7 @@ function Hero() {
           <HeaderText>
             Own a Unique <br />Piece of Miami
           </HeaderText>
+          <br/>
           <ShopNowButton href="#frontshop">
                 See Concept <BsFillArrowDownCircleFill />
               </ShopNowButton>{" "}

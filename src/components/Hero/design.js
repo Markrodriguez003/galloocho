@@ -35,9 +35,7 @@ export const HeroContainer = styled("div")`
   );
 
   /* background-color: rgba(0,255,255,0.2); */
-
 `;
-
 
 // MIAMI BACKGROUND
 export const HeaderText = styled("h1")`
@@ -46,7 +44,7 @@ export const HeaderText = styled("h1")`
   padding: 10px;
   color: black;
   font-size: 66px;
-  font-family: "menuFont", sans-serif;
+  font-family: "heroFont", sans-serif;
   letter-spacing: 4.5px;
   /* background: url("../../imgs/textures/TextureA.jpg") no-repeat left / 120%; */
   background: url("../../imgs/textures/background-6793839_1920.jpg") no-repeat left / 120%;
@@ -83,15 +81,26 @@ export const ShopNowButton = styled(Button)`
   border: none;
   margin-top: -25px;
 
+ 
+
+  &:link {
+    color: black !important;
+  }
+
+  &:visited {
+    color: none;
+  }
+
   &:hover {
     background-color: black !important;
+  }
+
+ 
+  &:active {
+    color: none;
   }
 
   @media (max-width: 600px) {
     margin-top: 60px;
   }
 `;
-
- 
- 
- 

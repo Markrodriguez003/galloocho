@@ -17,8 +17,7 @@ export const ProductCardsContainer = styled("div")`
 export const ProductCardElement = styled(Card)`
   position: relative !important;
   background-color: transparent !important ;
-  margin-bottom: 10px;
-  width: 33%; // This was added to make it a solo centered card. Take out when creating grid
+  width: 33vw; // This was added to make it a solo centered card. Take out when creating grid
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -30,6 +29,29 @@ export const ProductCardElement = styled(Card)`
 
   -webkit-box-shadow: 1px 3px 47px -18px rgba(0,0,0,0.7); 
 box-shadow: 1px 3px 47px -18px rgba(0,0,0,0.7);
+
+
+@media (max-width: 1375px) {
+  width: 40vw;
+  }
+ 
+  @media (max-width: 1035px) {
+  width: 45vw;
+  }
+
+  @media (max-width: 935px) {
+  width: 55vw;
+  }
+
+  @media (max-width: 725px) {
+  width: 55vw;
+  }
+ 
+  @media (max-width: 600px) {
+  width: 80vw;
+  }
+ 
+ 
  
 
 `;
@@ -54,5 +76,10 @@ width: 300px;
 height: auto;
 text-align:center;
 
+ 
+ 
+  @media (max-width: 645px) {
+  width: 225px;
+  }
 
 `

@@ -124,6 +124,8 @@
 
 .cardImgContainer {
   /* border: red 4px dotted; */
+ 
+ 
 }
 
 .cardImg {
@@ -135,6 +137,9 @@
   width: 100%;
   height: auto;
   padding-bottom:22px;
+
+ 
+  
 }
 
 .productCardFooter{
