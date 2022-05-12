@@ -3,9 +3,24 @@
 --> Buttons (Splash page)
 --> Social media bar (props --> column or row)
 
+--> fix bootstrap .active / .hover / .visited blue outline. 
 
--- Brushstroke bottom border for H1s?
+-- Brushstroke bottom border for H1s? Or perhaps brush strokes on the side of page
+of brush stroke (transparent veneer) across diagonally the hero? Perhaps small paint 
+splatter bits above and below?
+
+--> dotted texture, curving with low opacity (see HBJO site as reference)
+
+-- In the About the rooster section, make the "thats all folks" circles Scale up and down
+animation + slow transition
+-- In hero section make the pink miami brush stroke have the same animation as 
+"meet little havi". Same applies to About the Rooster section.
+-- adjust newsletter form to be multi purposed for artists, entreprenuers, 
+investors, assistance and customers.
+- fix top right brand logo rooster head. Something is off about it.
+- fix mouse icon button to be smaller and more brand specific to the logo
 
 
 Future Implements 
 -- Help bot (Similar to 1xrun.com)
+
