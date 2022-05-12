@@ -29,7 +29,7 @@ export const Header = styled(Navbar)`
   justify-content: space-between;
   background-color: white;
   padding: 13px;
-
+  transition: top 0.4s; 
   -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53);
   box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);
 
@@ -92,8 +92,9 @@ export const Menu = styled("a")`
   cursor: pointer;
   text-decoration: none;
   font-family: "menuFont";
-  font-size: 30px;
+  font-size: 28px;
   margin-left: 20px;
+  padding: 3px;
   /*   transition:  2s linear 1s; */
 
   &:link {
@@ -106,8 +107,11 @@ export const Menu = styled("a")`
   }
   &:hover {
     color: black;
+    background-color:rgba(0,0,0,0.065);
+    border-radius: 15px;
     text-decoration: none;
-    cursor: url(${roosterCursor})  -22 -22, auto;
+    cursor: url(${roosterCursor})  -52 -52, auto;
+    transition:  0.5s linear ;
   
   }
   &:active {

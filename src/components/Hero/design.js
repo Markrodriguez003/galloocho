@@ -2,7 +2,7 @@ import styled, { css, keyframes } from "styled-components";
 
 // IMAGES
 import heroTextureBG from "../../imgs/textures/TextureA.jpg";
-
+import borderBrush from "../../imgs/textures/WaterColorBrush-blue.png"
 //COMPONENTS
 import { Button } from "react-bootstrap";
 
@@ -78,6 +78,7 @@ export const ShopNowButton = styled(Button)`
   font-size: 26px;
   font-family: "menuFont";
   font-weight: bold;
+  letter-spacing: 1.5px;
   border: none;
   margin-top: -25px;
 
@@ -104,3 +105,18 @@ export const ShopNowButton = styled(Button)`
     margin-top: 60px;
   }
 `;
+
+
+/* Brushstroke border */
+export const BrushStrokeBorder = styled('div')`
+  /* background-color: red; */
+  width: 100%;
+  height: 80px;
+  background-image: url(${borderBrush});
+  background-size: cover;
+  opacity: 0.35;
+ 
+ 
+`;
+
+ 

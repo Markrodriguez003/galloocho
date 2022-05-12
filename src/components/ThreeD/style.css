@@ -1,24 +1,19 @@
-model-viewer#rooster {
+ model-viewer#rooster {
   --poster-color: transparent;
 }
 
 
-#rooster{
+#rooster {
   /* display: inline;
   position: absolute; */
   width: 700px;
   height: 700px;
-  margin-top: 50px;
+  margin-top: 30px;
   /* z-index: 0; */
-  
 }
 
-/* @media (max-width: 1107px) {
+@media (max-width: 1515px) {
   #rooster {
-    margin-top: -2255px;
-    padding-right: 820px;
-    margin-bottom: 1200px;
-    height: 5520vh;
-    width: 5422vw;
+    margin-top: -25px; 
   }
-} */
+}

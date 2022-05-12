@@ -2,3 +2,10 @@
 -- > Footer/Header Border
 --> Buttons (Splash page)
 --> Social media bar (props --> column or row)
+
+
+-- Brushstroke bottom border for H1s?
+
+
+Future Implements 
+-- Help bot (Similar to 1xrun.com)

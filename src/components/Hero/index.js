@@ -5,13 +5,14 @@ import ThreeD from "../ThreeD/index";
 import OutlinedText from "../OutlinedText"
 // ICONS
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
-
+ 
 import {
   HeroContainer,
-  HeroFlex,
   MiamiText,
   ShopNowButton,
+  BrushStrokeBorder,
   HeaderText,
+ 
 } from "./design";
 
 // CSS
@@ -28,20 +29,22 @@ function Hero() {
         <div style={{
           display: "flex",
           flexDirection: "column",
-          gap:"10px"
+          gap: "10px"
 
         }}>
           <HeaderText>
-            Own a Unique <br />Piece of Miami
+            Own a Unique <br />Piece of <span style={{ color: "hotpink" }}> Miami. </span>
           </HeaderText>
-          <br/>
+          <br />
           <ShopNowButton href="#frontshop">
-                See Concept <BsFillArrowDownCircleFill />
-              </ShopNowButton>{" "}
+            See Concept <BsFillArrowDownCircleFill />
+          </ShopNowButton>{" "}
         </div>
       </HeroContainer>
 
-      {/* <OutlinedText texture={3} size="96px" stroke="0.1px">Miami</OutlinedText> */}
+ 
+ 
+
 
 
 
