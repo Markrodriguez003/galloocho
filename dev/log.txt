@@ -14,6 +14,9 @@ splatter bits above and below?
 --> Inner paint brush stroke borders for entire webpage? See reference -> 
 imgs / textures / splatter / paint-958555.jpg
 
+--> Or have this image -- imgs / textures / splatter /seamless-1315325.jpg
+with low opacity in the background of entire page?
+
 -- In the About the rooster section, make the "thats all folks" circles Scale up and down
 animation + slow transition
 -- In hero section make the pink miami brush stroke have the same animation as 
