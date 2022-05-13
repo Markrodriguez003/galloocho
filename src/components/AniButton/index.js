@@ -1,6 +1,7 @@
 // ICONS
 import { SiteButton, SiteButtonPaint, SiteButtonLabel } from "./design";
 import  "./style.css" 
+import { BsFillArrowDownCircleFill } from "react-icons/bs";
 function AniButton() {
   return (
     <>
@@ -23,7 +24,7 @@ function AniButton() {
       <span className="btn-paint"></span>
       <span className="btn-paint"></span>
       <span className="btn-paint"></span>
-      <span className="btn-label">Seeawrawrasr Concept</span>
+      <span className="btn-label">Seeawrawrasr Concept  <BsFillArrowDownCircleFill /></span>
     </button>
 
 
