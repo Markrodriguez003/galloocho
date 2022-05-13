@@ -75,7 +75,7 @@ export const HeaderText = styled("h1")`
 export const ShopNowButton = styled(Button)`
   background-color: #fafafa;
   color: black;
-  font-size: 26px;
+  font-size: 34px;
   font-family: "menuFont";
   font-weight: bold;
   letter-spacing: 1.5px;

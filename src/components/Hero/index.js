@@ -3,6 +3,7 @@ import { useState } from "react";
 // COMPONENTS
 import ThreeD from "../ThreeD/index";
 import OutlinedText from "../OutlinedText"
+import AniButton from "../AniButton"
 // ICONS
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
  
@@ -39,6 +40,7 @@ function Hero() {
           <ShopNowButton href="#frontshop">
             See Concept <BsFillArrowDownCircleFill />
           </ShopNowButton>{" "}
+     
         </div>
       </HeroContainer>
 
