@@ -52,7 +52,18 @@ const ProductCard = () => {
             </small>
           </Card.Header>
           <Card.Body>
-            <CardBodyFlex style={{ display: "flex" }}>
+            <CardBodyFlex>
+            <Card.Text style={{fontFamily: "menuFont", fontSize: "20px", width: "96%"}}>
+                For those who've always wanted a rooster of their own, we
+                introduce Little Havi, the little rooster of Miami! Standing
+                just 9 inches tall, this genuine ceramic statuette pays homage
+                to Miami’s most famous farm animal—and its most fabulous city
+                mascot. Featuring hand-painted detail and eye-catching color
+                schemes, Little Havi was designed by local artists who wanted to
+                give both visitors and locals alike a way to show their pride in
+                this quirky and fun city where there’s always something new to
+                see or experience.
+              </Card.Text>
               <SRLWrapper>
                 <Carousel interval={null} id="carousel-image-container">
                   <Carousel.Item>
@@ -103,17 +114,7 @@ const ProductCard = () => {
                       Gallo Ocho 1 of 1 Sculptures and Art
                     </small>
                   </Card.Text> */}
-              <Card.Text style={{fontFamily: "menuFont", fontSize: "20px"}}>
-                For those who've always wanted a rooster of their own, we
-                introduce Little Havi, the little rooster of Miami! Standing
-                just 9 inches tall, this genuine ceramic statuette pays homage
-                to Miami’s most famous farm animal—and its most fabulous city
-                mascot. Featuring hand-painted detail and eye-catching color
-                schemes, Little Havi was designed by local artists who wanted to
-                give both visitors and locals alike a way to show their pride in
-                this quirky and fun city where there’s always something new to
-                see or experience.
-              </Card.Text>
+          
             </CardBodyFlex>
           </Card.Body>
           <Card.Footer className="productCardFooter">

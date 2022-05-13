@@ -17,7 +17,7 @@ export const ProductCardsContainer = styled("div")`
 export const ProductCardElement = styled(Card)`
   position: relative !important;
   background-color: transparent !important ;
-  width: 33vw; // This was added to make it a solo centered card. Take out when creating grid
+  width: 55vw; // This was added to make it a solo centered card. Take out when creating grid
   height: auto;
   margin-left: auto;
   margin-right: auto;
@@ -59,8 +59,16 @@ box-shadow: 1px 3px 47px -18px rgba(0,0,0,0.7);
 // CONTAINER FOR CARD BODY - FLEX - COL
 export const CardBodyFlex = styled("div")`
   display: flex;
-  flex-direction: column; // This should modulate when screen shrinks
+  flex-direction: row; // This should modulate when screen shrinks
   margin-top: "20px";
+  gap: 15px;
+
+  @media (max-width: 1495px) {
+  flex-direction: column;
+  }
+
+
+
 `;
 export const CardFooterFlex = styled("div")`
   display: flex;
