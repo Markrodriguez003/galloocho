@@ -23,7 +23,7 @@ function AniButton() {
       <span className="btn-paint"></span>
       <span className="btn-paint"></span>
       <span className="btn-paint"></span>
-      <span className="btn-label">See Concept</span>
+      <span className="btn-label">Seeawrawrasr Concept</span>
     </button>
 
 
