@@ -40,16 +40,22 @@ function Hero() {
           <ShopNowButton href="#frontshop">
             See Concept <BsFillArrowDownCircleFill />
           </ShopNowButton>{" "}
+
+         
      
         </div>
+      
       </HeroContainer>
 
  
  
+        <br/>
+        <br/>
+        <br/>
+{      <AniButton>Hello </AniButton>}
 
-
-
-
+      <br/>
+        <br/>
 
 
     </>

@@ -1,112 +1,79 @@
 import styled, { css, keyframes } from "styled-components";
 
+/* Second Button CSS animation */
 
-/* ANIMATION */
-const brushanimation = keyframes `
-   from {
-    -webkit-mask-position: 100% 0;
-    mask-position: 100% 0;
-   }
-  
-   to {
-    -webkit-mask-position: 0 0;
-    mask-position: 0 0;
-   }
-   `
-   
-/* MAIN SITE BUTTON*/
-export const SiteButton = styled("Button")`
-  background-color: green;
-  color: black;
-  font-size: 16px;
-  font-family: "menuFont";
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  border: none;
-  margin-top: -25px;
- 
-  width: 101%;
-  height: 100%;
-  font-family: "Lato", sans-serif;
-  font-weight: bold;
-  -webkit-mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
-  mask: url("https://raw.githubusercontent.com/robin-dela/css-mask-animation/master/img/urban-sprite.png");
-  -webkit-mask-size: 200%, 100%;
-  mask-size: 200% 100%;
-  border: none;
- 
+export const SiteButton = styled("button")`
+  appearance: none;
+  padding: 20px 30px;
+  font-size: 24px;
+  border-radius: 59px;
+  border: 2px solid black;
+  color: tomato;
+  background-color: transparent;
+  position: absolute;
   cursor: pointer;
-/*   -webkit-animation: ani2 0.7s steps(29) forwards; */
-  animation: ${brushanimation} 0.7s steps(29) forwards;
-
-  &:link {
-    color: black !important;
-  }
-
-  &:visited {
-    color: none;
-  }
+  overflow: hidden;
+  top: 90%;
+  left: 20%;
+  transform: translate(-50%, -50%);
 
   &:hover {
-    /*     background-color: black !important; */
-    -webkit-animation: ${brushanimation} 0.7s steps(29) forwards;
-    animation: ${brushanimation} 0.7s steps(29) forwards;
-  }
-
-  &:active {
-    color: none;
-  }
-
-  @media (max-width: 600px) {
-    margin-top: 60px;
-  }
-`;
-
-export const BtnContainer = styled("div")`
-  position: relative;
-  width: 100px;
-  height: 50px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 7vh;
-  overflow: hidden;
-  border: 1px solid #000;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  transition: 0.5s;
-  letter-spacing: 1px;
-  border-radius: 8px;
-`;
-
-export const WordMask = styled("span")`
-  position: absolute;
-  color: #000;
-  text-align: center;
-  width: 101%;
-  font-family: "Lato", sans-serif;
-  font-weight: 300;
-  position: absolute;
-  font-size: 11px;
-  margin-top: 17px;
-  overflow: hidden;
-  font-weight: bold;
-`;
-
- 
- 
-   
-    
-  /*  @keyframes ani2 {
-    from {
-     -webkit-mask-position: 100% 0;
-     mask-position: 100% 0;
+    span:nth-child(1) {
+      color: pink;
+      transform: translate(-35px, -20px) rotate (-20px) scale(1, 1);
     }
-   
-    to {
-     -webkit-mask-position: 0 0;
-     mask-position: 0 0;
+
+    span:nth-child(2) {
+      color: aqua;
+      transform: translate(21px, -20px) rotate (20px) scale(1, 1);
     }
-   } */
-   
-    
-    
+    span:nth-child(3) {
+      color: black;
+      transform: translate(81px, -20px) rotate (-20px) scale(1, 1);
+    }
+
+    span:nth-child(4) {
+      color: white;
+      transform: translate(131px, -20px) rotate (20px) scale(1, 1);
+    }
+  }
+`;
+
+export const SiteButtonPaint = styled("span")`
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: blue;
+  width: 80px;
+  height: 120px;
+  
+  font-size: 20px;
+  transition: transform 0.4s ease;
+
+  &: {
+    :nth-child(1) {
+      color: limegreen;
+      transform-origin: 50% 0;
+      transform: translate(-35px, 20px) rotate(-20deg) scale (1, 0);
+    }
+    :nth-child(2) {
+      color: limegreen;
+      transform-origin: 50% 100%;
+      transform: translate(21px, -20px) rotate(20deg) scale (1, 0);
+      transition-delay: 0.2s;
+    }
+
+    :nth-child(3) {
+      transform-origin: 50% 0%;
+      transform: translate(21px, -20px) rotate(-20deg) scale (1, 0);
+      transition-delay: 0.4s;
+    }
+    :nth-child(4) {
+      transform-origin: 50% 100%;
+      transform: translate(131px, -20px) rotate(20deg) scale (1, 0);
+      transition-delay: 0.7s;
+    }
+  }
+`;
+
+export const SiteButtonLabel = styled("span")``;

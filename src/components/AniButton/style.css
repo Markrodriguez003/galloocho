@@ -1,0 +1,70 @@
+.site-btn {
+  appearance: none;
+  padding: 20px 30px;
+  font-size: 24px;
+  border-radius: 59px;
+  border: 2px solid black;
+  color: black;
+  background-color: transparent;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  /*  transform: translate(-50%, -50%); */
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.btn-paint {
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: black;
+  width: 80px;
+  height: 120px;
+  transition: transform 0.4s ease;
+}
+
+.btn-label {
+  position: relative;
+  font-family: "menuFont"
+
+}
+
+.btn-paint:nth-child(1) {
+  transform-origin: 50% 0;
+  transform: translate(-35px, -20px) rotate(-20deg) scale(1, 0);
+}
+.btn-paint:nth-child(2) {
+  transform-origin: 50% 100%;
+  transform: translate(21px, -20px) rotate(20deg) scale(1, 0);
+  transition-delay: 0.1s;
+}
+.btn-paint:nth-child(3) {
+  transform-origin: 50% 0%;
+  transform: translate(81px, -20px) rotate(-20deg) scale(1, 0);
+  transition-delay: 0.2s;
+}
+.btn-paint:nth-child(4) {
+  transform-origin: 50% 0;
+  transform: translate(131px, -20px) rotate(20deg) scale(1, 0);
+  transition-delay: 0.3s;
+}
+
+.site-btn:hover{
+    color:white;
+    transition-delay: 0.2s;
+}
+
+.site-btn:hover > .btn-paint:nth-child(1) {
+ 
+  transform: translate(-35px, -20px) rotate(-20deg) scale(1, 1);
+}
+.site-btn:hover > .btn-paint:nth-child(2) {
+  transform: translate(21px, -20px) rotate(20deg) scale(1, 1);
+}
+.site-btn:hover > .btn-paint:nth-child(3) {
+  transform: translate(81px, -20px) rotate(-20deg) scale(1, 1);
+}
+.site-btn:hover > .btn-paint:nth-child(4) {
+  transform: translate(131px, -20px) rotate(20deg) scale(1, 1);
+}
