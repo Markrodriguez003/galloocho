@@ -73,7 +73,8 @@ export const HeaderText = styled("h1")`
 
 /* SHOP NOW BUTTON LOCATED AT THE BOTTOM */
 export const ShopNowButton = styled(Button)`
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
+  background-color: transparent ;
   color: black;
   font-size: 34px;
   font-family: "menuFont";

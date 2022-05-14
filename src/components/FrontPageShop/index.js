@@ -15,7 +15,8 @@ import { BsFillArrowDownCircleFill } from "react-icons/bs";
 /* SHOP NOW BUTTON LOCATED AT THE BOTTOM */
 export const ShopNowButton = styled(Button)`
   display: block;
-  background-color: #fafafa;
+  /* background-color: #fafafa; */
+  background-color: transparent ;
   color: black;
   font-size: 34px;
   font-family: "menuFont";

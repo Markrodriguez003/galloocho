@@ -30,13 +30,12 @@ export const Header = styled(Navbar)`
   background-color: white;
   padding: 13px;
   transition: top 0.4s; 
+  z-index:1;
   -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53);
   box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);
 
- 
-
   /*  ORIGINAL PLAIN BORDER */
-  border-bottom: solid rgba(0, 0, 0, 0.3) 2px;
+  /* border-bottom: solid rgba(0, 0, 0, 0.3) 2px; */
 
   /* STRIPED (APPLIED TO FOOTER) BORDER IDEA */
   /* border-width: 14px;
@@ -85,6 +84,18 @@ export const Header = styled(Navbar)`
   }
   transition: top 0.4s; */
 `;
+
+export const BlackLip = styled("div")`
+
+background-color:rgba(0,0,0,0.68);
+width: 100%;
+height: 126px;
+z-index:-2;
+  -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53);
+  box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);
+  margin-bottom:-126px;
+
+`
 
 export const Menu = styled("a")`
   color: black;

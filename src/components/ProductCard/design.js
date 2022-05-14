@@ -18,7 +18,7 @@ export const ProductCardsContainer = styled("div")`
 // INDIVIDUAL PRODUCT CARD
 export const ProductCardElement = styled(Card)`
   position: relative !important;
-  background-color: transparent !important ;
+  /* background-color: transparent !important ; */
   width: 40vw; // This was added to make it a solo centered card. Take out when creating grid
   height: auto;
   margin-left: 10px;
@@ -65,6 +65,7 @@ export const CardFooterFlex = styled("div")`
   justify-content: space-around;
   align-content: center;
   width: 100% !important;
+ 
 `;
 
 export const ProductHeaderTitle = styled("img")`

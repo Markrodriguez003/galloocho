@@ -3,22 +3,29 @@
   padding: 0;
   font-size: 1em;
   font-family: inherit;
+
+
 }
 
-html,body {
-  margin:0;
-  padding:0;
-  overflow-x:hidden;
+ 
+
+html, body {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+
 }
 
 body {
   margin: 0;
-  padding:0;
+  padding: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+
 }
 
 code {
@@ -38,24 +45,26 @@ code {
   src: url("./fonts/cursive/Havana.ttf");
 }
 
- 
+
 @font-face {
   font-family: "aboutHeaderFont";
   /* src: url("./fonts/brandText/MACCOS_DOUBLE_Demo.otf") format("opentype"); */
-  src: url("./fonts/about/Glaschu-Inline.otf") format("opentype");;
+  src: url("./fonts/about/Glaschu-Inline.otf") format("opentype");
+  ;
 }
 
 @font-face {
   font-family: "aboutFont";
   /* src: url("./fonts/brandText/MACCOS_DOUBLE_Demo.otf") format("opentype"); */
-  src: url("./fonts/about/Branding Pro Regular.otf") format("opentype");;
+  src: url("./fonts/about/Branding Pro Regular.otf") format("opentype");
+  ;
 }
 
 @import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 
 
 
- 
+
 
 @font-face {
   font-family: "heroFont";
@@ -119,38 +128,38 @@ code {
   /* src: url("./fonts/Brush/OneBrush.ttf");  */
   /* src: url("./fonts/Brush/NORTHEN.ttf");  */
   /* src: url("./fonts/Brush/RUNWAY\ BRUSH.otf");  */
-  /* src: url("./fonts/Brush/Royal\ Mision.ttf"); */ 
+  /* src: url("./fonts/Brush/Royal\ Mision.ttf"); */
   /* src: url("./fonts/Brush/THE\ BENTAR.ttf");  */
   /* src: url("./fonts/Brush/Klatas-Brush.ttf");  */
-  
+
   /* FAVORITES */
   /* HERO H1 */
-  src: url("./fonts/Brush/LALOUZZ.ttf"); 
+  src: url("./fonts/Brush/LALOUZZ.ttf");
   /* src: url("./fonts/Brush/your\ flames\ DEMO.otf");  */
   /* src: url("./fonts/Brush/FRANKY\ TOYS.ttf");  */
   /* src: url("./fonts/Brush/Spinwash\ DEMO.otf");  */
   /* src: url("./fonts/Brush/Rhodeport\ Slant_DEMO.otf");  */
-/*   src: url("./fonts/Grafitti/Fiery\ Sun\ Demo.ttf");  */
-  
+  /* src: url("./fonts/Grafitti/Fiery\ Sun\ Demo.ttf");  */
+
   /* H2 AND BELOW */
   /* src: url("./fonts/Brush/Rainday.ttf");  */
   /* src: url("./fonts/Brush/Twirrewyn\ DEMO.otf");  */
   /* src: url("./fonts/Brush/Saspoor\ Bold.ttf");  */
-  
+
 
   /* ALL */
   /* src: url("./fonts/Brush/Midnight\ Sun\ DEMO.otf");  */
-  /* src: url("./fonts/Brush/DK\ Plakkaat.ttf"); */ 
+  /* src: url("./fonts/Brush/DK\ Plakkaat.ttf"); */
   /* src: url("./fonts/Brush/Starboard\ DEMO.otf");  */
   /* src: url("./fonts/Brush/Studio\ Brush\ DEMO.otf");  */
-  
-  
+
+
   /* src: url("./fonts/Brush/Greed.otf");  */
-  /* src: url("./fonts/Brush/Rebrush\ Demo.ttf"); */ 
+  /* src: url("./fonts/Brush/Rebrush\ Demo.ttf"); */
   /* src: url("./fonts/Brush/ShunSet-Regular.ttf");  */
   /* src: url("./fonts/Brush/Russian\ Angel.ttf");  */
   /* src: url("./fonts/Brush/Senko\ Hanabi\ DEMO.otf");  */
-  /* src: url("./fonts/Brush/Symbolic\ Prophecy\ DEMO.otf"); */ 
+  /* src: url("./fonts/Brush/Symbolic\ Prophecy\ DEMO.otf"); */
   /* src: url("./fonts/Brush/TropicalAsianDEMO-Regular.ttf");  */
   /* src: url("./fonts/Brush/Kapsalon\ Brush\ DEMO.otf");  */
   /* src: url("./fonts/Brush/THE\ PLANET.ttf");  */
@@ -159,119 +168,119 @@ code {
   /* src: url("./fonts/Brush/Hillshort.otf");  */
 
   /* GRAFITTI */
-  /* src: url("./fonts/Grafitti/Bombing.ttf"); */ 
- 
-  }
+  /* src: url("./fonts/Grafitti/Bombing.ttf"); */
 
-  @font-face {
-    font-family: "menuFont";
-    /* src: url("./fonts/telegrafico.ttf"); */
-    /* src: url("./fonts/heroTapeFont/Trincha.ttf");  */
-    /* src: url("./fonts/Brush/Blodders.otf");  */
-    /* src: url("./fonts/Brush/aAgustusMerdeka.otf");  */
-    /* src: url("./fonts/Brush/aAbrushow.otf");  */
-    /* src: url("./fonts/Brush/BLUESALE.otf");  */
-    /* src: url("./fonts/Brush/Brisk\ Brush.ttf");  */
-    /* src: url("./fonts/Brush/BRUSHED.TTF");  */
-    /* src: url("./fonts/Brush/Brushill.ttf");  */
-    /* src: url("./fonts/Brush/Bruzh.otf");  */
-    /* src: url("./fonts/Brush/Burrick.otf");  */
-    /* src: url("./fonts/Brush/catrock.ttf");  */
-    /* src: url("./fonts/Brush/Crushed\ Stone.otf");  */
-    /* src: url("./fonts/Brush/Crystal\ Snowfields\ Demo.ttf");  */
-    /* src: url("./fonts/Brush/DK\ Black\ Bamboo.ttf");  */
-    /* src: url("./fonts/Brush/DK\ Brush\ Crush.otf");  */
-    /* src: url("./fonts/Brush/DK\ Cinnabar\ Brush.ttf");  */
-    /* src: url("./fonts/Brush/DK\ Coal\ Brush.otf");  */
-    /* src: url("./fonts/Brush/DK\ Magical\ Brush.otf");  */
-    /* src: url("./fonts/Brush/DK\ Superbrush.otf");  */
-    /* src: url("./fonts/Brush/DREAMLAND.otf");  */
-    /* src: url("./fonts/Brush/Dreary\ Broken.otf");  */
-    /* src: url("./fonts/Brush/edosz.ttf");  */
-    /* src: url("./fonts/Brush/Elbrush.ttf");  */
-    /* src: url("./fonts/Brush/ELEMENT.otf");  */
-    /* src: url("./fonts/Brush/FELTPEN_.TTF");  */
-    /* src: url("./fonts/Brush/FORTQUINSY.otf");  */
-    /* src: url("./fonts/Brush/Graceland.otf");  */
-    /* src: url("./fonts/Brush/Grunge.ttf");  */
-    /* src: url("./fonts/Brush/Guilty\ Pleasure\ DEMO.otf");  */
-    /* src: url("./fonts/Brush/Heavy\ Trip\ -\ Demo.ttf");  */
-    /* src: url("./fonts/Brush/Helga\ Brush.ttf");  */
-    /* src: url("./fonts/Brush/HEAVYRUST\ ROUGH.otf");  */
-    /* src: url("./fonts/Brush/Hey\ November.otf");  */
-    /* src: url("./fonts/Brush/Hold\ On.otf");  */
-    /* src: url("./fonts/Brush/karian.ttf");  */
-    /* src: url("./fonts/Brush/KAZYinfo.ttf");  */
-    /* src: url("./fonts/Brush/KGLifeisMessy.ttf");  */
-    /* src: url("./fonts/Brush/Kilimanjaro.otf");  */
-    /* src: url("./fonts/Brush/KRUGERS.otf");  */
-    /* src: url("./fonts/Brush/Lachrymose\ DEMO.otf");  */
-    /* src: url("./fonts/Brush/Lazer84.ttf");  */
-    /* src: url("./fonts/Brush/LINCONS.otf");  */
-    /* src: url("./fonts/Brush/Live\ Source\ -\ Demo.ttf");  */
-    /* src: url("./fonts/Brush/Zidan.ttf");  */
-    /* src: url("./fonts/Brush/Wkwkwk.ttf");  */
-    /* src: url("./fonts/Brush/Winter.ttf");  */
-    /* src: url("./fonts/Brush/Whalebone\ DEMO.otf");  */
-    /* src: url("./fonts/Brush/ventides.ttf");  */
-    /* src: url("./fonts/Brush/TheAbsoluteBrush.otf");  */
-    /* src: url("./fonts/Brush/SUNRISE-ISLAND.ttf");  */
-    /* src: url("./fonts/Brush/Snowes.ttf");  */
-    /* src: url("./fonts/Brush/Rue\ Mademoiselle.otf");  */
-    /* src: url("./fonts/Brush/Reliable\ DEMO.otf");  */
-    /* src: url("./fonts/Brush/Quachita-Regular.ttf");  */
-    /* src: url("./fonts/Brush/Pistachio.otf");  */
-    /* src: url("./fonts/Brush/Paintbrush.ttf");  */
-    /* src: url("./fonts/Brush/OneBrush.ttf");  */
-    /* src: url("./fonts/Brush/NORTHEN.ttf");  */
-    /* src: url("./fonts/Brush/RUNWAY\ BRUSH.otf");  */
-    /* src: url("./fonts/Brush/Royal\ Mision.ttf"); */ 
-    /* src: url("./fonts/Brush/THE\ BENTAR.ttf");  */
-    /* src: url("./fonts/Brush/Klatas-Brush.ttf");  */
-    
-    /* FAVORITES */
-    /* HERO H1 */
-   /*  src: url("./fonts/Brush/LALOUZZ.ttf");  */
-    /* src: url("./fonts/Brush/your\ flames\ DEMO.otf");  */
-    /* src: url("./fonts/Brush/FRANKY\ TOYS.ttf");  */
-    /* src: url("./fonts/Brush/Spinwash\ DEMO.otf");  */
-    /* src: url("./fonts/Brush/Rhodeport\ Slant_DEMO.otf");  */
+}
+
+@font-face {
+  font-family: "menuFont";
+  /* src: url("./fonts/telegrafico.ttf"); */
+  /* src: url("./fonts/heroTapeFont/Trincha.ttf");  */
+  /* src: url("./fonts/Brush/Blodders.otf");  */
+  /* src: url("./fonts/Brush/aAgustusMerdeka.otf");  */
+  /* src: url("./fonts/Brush/aAbrushow.otf");  */
+  /* src: url("./fonts/Brush/BLUESALE.otf");  */
+  /* src: url("./fonts/Brush/Brisk\ Brush.ttf");  */
+  /* src: url("./fonts/Brush/BRUSHED.TTF");  */
+  /* src: url("./fonts/Brush/Brushill.ttf");  */
+  /* src: url("./fonts/Brush/Bruzh.otf");  */
+  /* src: url("./fonts/Brush/Burrick.otf");  */
+  /* src: url("./fonts/Brush/catrock.ttf");  */
+  /* src: url("./fonts/Brush/Crushed\ Stone.otf");  */
+  /* src: url("./fonts/Brush/Crystal\ Snowfields\ Demo.ttf");  */
+  /* src: url("./fonts/Brush/DK\ Black\ Bamboo.ttf");  */
+  /* src: url("./fonts/Brush/DK\ Brush\ Crush.otf");  */
+  /* src: url("./fonts/Brush/DK\ Cinnabar\ Brush.ttf");  */
+  /* src: url("./fonts/Brush/DK\ Coal\ Brush.otf");  */
+  /* src: url("./fonts/Brush/DK\ Magical\ Brush.otf");  */
+  /* src: url("./fonts/Brush/DK\ Superbrush.otf");  */
+  /* src: url("./fonts/Brush/DREAMLAND.otf");  */
+  /* src: url("./fonts/Brush/Dreary\ Broken.otf");  */
+  /* src: url("./fonts/Brush/edosz.ttf");  */
+  /* src: url("./fonts/Brush/Elbrush.ttf");  */
+  /* src: url("./fonts/Brush/ELEMENT.otf");  */
+  /* src: url("./fonts/Brush/FELTPEN_.TTF");  */
+  /* src: url("./fonts/Brush/FORTQUINSY.otf");  */
+  /* src: url("./fonts/Brush/Graceland.otf");  */
+  /* src: url("./fonts/Brush/Grunge.ttf");  */
+  /* src: url("./fonts/Brush/Guilty\ Pleasure\ DEMO.otf");  */
+  /* src: url("./fonts/Brush/Heavy\ Trip\ -\ Demo.ttf");  */
+  /* src: url("./fonts/Brush/Helga\ Brush.ttf");  */
+  /* src: url("./fonts/Brush/HEAVYRUST\ ROUGH.otf");  */
+  /* src: url("./fonts/Brush/Hey\ November.otf");  */
+  /* src: url("./fonts/Brush/Hold\ On.otf");  */
+  /* src: url("./fonts/Brush/karian.ttf");  */
+  /* src: url("./fonts/Brush/KAZYinfo.ttf");  */
+  /* src: url("./fonts/Brush/KGLifeisMessy.ttf");  */
+  /* src: url("./fonts/Brush/Kilimanjaro.otf");  */
+  /* src: url("./fonts/Brush/KRUGERS.otf");  */
+  /* src: url("./fonts/Brush/Lachrymose\ DEMO.otf");  */
+  /* src: url("./fonts/Brush/Lazer84.ttf");  */
+  /* src: url("./fonts/Brush/LINCONS.otf");  */
+  /* src: url("./fonts/Brush/Live\ Source\ -\ Demo.ttf");  */
+  /* src: url("./fonts/Brush/Zidan.ttf");  */
+  /* src: url("./fonts/Brush/Wkwkwk.ttf");  */
+  /* src: url("./fonts/Brush/Winter.ttf");  */
+  /* src: url("./fonts/Brush/Whalebone\ DEMO.otf");  */
+  /* src: url("./fonts/Brush/ventides.ttf");  */
+  /* src: url("./fonts/Brush/TheAbsoluteBrush.otf");  */
+  /* src: url("./fonts/Brush/SUNRISE-ISLAND.ttf");  */
+  /* src: url("./fonts/Brush/Snowes.ttf");  */
+  /* src: url("./fonts/Brush/Rue\ Mademoiselle.otf");  */
+  /* src: url("./fonts/Brush/Reliable\ DEMO.otf");  */
+  /* src: url("./fonts/Brush/Quachita-Regular.ttf");  */
+  /* src: url("./fonts/Brush/Pistachio.otf");  */
+  /* src: url("./fonts/Brush/Paintbrush.ttf");  */
+  /* src: url("./fonts/Brush/OneBrush.ttf");  */
+  /* src: url("./fonts/Brush/NORTHEN.ttf");  */
+  /* src: url("./fonts/Brush/RUNWAY\ BRUSH.otf");  */
+  /* src: url("./fonts/Brush/Royal\ Mision.ttf"); */
+  /* src: url("./fonts/Brush/THE\ BENTAR.ttf");  */
+  /* src: url("./fonts/Brush/Klatas-Brush.ttf");  */
+
+  /* FAVORITES */
+  /* HERO H1 */
+  /*  src: url("./fonts/Brush/LALOUZZ.ttf");  */
+  /* src: url("./fonts/Brush/your\ flames\ DEMO.otf");  */
+  /* src: url("./fonts/Brush/FRANKY\ TOYS.ttf");  */
+  /* src: url("./fonts/Brush/Spinwash\ DEMO.otf");  */
+  /* src: url("./fonts/Brush/Rhodeport\ Slant_DEMO.otf");  */
   /*   src: url("./fonts/Grafitti/Fiery\ Sun\ Demo.ttf");  */
-    
-    /* H2 AND BELOW */
-    /* src: url("./fonts/Brush/Rainday.ttf");  */
-    /* src: url("./fonts/Brush/Twirrewyn\ DEMO.otf");  */
-    /* src: url("./fonts/Brush/Saspoor\ Bold.ttf");  */
-    
-  
-    /* ALL */
-    src: url("./fonts/Brush/Midnight\ Sun\ DEMO.otf"); 
-    /* src: url("./fonts/Brush/DK\ Plakkaat.ttf"); */ 
-    /* src: url("./fonts/Brush/Starboard\ DEMO.otf");  */
-    /* src: url("./fonts/Brush/Studio\ Brush\ DEMO.otf");  */
-    
-    
-    /* src: url("./fonts/Brush/Greed.otf");  */
-    /* src: url("./fonts/Brush/Rebrush\ Demo.ttf"); */ 
-    /* src: url("./fonts/Brush/ShunSet-Regular.ttf");  */
-    /* src: url("./fonts/Brush/Russian\ Angel.ttf");  */
-    /* src: url("./fonts/Brush/Senko\ Hanabi\ DEMO.otf");  */
-    /* src: url("./fonts/Brush/Symbolic\ Prophecy\ DEMO.otf"); */ 
-    /* src: url("./fonts/Brush/TropicalAsianDEMO-Regular.ttf");  */
-    /* src: url("./fonts/Brush/Kapsalon\ Brush\ DEMO.otf");  */
-    /* src: url("./fonts/Brush/THE\ PLANET.ttf");  */
-    /* src: url("./fonts/Brush/Woah.ttf");  */
-    /* src: url("./fonts/Brush/Grayson.ttf");  */
-    /* src: url("./fonts/Brush/Hillshort.otf");  */
-  
-    /* GRAFITTI */
-    /* src: url("./fonts/Grafitti/Bombing.ttf"); */ 
-   
-    }
+
+  /* H2 AND BELOW */
+  /* src: url("./fonts/Brush/Rainday.ttf");  */
+  /* src: url("./fonts/Brush/Twirrewyn\ DEMO.otf");  */
+  /* src: url("./fonts/Brush/Saspoor\ Bold.ttf");  */
+
+
+  /* ALL */
+  src: url("./fonts/Brush/Midnight\ Sun\ DEMO.otf");
+  /* src: url("./fonts/Brush/DK\ Plakkaat.ttf"); */
+  /* src: url("./fonts/Brush/Starboard\ DEMO.otf");  */
+  /* src: url("./fonts/Brush/Studio\ Brush\ DEMO.otf");  */
+
+
+  /* src: url("./fonts/Brush/Greed.otf");  */
+  /* src: url("./fonts/Brush/Rebrush\ Demo.ttf"); */
+  /* src: url("./fonts/Brush/ShunSet-Regular.ttf");  */
+  /* src: url("./fonts/Brush/Russian\ Angel.ttf");  */
+  /* src: url("./fonts/Brush/Senko\ Hanabi\ DEMO.otf");  */
+  /* src: url("./fonts/Brush/Symbolic\ Prophecy\ DEMO.otf"); */
+  /* src: url("./fonts/Brush/TropicalAsianDEMO-Regular.ttf");  */
+  /* src: url("./fonts/Brush/Kapsalon\ Brush\ DEMO.otf");  */
+  /* src: url("./fonts/Brush/THE\ PLANET.ttf");  */
+  /* src: url("./fonts/Brush/Woah.ttf");  */
+  /* src: url("./fonts/Brush/Grayson.ttf");  */
+  /* src: url("./fonts/Brush/Hillshort.otf");  */
+
+  /* GRAFITTI */
+  /* src: url("./fonts/Grafitti/Bombing.ttf"); */
+
+}
 
 @font-face {
   font-family: "cardFont";
-  src: url("./fonts/heroTapeFont/Trincha.ttf"); 
+  src: url("./fonts/heroTapeFont/Trincha.ttf");
 }
 
 /* @font-face {
@@ -286,4 +295,3 @@ code {
    src: url("./fonts/heroTapeFont/HotSauce.ttf");  
    src: url("./fonts/heroTapeFont/Handvetica Neue Regular Trial.ttf"); 
 } */
- 

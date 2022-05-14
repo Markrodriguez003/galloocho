@@ -1,5 +1,6 @@
 import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 
+import BackgroundImg from "./components/BackgroundImg"
 import MainHeader from "./components/MainHeader";
 import MainFooter from "./components/MainFooter";
 import Home from "./components/Home";
@@ -13,6 +14,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
+      <BackgroundImg />
       <BrowserRouter>
         <SimpleReactLightbox>
           <MainHeader />

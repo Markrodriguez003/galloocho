@@ -17,6 +17,7 @@ import {
   BrandLink,
   SubSideMenu,
   MenuHeaderIcon,
+  BlackLip
 } from "./design";
 
 // COMPONENTS
@@ -231,6 +232,7 @@ function MainHeader() {
        
         </BrandLink>
       </Header>
+        <BlackLip/>
     </>
   );
 }
