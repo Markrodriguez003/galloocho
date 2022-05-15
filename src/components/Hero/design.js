@@ -50,6 +50,11 @@ export const HeaderText = styled("h1")`
   background: url("../../imgs/textures/background-6793839_1920.jpg") no-repeat left / 120%;
   /* height: 49vh; */
   text-align: center;
+& span{
+  color:hotpink;
+ 
+}
+
   @media (max-width: 280px) {
     font-size: 14vw;
   } */
@@ -120,4 +125,3 @@ export const BrushStrokeBorder = styled('div')`
  
 `;
 
- 

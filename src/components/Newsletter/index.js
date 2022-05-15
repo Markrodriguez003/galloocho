@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 // COMPONENTS
-import { Row, Col, Form, Button, Modal } from "react-bootstrap";
+import { Row, Col, Form, Button, Modal, Tabs, Tab } from "react-bootstrap";
 
 //! Interesting Ideas
 // https://www.w3schools.com/howto/howto_js_animate_icons.asp
@@ -14,12 +14,17 @@ import {
   BsArrowRight,
   BsFillPersonFill,
   BsPencilSquare,
+  BsFillPencilFill,
+  BsCheckCircleFill,
+  BsFillPaletteFill
+
+
 } from "react-icons/bs";
 import { MdAlternateEmail } from "react-icons/md";
-import { RiArticleFill } from "react-icons/ri";
+import { RiArticleFill, RiLineHeight } from "react-icons/ri";
 
 // CSS
-import { ContactContainer, FormContainer, ContactFormHeader } from "./design";
+import { ContactContainer, FormContainer, ContactFormHeader, FormDescriptor,  } from "./design";
 import "./style.css";
 
 /* MODAL FUNCTION */
@@ -68,82 +73,178 @@ function Newsletter() {
   ];
 
   return (
-    <>
-      <ContactContainer>
-        <ContactFormHeader>
-          <span id="animIcon">
-            <RiArticleFill /> Sign Up to our Newsletter!  
+    <> 
+      <ContactContainer >
+        <ContactFormHeader id="contact">
+          <span id="animIcon" style={{ letterSpacing: "2px", fontFamily: "heroFont", fontSize: "44px" }}>
+            Contact us!
           </span>
         </ContactFormHeader>
-        <p style={{ color: "white", textAlign: "center", fontStyle:"italic" }}> 
-          Be the first to know when our rooster sculptures are released!
-        </p><br/>
+        <br />
+        <FormDescriptor>
+          <small>
+            Be the first to know when our rooster sculptures are released by signing up to our newsletter!
+            Any other requests for custom work, business inquiries or if you are an artist who wants to be
+            part of the Gallo Ocho team please send us your info using the inquiries tab in our contact form
+            below.
+          </small>
+        </FormDescriptor>
+        <br />
+
         <FormContainer>
-          {/* <Form.Text id="contact-help" style={{ color: "black", fontStyle:"italic" }}>
-            Be the first to know when our rooster sculptures are released!
-          </Form.Text> */}
-          <Form>
-            <br />
-            <p> </p>
-            <Form.Group as={Row} className="mb-3" controlId="contact-form">
-              <Col sm={12}>
-                <span style={{ display: "flex" }}>
-                  <BsFillPersonFill
-                    style={{
-                      color: "white",
-                      backgroundColor: "rgba(0, 0, 0, 0.85)",
-                      fontSize: "38.8px",
-                      padding: "6px",
-                    }}
-                  />
-                  <Form.Control type="name" placeholder="Name" />
-                </span>
-              </Col>
+          <Tabs defaultActiveKey="newsletter" id="uncontrolled-tab-example" className="mb-3">
+            <Tab eventKey="newsletter" title={<span>   <RiArticleFill />{" "} Sign Up for our Newsletter </span>}  >
 
-              <p> </p>
-              <br />
-              <span style={{ display: "flex" }}>
+              <Form>
 
-                <MdAlternateEmail
-                  style={{
-                    color: "white",
-                    backgroundColor: "rgba(0, 0, 0, 0.85)",
-                    fontSize: "38.8px",
-                    padding: "7px",
-                  }}
+                <Form.Group as={Row} className="mb-3" controlId="contact-form">
+                  <Col sm={12}>
+                    <span style={{ display: "flex" }}>
+                      <BsFillPersonFill
+                        style={{
+                          color: "white",
+                          backgroundColor: "rgba(0, 0, 0, 0.85)",
+                          fontSize: "38.8px",
+                          padding: "6px",
+                        }}
+                      />
+                      <Form.Control type="name" placeholder="Name" />
+                    </span>
+                  </Col>
+
+                  <p> </p>
+                  <br />
+                  <span style={{ display: "flex" }}>
+
+                    <MdAlternateEmail
+                      style={{
+                        color: "white",
+                        backgroundColor: "rgba(0, 0, 0, 0.85)",
+                        fontSize: "38.8px",
+                        padding: "7px",
+                      }}
+                    />
+                    <Form.Control type="Email" placeholder="Email" />
+                  </span>
+                </Form.Group>
+
+
+                <br />
+
+
+                <Form.Group as={Row} className="mb-3">
+                  <Col className="d-grid gap-2">
+                    <Button
+                      type="submit"
+                      size="lg"
+                      variant="outline-dark"
+                      style={{ marginLeft: "8px" }}
+                      onClick={() => setModalShow(true)}
+                    >
+                      Submit <BsArrowRight className="mb-1" />
+                    </Button>
+
+                  </Col>
+                </Form.Group>
+              </Form>
+            </Tab>
+
+
+            {/* Artist / Other Inqueries */}
+
+            <Tab eventKey="inquery" title={<span><BsFillPaletteFill /> {" "} Inqueries</span>}  >
+              <Form>
+
+                <Form.Group as={Row} className="mb-3" controlId="contact-form">
+                  <Col sm={12}>
+                    <span style={{ display: "flex" }}>
+                      <BsFillPersonFill
+                        style={{
+                          color: "white",
+                          backgroundColor: "rgba(0, 0, 0, 0.85)",
+                          fontSize: "38.8px",
+                          padding: "6px",
+                        }}
+                      />
+                      <Form.Control type="name" placeholder="Name" />
+                    </span>
+                  </Col>
+                  <p> </p>
+                  <br />
+                  <Col sm={12}>
+                    {/* <Form.Text id="contact-help" style={{ color: "black", fontStyle: "italic", marginLeft:"50px" }}>
+                      Be the first to know when our rooster sculptures are released!
+                    </Form.Text> */}
+                    <span style={{ display: "flex" }}>
+                      <BsFillPencilFill
+                        style={{
+                          color: "white",
+                          backgroundColor: "rgba(0, 0, 0, 0.85)",
+                          fontSize: "38.8px",
+                          padding: "6px",
+                          height: "22vh"
+
+                        }}
+                      />
+                      <Form.Control as="textarea" rows={8} placeholder="Type up any questions, requests or inqueries here!" />
+                    </span>
+                  </Col>
+
+                  <p> </p>
+                  <br />
+                  <span style={{ display: "flex" }}>
+
+                    <MdAlternateEmail
+                      style={{
+                        color: "white",
+                        backgroundColor: "rgba(0, 0, 0, 0.85)",
+                        fontSize: "38.8px",
+                        padding: "7px",
+                      }}
+                    />
+                    <Form.Control type="Email" placeholder="Email" />
+                  </span>
+                </Form.Group>
+
+
+                <br />
+
+
+                <Form.Check
+                  type="switch"
+                  id="newsletterSub"
+                  label="Subscribe to newsletter"
                 />
-                <Form.Control type="Email" placeholder="Email" />
-              </span>
-            </Form.Group>
+                <br />
+                <Form.Check
+                  type="switch"
+                  id="copyEmail"
+                  label="Send copy to my email"
+                />
+
+                <br />
+                <br />
+                <Form.Group as={Row} className="mb-3">
+                  <Col className="d-grid gap-2">
+                    <Button
+                      type="submit"
+                      size="lg"
+                      variant="outline-dark"
+                      style={{ marginLeft: "8px" }}
+                      onClick={() => setModalShow(true)}
+                    >
+                      Submit <BsArrowRight className="mb-1" />
+                    </Button>
 
 
-            <br />
-
-
-            <Form.Group as={Row} className="mb-3">
-              <Col className="d-grid gap-2">
-                <Button
-                  type="submit"
-                  size="lg"
-                  variant="outline-dark"
-                  style={{ marginLeft: "8px" }}
-                  onClick={() => setModalShow(true)}
-                >
-                  Submit <BsArrowRight className="mb-1" />
-                </Button>
-
-                {/*  <Button
-                  type="submit"
-                  size="lg"
-                  variant="danger"
-                  style={{ float: "right", marginLeft: "8px" }}
-                >
-                  Clear Form
-                </Button> */}
-              </Col>
-            </Form.Group>
-          </Form>
+                  </Col>
+                </Form.Group>
+              </Form>
+            </Tab>
+          </Tabs>
         </FormContainer>
+
+
         <MessageSentModal show={modalShow} onHide={() => setModalShow(false)} />
       </ContactContainer>
     </>

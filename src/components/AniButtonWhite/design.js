@@ -43,7 +43,7 @@ export const SiteButtonPaint = styled("span")`
   position: absolute;
   top: 0;
   left: 0;
-  background-color: blue;
+ 
   width: 100px;
   height: 120px;
   

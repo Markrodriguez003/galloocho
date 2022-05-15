@@ -9,6 +9,7 @@ import FrontPageArtists from "../FrontPageArtists";
 import AboutPage from "../AboutPage";
 import Newsletter from "../Newsletter";
 import OutlinedText from "../OutlinedText";
+import AniButton from "../AniButton"
 import { Button } from "react-bootstrap";
 import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
@@ -64,6 +65,13 @@ export const ProductCardInfo = styled("div")`
   font-size: 28px;
   width: 35vw;
   margin-right: 40px;
+  
+ 
+ 
+  p {
+    /* text-shadow:1px 1px black; */
+    
+  }
 
   @media (max-width: 1609px) {
     font-size: 1.7vw;
@@ -117,27 +125,27 @@ function FrontPageShop() {
   return (
     <>
       {/* <FrontPageShopHeader>*** LATEST ARRIVALS ***</FrontPageShopHeader> */}
-      <div className="wrapper" id="frontshop">
-        <h1 className="title">Meet Lil' Havi</h1>
-      </div>
+      <h1 className="title" id="frontshop"><span style={{color:"cadetblue"}}>Meet</span> Lil' Havi</h1>
+ 
       <FrontPageShopContainer>
         <FlexBoxWrapper>
           <ProductCardInfo>
-            For those who've always wanted a{" "}
-            <span style={{ color: "red" }}> rooster </span> of their own, we
-            introduce Little Havi, the little rooster of Miami! Standing just 9
-            inches tall, this genuine ceramic statuette pays homage to Miami’s
-            most famous farm animal—and its most fabulous city mascot. Featuring
-            hand-painted detail and eye-catching color schemes, Little Havi was
-            designed by local artists who wanted to give both visitors and
-            locals alike a way to show their pride in this quirky and fun city
-            where there’s always something new to see or experience.
+            <p>For those who've always wanted a
+              <span style={{ color: "red" }}> rooster </span> of their own, we
+              introduce Little Havi, the little rooster of Miami! Standing just 9
+              inches tall, this genuine ceramic statuette pays homage to Miami’s
+              most famous farm animal—and its most fabulous city mascot. Featuring
+              hand-painted detail and eye-catching color schemes, Little Havi was
+              designed by local artists who wanted to give both visitors and
+              locals alike a way to show their pride in this quirky and fun city
+              where there’s always something new to see or experience.</p>
             <br />
             <br />
-            <ShopNowButton href="#aboutId">
+            {/* <ShopNowButton href="#aboutId">
               {" "}
               About Us <BsFillArrowDownCircleFill />
-            </ShopNowButton>
+            </ShopNowButton> */}
+            <AniButton hrefTag="#about" btnTitle="About Us"></AniButton>
           </ProductCardInfo>
           <ProductCard></ProductCard>
         </FlexBoxWrapper>

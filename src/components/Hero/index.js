@@ -25,7 +25,7 @@ function Hero() {
 
 
 
-      <HeroContainer>
+      <HeroContainer id="hero">
         <ThreeD />
         <div style={{
           display: "flex",
@@ -34,12 +34,13 @@ function Hero() {
 
         }}>
           <HeaderText>
-            Own a Unique <br />Piece of <span style={{ color: "hotpink" }}> Miami. </span>
+            Own a Unique <br />Piece of <span> Miami. </span>
           </HeaderText>
           <br />
-          <ShopNowButton href="#frontshop">
+          <AniButton btnTitle={"See Concept"} hrefTag={"#frontshop"}/>
+          {/* <ShopNowButton href="#frontshop">
             See Concept <BsFillArrowDownCircleFill />
-          </ShopNowButton>{" "}
+          </ShopNowButton>{" "} */}
 
          
      
@@ -52,7 +53,7 @@ function Hero() {
         <br/>
         <br/>
         <br/>
-{      <AniButton>Hello </AniButton>}
+{/* {      <AniButton>See Concept </AniButton>} */}
 
       <br/>
         <br/>

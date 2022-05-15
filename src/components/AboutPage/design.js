@@ -1,23 +1,7 @@
 import styled, { css } from "styled-components";
-import parallax1 from "../../imgs/splash/1.jpg";
-// import aboutContainer from "../../imgs/textures/6F5401C9-77CF-40C6-9A2A-8C714B22FAA2.png"
-// import aboutContainer from "../../imgs/textures/sheets-3392320_1920.jpg"
 
-export const AboutFirstSection = styled("div")`
-  display: block;
-  position: relative;
-  z-index: 1;
-`;
 
-/*  CAROUSEL SLIDE IMAGE  */
-export const CarouselImage = styled("img")`
-  width: 100%;
-  max-width: 100%;
-  height: 120vh;
-  object-fit: cover;
-  filter: grayscale(35%);
-  opacity: 0.8;
-`;
+ 
 
 export const AboutHeaderContainer = styled("div")`
   display: flex;
@@ -47,23 +31,20 @@ export const AboutHeader = styled("h1")`
   }
 `;
 
-export const MiamiText = styled("h1")`
-  font-family: "cursiveFont";
-  color: hotpink;
-  font-size: 155px;
-  background: -webkit-linear-gradient(yellow, #e01686, pink);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-attachment: fixed;
-  margin-bottom: -70px;
-
-  @media screen and (max-width: 400px) {
-    font-size: 120px;
-  }
-`;
 
 
+export const AboutContainer = styled('div')`
+padding: 40px;
+color: white;
+background-color: rgba(0,0,0,0.92);
+background-image:radial-gradient(circle at center center, lightgrey, white), 
+repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 10px, 
+transparent 40px, transparent 40px);
+background-blend-mode: multiply;
+ 
 
+ 
+`
 
 export const RotatedH1 = styled('h1')`
   display: inline;
@@ -74,7 +55,7 @@ export const RotatedH1 = styled('h1')`
   text-align: center;
   margin-top:35px;
   font-family: "heroFont";
-  text-shadow: 4px 3px 0 rgba(0,255,255,0.3);
+  text-shadow: 4px 3px 0 rgba(0,0,0,0.9);
   ${props => props.rotatedR && css`
   transform: rotate(180deg);
   
@@ -85,114 +66,6 @@ export const RotatedH1 = styled('h1')`
   `}
 
 `
-
-export const WhoAreWeContainer = styled("div")`
-  width: 100%;
-  height: auto;
-  padding-top: 80px;
-  color: white;
-
-  background-color: rgb(14, 14, 14); 
-  text-align: center;
-  padding-bottom: 80px;
-
-  & h1 {
-    color: white;
-    padding-bottom: 40px;
-    font-family: "aboutFont";
-    font-size: 100px;
-    font-weight: bold;
-    text-shadow: 4px 3px 0 rgba(255, 122, 122, 0.5);
-    /* font-weight: bold; */
-    letter-spacing: 8px;
-    text-decoration: underline;
-  }
-
-  & p {
-    font-family: "aboutFont";
-    font-size: 28px;
-    margin-left: 50px;
-    margin-right: 50px;
-    margin-bottom: 10px;
-  }
-`;
-
-export const ParallaxImg = styled("div")`
-  background-color: rgba(0,0,0,0.2 );
-  /* The image used */
-  background-image: url(${parallax1});
-  background-blend-mode:multiply;
-  /* Set a specific height */
-  min-height: 800px;
-
-  /* Create the parallax scrolling effect */
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-`;
-
-export const ParallaxHeader = styled("div")`
-  color: white;
-  font-family: "aboutFont";
-  font-weight: bold;
-  font-size: 100px;
-
-  text-shadow: 8px 8px 0 black, 8px 8px 0 slategrey;
-  text-align: center;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 150px;
-
-  margin-left: 50px;
-  margin-right: 50px;
-
-  & p {
-    padding-bottom: 40px;
-    font-family: "aboutFont";
-    font-size: 28px;
-    margin-left: 50px;
-    margin-right: 50px;
-    text-shadow: 2px 2px 0 black, 2px 2px 0 slategrey;
-  }
-`;
-
-export const NavDiv = styled("div")`
-  display: inline;
-  position: absolute;
-  z-index: 2;
-  background-color: rgba(0, 0, 0, 0.2);
-  top: 400px;
-  left: 40px;
-  padding: 10px;
-  padding-top: 22px;
-`;
-
-export const NavigationPanel = styled("div")`
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  z-index: 10;
-  position: sticky;
-  position: -webkit-sticky;
-  top: 400px;
-  z-index: 2;
-`;
-export const NavCircle = styled("div")`
-  width: 15px;
-  height: 15px;
-  background-color: rgba(0, 0, 0, 0.2);
-  border: black 2px solid;
-  border-radius: 50%;
-  cursor: pointer;
-  margin-bottom: 22px;
-  margin-left: 40px;
-
-  &:hover {
-    background: rgba(0, 0, 0, 0.6);
-  }
-`;
-
 
 export const SocialMediaBar = styled("div")`
   color: white;
@@ -216,3 +89,68 @@ export const SocialMediaItem = styled("a")`
     color: #fc6a6a;
   }
 `;
+
+
+
+//  CSS FOR PARALLAX & CAROUSEL SECTIONS
+/*
+
+
+import parallax1 from "../../imgs/splash/1.jpg";
+
+export const AboutFirstSection = styled("div")`
+  display: block;
+  position: relative;
+  z-index: 1;
+`;
+
+export const CarouselImage = styled("img")`
+  width: 100%;
+  max-width: 100%;
+  height: 120vh;
+  object-fit: cover;
+  filter: grayscale(35%);
+  opacity: 0.8;
+`;
+
+export const ParallaxImg = styled("div")`
+  background-color: rgba(0,0,0,0.2 );
+ 
+  background-image: url(${parallax1});
+  background-blend-mode:multiply;
+ 
+  min-height: 800px;
+
+ 
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+`;
+
+export const ParallaxHeader = styled("div")`
+  color: white;
+  font-family: "aboutFont";
+  font-weight: bold;
+  font-size: 100px;
+
+  text-shadow: 8px 8px 0 black, 8px 8px 0 slategrey;
+  text-align: center;
+ 
+  padding-top: 150px;
+
+  margin-left: 50px;
+  margin-right: 50px;
+
+  & p {
+    padding-bottom: 40px;
+    font-family: "aboutFont";
+    font-size: 28px;
+    margin-left: 50px;
+    margin-right: 50px;
+    text-shadow: 2px 2px 0 black, 2px 2px 0 slategrey;
+  }
+`;
+
+
+*/

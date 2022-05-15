@@ -2,6 +2,7 @@
 -- > Footer/Header Border
 --> Buttons (Splash page)
 --> Social media bar (props --> column or row)
+--> cleanup code styled components + react-bootstrap with nested css --> https://stackoverflow.com/questions/47318455/overwriting-nested-styles-in-react-bootstrap-using-styled-components
 
 --> fix bootstrap .active / .hover / .visited blue outline. 
 

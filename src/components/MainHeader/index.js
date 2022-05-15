@@ -69,9 +69,10 @@ function MainHeader() {
       <Header fixed="top" id="navbar">
         {/* Maybe put a menu Icon - Roster's Head at the end of the "Menu" Left btton */}
         <SubSideMenu>
-        <Menu href="#navbar">Home</Menu> 
+        <Menu href="#hero">Home</Menu> 
         <Menu href="#frontshop">Concept</Menu> 
-        <Menu href="#aboutId">About</Menu> 
+        <Menu href="#about">About</Menu> 
+        <Menu href="#contact">Contact</Menu> 
         {/* <Menu href="#newsletterId">Newsletter</Menu>  */}
 
 

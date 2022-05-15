@@ -1,18 +1,24 @@
 import styled, { css } from "styled-components";
 
-// import bg from "../../imgs/textures/splatter/ink-303240.png"
-// import bg from "../../imgs/textures/splatter/d.jpg"
+import bg from "../../imgs/textures/splatter/d.jpg"
 // import bg from "../../imgs/textures/splatter/i.jpg"
 // import bg from "../../imgs/textures/splatter/e.jpg"
-import bg from "../../imgs/textures/splatter/c.jpg"
-
-
+// import bg from "../../imgs/textures/splatter/c.jpg"
+// import bg from "../../imgs/textures/splatter/ink-303240.png"
+// import bg from "../../imgs/textures/TextureA.jpg"
+// import bg from "../../imgs/textures/StockSnap_0CVRHKMUKO.jpg"
+// import bg from "../../imgs/textures/618BFADB-8C07-43EB-B523-59B962CAF4FE.png"
+// import bg from "../../imgs/textures/StockSnap_6IVARAOYB7.jpg"
 // import bg from "../../imgs/textures/splatter/a.jpg"
-// import bg from "../../imgs/textures/splatter/b.jpg"
-// import bg from "../../imgs/textures/splatter/f.jpg"
+// import bg from "../../imgs/textures/background-6793839_1920.jpg"
 // import bg from "../../imgs/textures/splatter/g.jpg"
 // import bg from "../../imgs/textures/splatter/h.jpg"
 // import bg from "../../imgs/textures/splatter/Green Tight Splatter.jpg"
+
+
+
+
+
 
 export const BGImg = styled('img')`
 
@@ -54,7 +60,7 @@ min-height: 100%;
   top: 0;
   left: 0;
 z-index: -2;
-opacity: 0.04;
+opacity: 0.065;
 /* opacity: 0.1; */
 `
 

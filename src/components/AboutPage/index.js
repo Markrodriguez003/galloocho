@@ -1,14 +1,9 @@
 import React, { useState } from "react";
 // COMPONENTS
 import { Row, Col, Carousel, Container } from "react-bootstrap";
+import AniButtonWhite from "../AniButtonWhite";
 import {
-  AboutFirstSection,
-  CarouselImage,
-  AboutHeader,
-  MiamiText,
-  AboutHeaderContainer,
-  ParallaxImg,
-  ParallaxHeader,
+  AboutContainer,
   RotatedH1,
   SocialMediaBar,
   SocialMediaItem,
@@ -35,95 +30,9 @@ import "./script";
 function AboutPage() {
   return (
     <>
-      {/* <Container fluid>
-        <AboutFirstSection>
-          <Carousel controls={false} indicators={false} fade={true}>
-            <Carousel.Item>
-              <CarouselImage
-                className="d-block w-100"
-                src={splash1}
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <CarouselImage
-                className="d-block w-100"
-                src={splash2}
-                alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <CarouselImage
-                className="d-block w-100"
-                src={splash3}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-          </Carousel>
-        </AboutFirstSection>
-        <AboutHeaderContainer>
-          <AboutHeader>
-            <MiamiText> Miami </MiamiText>
-            <br /> <span>STRIAGHT TO YOU</span>
-            <br />{" "}
-            <span>
-              FROM <span style={{ fontStyle: "italic" }}>US</span>
-            </span>
-            <br />
-          </AboutHeader>
-        </AboutHeaderContainer>
-        <AboutFirstSection>
-          <Carousel controls={false} indicators={false} fade={true}>
-            <Carousel.Item>
-              <CarouselImage
-                className="d-block w-100"
-                src={splash1}
-                alt="First slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <CarouselImage
-                className="d-block w-100"
-                src={splash2}
-                alt="Second slide"
-              />
-            </Carousel.Item>
-            <Carousel.Item>
-              <CarouselImage
-                className="d-block w-100"
-                src={splash3}
-                alt="Third slide"
-              />
-            </Carousel.Item>
-          </Carousel>
-        </AboutFirstSection>
-        <AboutHeaderContainer>
-          <AboutHeader>
-            <MiamiText> Miami </MiamiText>
-            <br /> <span>STRIAGHT TO YOU</span>
-            <br />{" "}
-            <span>
-              FROM <span style={{ fontStyle: "italic" }}>US</span>
-            </span>
-            <br />
-          </AboutHeader>
-        </AboutHeaderContainer>
-      </Container> */}
 
-      <div
-        style={{
-          color: "white",
-          backgroundColor: "rgba(0,0,0,0.92)",
-          backgroundImage:
-            "radial-gradient(circle at center center, #444cf7, #e5e5f7), repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 10px, transparent 20px, transparent 10px)",
-          backgroundBlendMode: "multiply",
-          padding: "40px",
-          // border:"solid rgba(255,255,255,1) 10px",
-          // borderRadius: "20px"
-          // borderBottom:"solid rgba(255,255,255,0.92) 4px",
-          // borderTop:"solid rgba(255,255,255,0.92) 4px",
-        }}
-      >
+
+      <AboutContainer id="about">
         <Container>
           <Row>
             <Col lg={2} xs={6}>
@@ -141,6 +50,7 @@ function AboutPage() {
                     backgroundColor: "transparent",
                     padding: "0px",
                     marginLeft: "-70px",
+
                   }}
                   src={roosterImage}
                 ></img>
@@ -158,7 +68,8 @@ function AboutPage() {
                     borderRadius: "10px",
                     textAlign: "center",
                     textTransform: "uppercase",
-                    textShadow: "4px 3px 0 rgba(0,255,255,0.3)",
+                    textShadow: "4px 3px 0 rgba(0,0,0,0.9)",
+                    fontSize: "55px"
                   }}
                 >
                   History Of The Cuban Rooster
@@ -166,53 +77,74 @@ function AboutPage() {
 
                 <p
                   style={{
-                    fontFamily: "aboutFont",
-                    fontWeight: "bold",
-                    fontSize: "20px",
-                    letterSpacing: "1.1px",
-                    padding: "4px",
-                    borderRadius: "10px",
-                    backgroundColor: "rgba(0,255,255,0.07)",
+                    // fontFamily: "aboutFont",
+                    fontFamily: "menuFont",
+
+            
+                fontSize: "22px",
+                letterSpacing: "1.1px",
+                padding: "4px",
+                borderRadius: "10px",
+                backgroundColor: "transparent",
                     // 1245px change font size to a smaller size
                   }}
                 >
-                  Gallo Ocho is the “rehatching” of the famed Miami art project
-                  that gave us the Roosters of Calle Ocho, also known as
-                  RoosterWalk. It is a platform made to highlight and exhibit
-                  the tremendous artistry in Miami, through exclusive original
-                  art handcrafted exclusively by resident contemporary artists
-                  and creatives, using the city’s iconic mascot as a canvas.
-                  Every Gallo Ocho artwork is one of a kind and will not be
-                  replicated.
-                </p>
-                <SocialMediaBar>
-                  <SocialMediaItem href="#">
-                    <BsFacebook />
-                  </SocialMediaItem>
-                  <SocialMediaItem href="#">
-                    {" "}
-                    <BsInstagram />
-                  </SocialMediaItem>
-                  <SocialMediaItem href="https://calleochonews.com/whats-up-with-the-calle-ocho-roosters/">
-                    {" "}
-                    <img
-                      src={rosterLogo}
-                      style={{ width: "24px", height: "32px" }}
-                    ></img>
-                  </SocialMediaItem>
-                </SocialMediaBar>
-              </Row>
-            </Col>
-            <Col></Col>
+                Gallo Ocho is the “rehatching” of the famed Miami art project
+                that gave us the Roosters of Calle Ocho, also known as
+                RoosterWalk. It is a platform made to highlight and exhibit
+                the tremendous artistry in Miami, through exclusive original
+                art handcrafted exclusively by resident contemporary artists
+                and creatives, using the city’s iconic mascot as a canvas.
+                Every Gallo Ocho artwork is one of a kind and will not be
+                replicated.
+              </p>
+              <SocialMediaBar>
+                <SocialMediaItem href="#">
+                  <BsFacebook />
+                </SocialMediaItem>
+                <SocialMediaItem href="#">
+                  {" "}
+                  <BsInstagram />
+                </SocialMediaItem>
+                <SocialMediaItem href="https://calleochonews.com/whats-up-with-the-calle-ocho-roosters/">
+                  {" "}
+                  <img
+                    src={rosterLogo}
+                    style={{ width: "24px", height: "32px" }}
+                  ></img>
+                </SocialMediaItem>
+              </SocialMediaBar>
+              <AniButtonWhite btnTitle="See Our Social Media"/>
           </Row>
-        </Container>
-      </div>
+        </Col>
+      </Row>
+ 
+    </Container>
+      </AboutContainer >
 
       <br />
       <br />
       <br />
 
-      {/* <ParallaxImg>
+
+    </>
+  );
+}
+
+export default AboutPage;
+
+
+// PARRALLAX HERO
+{/* 
+
+import {
+  AboutFirstSection,
+  AboutHeader,
+  AboutHeaderContainer,
+ 
+} from "./design";
+
+<ParallaxImg>
         <ParallaxHeader>
           FUTURE CONCEPTS
           <p>
@@ -228,8 +160,84 @@ function AboutPage() {
           </p>
         </ParallaxHeader>
       </ParallaxImg> */}
-    </>
-  );
-}
 
-export default AboutPage;
+
+
+// SCROLLING - CAROUSEL HERO PAGE
+
+/*
+  <Container fluid>
+        <AboutFirstSection>
+          <Carousel controls={false} indicators={false} fade={true}>
+            <Carousel.Item>
+              <CarouselImage
+                className="d-block w-100"
+                src={splash1}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CarouselImage
+                className="d-block w-100"
+                src={splash2}
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CarouselImage
+                className="d-block w-100"
+                src={splash3}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+        </AboutFirstSection>
+        <AboutHeaderContainer>
+          <AboutHeader>
+            <MiamiText> Miami </MiamiText>
+            <br /> <span>STRIAGHT TO YOU</span>
+            <br />{" "}
+            <span>
+              FROM <span style={{ fontStyle: "italic" }}>US</span>
+            </span>
+            <br />
+          </AboutHeader>
+        </AboutHeaderContainer>
+        <AboutFirstSection>
+          <Carousel controls={false} indicators={false} fade={true}>
+            <Carousel.Item>
+              <CarouselImage
+                className="d-block w-100"
+                src={splash1}
+                alt="First slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CarouselImage
+                className="d-block w-100"
+                src={splash2}
+                alt="Second slide"
+              />
+            </Carousel.Item>
+            <Carousel.Item>
+              <CarouselImage
+                className="d-block w-100"
+                src={splash3}
+                alt="Third slide"
+              />
+            </Carousel.Item>
+          </Carousel>
+        </AboutFirstSection>
+        <AboutHeaderContainer>
+          <AboutHeader>
+            <MiamiText> Miami </MiamiText>
+            <br /> <span>STRIAGHT TO YOU</span>
+            <br />{" "}
+            <span>
+              FROM <span style={{ fontStyle: "italic" }}>US</span>
+            </span>
+            <br />
+          </AboutHeader>
+        </AboutHeaderContainer>
+      </Container>
+*/

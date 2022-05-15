@@ -20,12 +20,12 @@ function AniButton(props) {
 
       {/* Second Button animation old css style */}
       <a href={props.hrefTag} style={{display:"block", textAlign:"center",  }}>
-        <button className="site-btn"  >
-          <span className="btn-paint"></span>
-          <span className="btn-paint"></span>
-          <span className="btn-paint"></span>
-          <span className="btn-paint"></span>
-          <span className="btn-label">{props.btnTitle}  <BsFillArrowDownCircleFill /></span>
+        <button className="site-btnW"  >
+          <span className="btn-paintW"></span>
+          <span className="btn-paintW"></span>
+          <span className="btn-paintW"></span>
+          <span className="btn-paintW"></span>
+          <span className="btn-labelW">{props.btnTitle}  <BsFillArrowDownCircleFill /></span>
         </button>
       </a>
 
