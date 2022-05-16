@@ -1,19 +1,17 @@
 import styled, { css } from "styled-components";
 
 
- 
-
 export const AboutHeaderContainer = styled("div")`
   display: flex;
   justify-content: center;
   text-align: center;
+ 
 `;
 
 export const AboutHeader = styled("h1")`
   font-size: 68px;
-
   font-weight: bold;
-  color: white;
+  color: black;
   display: inline-block;
   position: absolute;
   background-color: rgba(0, 0, 0, 0.48);
@@ -36,12 +34,13 @@ export const AboutHeader = styled("h1")`
 export const AboutContainer = styled('div')`
 padding: 40px;
 color: white;
-background-color: rgba(0,0,0,0.92);
-background-image:radial-gradient(circle at center center, lightgrey, white), 
+/* background-color: rgba(0,0,0,0.92); */
+background-color: transparent;
+/* background-image:radial-gradient(circle at center center, lightgrey, white), 
 repeating-radial-gradient(circle at center center, #444cf7, #444cf7, 10px, 
 transparent 40px, transparent 40px);
-background-blend-mode: multiply;
- 
+background-blend-mode: multiply; */
+margin-bottom:180px;
 
  
 `
@@ -55,7 +54,8 @@ export const RotatedH1 = styled('h1')`
   text-align: center;
   margin-top:35px;
   font-family: "heroFont";
-  text-shadow: 4px 3px 0 rgba(0,0,0,0.9);
+  color:black;
+  /* text-shadow: 4px 3px 0 rgba(0,0,0,0.9); */
   ${props => props.rotatedR && css`
   transform: rotate(180deg);
   

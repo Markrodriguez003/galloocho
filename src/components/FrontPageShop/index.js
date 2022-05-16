@@ -5,13 +5,11 @@ import "./style.css";
 
 // COMPONENTS
 import ProductCard from "../ProductCard";
-import FrontPageArtists from "../FrontPageArtists";
 import AboutPage from "../AboutPage";
 import Newsletter from "../Newsletter";
-import OutlinedText from "../OutlinedText";
 import AniButton from "../AniButton"
+ 
 import { Button } from "react-bootstrap";
-import { BsFillArrowDownCircleFill } from "react-icons/bs";
 
 /* SHOP NOW BUTTON LOCATED AT THE BOTTOM */
 export const ShopNowButton = styled(Button)`
@@ -139,8 +137,7 @@ function FrontPageShop() {
               designed by local artists who wanted to give both visitors and
               locals alike a way to show their pride in this quirky and fun city
               where there’s always something new to see or experience.</p>
-            <br />
-            <br />
+             <br/>
             {/* <ShopNowButton href="#aboutId">
               {" "}
               About Us <BsFillArrowDownCircleFill />
@@ -166,6 +163,7 @@ function FrontPageShop() {
       <br />
 
       <AboutPage id="aboutId" />
+ 
       <Newsletter id="contactId" />
     </>
   );

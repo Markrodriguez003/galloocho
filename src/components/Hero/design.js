@@ -19,20 +19,21 @@ export const HeroContainer = styled("div")`
   width: 100%;
   height: 100%;
   padding-top: 120px;
-  padding-bottom: 80px;
+  padding-bottom: 160px;
   /* BG COLOR */
-  background-color: rgba(0, 0, 0, 0.05);
-  background: -moz-linear-gradient(top, rgba(0, 0, 0, 0.05) 0%, #ffffff 100%);
-  background: -webkit-linear-gradient(
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  
+  /* background: -webkit-linear-gradient(
     top,
-    rgba(0, 0, 0, 0.05) 0%,
-    #ffffff 100%
+    #ffffff
+      0%,
+      rgba(0, 0, 0, 0.05)100%
   );
   background: linear-gradient(
     to bottom,
-    rgba(0, 0, 0, 0.05) ; 0%,
-    #ffffff 100%
-  );
+    #ffffff ; 0%,
+    rgba(0, 0, 0, 0.05)100%
+  ); */
 
   /* background-color: rgba(0,255,255,0.2); */
 `;

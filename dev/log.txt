@@ -1,9 +1,10 @@
 -- Reusable Components --
 -- > Footer/Header Border
 --> Buttons (Splash page)
+--> switches
 --> Social media bar (props --> column or row)
+-- > Modals
 --> cleanup code styled components + react-bootstrap with nested css --> https://stackoverflow.com/questions/47318455/overwriting-nested-styles-in-react-bootstrap-using-styled-components
-
 --> fix bootstrap .active / .hover / .visited blue outline. 
 
 -- Brushstroke bottom border for H1s? Or perhaps brush strokes on the side of page
