@@ -64,7 +64,7 @@ function ThreeD(props) {
 
           // THIS WILL PRINT ERROR MESSAGE WHEN MODEL FAILED TO LOAD (SETUP POSTER) 
         } else if (modelVariants.modelIsVisible === null) {
-          console.log("Model is visible");
+          // console.log("Model is visible");
         }
       })
     });

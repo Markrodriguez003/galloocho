@@ -40,12 +40,7 @@ code {
   src: url("./fonts/brandText/Loce.ttf") format("opentype");
 }
 
-@font-face {
-  font-family: "cursiveFont";
-  /* src: url("./fonts/brandText/MACCOS_DOUBLE_Demo.otf") format("opentype"); */
-  src: url("./fonts/cursive/Havana.ttf");
-}
-
+ 
 
 @font-face {
   font-family: "aboutHeaderFont";
@@ -61,15 +56,17 @@ code {
   ;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+ 
 
 
+/* @font-face{
+  font-family: "altFont";
+  src: url("./fonts/new/Montserrat-VariableFont_wght.ttf");
 
-
+} */
 
 @font-face {
   font-family: "heroFont";
-  /* src: url("./fonts/telegrafico.ttf"); */
   /* src: url("./fonts/heroTapeFont/Trincha.ttf");  */
   /* src: url("./fonts/Brush/Blodders.otf");  */
   /* src: url("./fonts/Brush/aAgustusMerdeka.otf");  */
@@ -135,7 +132,9 @@ code {
 
   /* FAVORITES */
   /* HERO H1 */
-  src: url("./fonts/Brush/LALOUZZ.ttf");
+  /* src: url("./fonts/Brush/LALOUZZ.ttf"); */
+  src: url("./fonts/new/PermanentMarker-Regular.ttf");
+  /* src: url("./fonts/new/Hey October.ttf"); */
   /* src: url("./fonts/Brush/your\ flames\ DEMO.otf");  */
   /* src: url("./fonts/Brush/FRANKY\ TOYS.ttf");  */
   /* src: url("./fonts/Brush/Spinwash\ DEMO.otf");  */
@@ -175,6 +174,7 @@ code {
 
 @font-face {
   font-family: "menuFont";
+  src: url("./fonts/new/Montserrat-VariableFont_wght.ttf");
   /* src: url("./fonts/telegrafico.ttf"); */
   /* src: url("./fonts/heroTapeFont/Trincha.ttf");  */
   /* src: url("./fonts/Brush/Blodders.otf");  */
@@ -255,7 +255,7 @@ code {
 
 
   /* ALL */
-  src: url("./fonts/Brush/Midnight\ Sun\ DEMO.otf");
+  /* src: url("./fonts/Brush/Midnight\ Sun\ DEMO.otf"); */
   /* src: url("./fonts/Brush/DK\ Plakkaat.ttf"); */
   /* src: url("./fonts/Brush/Starboard\ DEMO.otf");  */
   /* src: url("./fonts/Brush/Studio\ Brush\ DEMO.otf");  */
@@ -273,6 +273,7 @@ code {
   /* src: url("./fonts/Brush/Woah.ttf");  */
   /* src: url("./fonts/Brush/Grayson.ttf");  */
   /* src: url("./fonts/Brush/Hillshort.otf");  */
+  /* src: url("./fonts/new/Hey October.ttf"); */
 
   /* GRAFITTI */
   /* src: url("./fonts/Grafitti/Bombing.ttf"); */

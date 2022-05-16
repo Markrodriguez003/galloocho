@@ -13,23 +13,25 @@ export const ProductCardsContainer = styled("div")`
   /*  margin-left: auto;
  margin-right: auto;  */
   overflow: hidden;
+  padding: 50px;
 `;
 
 // INDIVIDUAL PRODUCT CARD
 export const ProductCardElement = styled(Card)`
   position: relative !important;
   /* background-color: transparent !important ; */
-  width: 40vw; // This was added to make it a solo centered card. Take out when creating grid
-  height: auto;
+  width: 30vw; // This was added to make it a solo centered card. Take out when creating grid
+  /* height: 72vh; */
   margin-left: 10px;
   margin-right: 10px;
-
+ 
   margin-bottom: 65px;
   margin-top: 40px;
-  border: grey 1px solid !important;
+  border: transparent 1px solid !important;
 
-  -webkit-box-shadow: 4px 3px 47px -18px rgba(0, 0, 0, 0.7);
-  box-shadow: 4px 3px 47px -18px rgba(0, 0, 0, 0.7);
+ 
+  -webkit-box-shadow: 0px 5px 34px -3px rgba(0,0,0,0.38); 
+box-shadow: 0px 5px 34px -3px rgba(0,0,0,0.38);
 
   @media (max-width: 1325px) {
     width: 55vw;

@@ -8,7 +8,7 @@ import ProductCard from "../ProductCard";
 import AboutPage from "../AboutPage";
 import Newsletter from "../Newsletter";
 import AniButton from "../AniButton"
- 
+
 import { Button } from "react-bootstrap";
 
 /* SHOP NOW BUTTON LOCATED AT THE BOTTOM */
@@ -52,6 +52,7 @@ export const FlexBoxWrapper = styled("div")`
   align-items: center;
   justify-content: center;
   justify-items: center;
+ 
 
   @media (max-width: 1325px) {
     flex-direction: column-reverse;
@@ -91,41 +92,16 @@ export const ProductCardInfo = styled("div")`
   }
 `;
 
-// FRONT PAGE SHOP HEADER
-const FrontPageShopHeader = styled("h1")`
-  position: relative !important;
-  display: block !important;
-  font-family: "brandFont";
-  font-size: 72px !important;
-  letter-spacing: 3px !important;
-  padding: 32px;
-  border-width: 14px;
-  border-top-style: solid;
-  border-bottom-style: solid;
-  border-image: repeating-radial-gradient(
-      circle at -12px,
-      grey,
-      transparent 2px,
-      black 8px,
-      slategrey 2px
-    )
-    26;
-  margin-bottom: 30px;
-  text-align: center;
-  text-shadow: 2px 2px 0 gainsboro, 2px 1.2px 0 grey;
-
-  @media (max-width: 879px) {
-    font-size: 28px;
-  }
-`;
 
 function FrontPageShop() {
   return (
     <>
       {/* <FrontPageShopHeader>*** LATEST ARRIVALS ***</FrontPageShopHeader> */}
-      <h1 className="title" id="frontshop"><span style={{color:"cadetblue"}}>Meet</span> Lil' Havi</h1>
- 
+      <div className="wrapper">
+        <h1 className="title" id="frontshop"><span style={{ color: "cadetblue" }}>Meet</span> Little Havi</h1>
+      </div>
       <FrontPageShopContainer>
+
         <FlexBoxWrapper>
           <ProductCardInfo>
             <p>For those who've always wanted a
@@ -137,11 +113,8 @@ function FrontPageShop() {
               designed by local artists who wanted to give both visitors and
               locals alike a way to show their pride in this quirky and fun city
               where there’s always something new to see or experience.</p>
-             <br/>
-            {/* <ShopNowButton href="#aboutId">
-              {" "}
-              About Us <BsFillArrowDownCircleFill />
-            </ShopNowButton> */}
+            <br />
+
             <AniButton hrefTag="#about" btnTitle="About Us"></AniButton>
           </ProductCardInfo>
           <ProductCard></ProductCard>
@@ -163,7 +136,7 @@ function FrontPageShop() {
       <br />
 
       <AboutPage id="aboutId" />
- 
+
       <Newsletter id="contactId" />
     </>
   );

@@ -21,20 +21,6 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<AboutPage />} />
-            <Route path="/news" element={<UnderConstruction />} />
-            <Route path="/shop" element={<UnderConstruction />} />
-            <Route path="/artists" element={<UnderConstruction />} />
-            <Route path="/cart" element={<UnderConstruction />} />
-            <Route path="/support" element={<UnderConstruction />} />
-            <Route path="/newsletter" element={<UnderConstruction />} />
-            <Route path="/nft" element={<UnderConstruction />} />
-            <Route path="/investor" element={<UnderConstruction />} />
-            <Route path="/artist-sign-up" element={<UnderConstruction />} />
-            <Route path="/contact" element={<Contact />} />
-            <Route path="/future" element={<UnderConstruction />} />
-            <Route path="/refund" element={<UnderConstruction />} />
-            <Route path="/affiliates" element={<UnderConstruction />} /> */}
           </Routes>
           <MainFooter />
         </SimpleReactLightbox>
