@@ -22,9 +22,7 @@
   },
   "scripts": {
     "start": "react-app-rewired start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
- 
+    "build": "react-app-rewired build",
     "test": "react-app-rewired test",
     "eject": "react-scripts eject"
   },
@@ -47,6 +45,7 @@
     ]
   },
   "devDependencies": {
+    "@flydotio/dockerfile": "^0.5.8",
     "assert": "^2.0.0",
     "buffer": "^6.0.3",
     "crypto-browserify": "^3.12.0",
