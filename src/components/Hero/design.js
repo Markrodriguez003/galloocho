@@ -18,7 +18,7 @@ export const HeroContainer = styled("div")`
   gap: 5px;
   width: 100%;
   height: 100%;
-  padding-top: 120px;
+  padding-top: 60px;
   padding-bottom: 80px;
   /* BG COLOR */
   background-color: rgba(0, 0, 0, 0.05);
@@ -42,8 +42,9 @@ export const HeaderText = styled("h1")`
   /* display: inline;
   position: relative; */
   padding: 10px;
+  margin-right: 30px;
   color: black;
-  font-size: 66px;
+  font-size: 56px;
   font-family: "heroFont", sans-serif;
   letter-spacing: 4.5px;
   /* background: url("../../imgs/textures/TextureA.jpg") no-repeat left / 120%; */
