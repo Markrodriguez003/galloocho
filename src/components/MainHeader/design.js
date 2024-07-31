@@ -28,11 +28,11 @@ export const Header = styled(Navbar)`
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
-  padding: 13px;
-  transition: top 0.4s; 
-  z-index:1;
-  -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53);
-  box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);
+  padding: 3px;
+  transition: top 0.4s;
+  z-index: 1;
+  -webkit-box-shadow: 3px 5px 30px 4px rgba(0, 0, 0, 0.53);
+  box-shadow: 3px 5px 30px 4px rgba(0, 0, 0, 0.23);
 
   /*  ORIGINAL PLAIN BORDER */
   /* border-bottom: solid rgba(0, 0, 0, 0.3) 2px; */
@@ -50,14 +50,14 @@ export const Header = styled(Navbar)`
     26;  */
 
   /* ORIGINAL DARKER BORDER IDEA */
-  /*   border-image-slice: 26 16 144 13;
-  border-image-width: 0px 0px 24px 0px;
-  border-image-outset: 0px 0px 20px 0px;
+  border-image-slice: 10 6 80 3;
+  border-image-width: 0px 0px 8.5px 0px;
+  border-image-outset: 0px 0px 8.5px 0px;
   border-image-repeat: repeat repeat;
-  border-image-source: url(${border}); */
+  border-image-source: url(${border});
 
   /* LIGHTER BORDER IDEA */
-  /*   &:after {
+    /* &:after {
     content: "";
     position: absolute;
     left: 0;
@@ -86,16 +86,14 @@ export const Header = styled(Navbar)`
 `;
 
 export const BlackLip = styled("div")`
-
-background-color:rgba(0,0,0,0.68);
-width: 100%;
-height: 126px;
-z-index:-2;
-  -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.53);
-  box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.23);
-  margin-bottom:-126px;
-
-`
+  /* background-color: rgba(0, 0, 0, 0.05); */
+  width: 100%;
+  height: 205px;
+  z-index: -2;
+  /* -webkit-box-shadow: 1px 2px 4px 3px rgba(0, 0, 0, 0.1); */
+  /* box-shadow: 1px 2px 28px 2px rgba(0, 0, 0, 0.1); */
+  margin-bottom: -156px;
+`;
 
 export const Menu = styled("a")`
   color: black;
@@ -118,12 +116,11 @@ export const Menu = styled("a")`
   }
   &:hover {
     color: black;
-    background-color:rgba(0,0,0,0.065);
+    background-color: rgba(0, 0, 0, 0.065);
     border-radius: 15px;
     text-decoration: none;
-    cursor: url(${roosterCursor})  -52 -52, auto;
-    transition:  0.5s linear ;
-  
+    cursor: url(${roosterCursor}) -52 -52, auto;
+    transition: 0.5s linear;
   }
   &:active {
     color: black;
@@ -144,8 +141,8 @@ export const Menu = styled("a")`
 
   @media (max-width: 290px) {
     font-size: 12px;
-    margin-left:auto;
-    margin-right:auto;
+    margin-left: auto;
+    margin-right: auto;
   }
 `;
 
@@ -174,25 +171,23 @@ export const SubSideMenu = styled("div")`
   align-items: center;
   align-content: space-around;
   @media (max-width: 555px) {
-    order:2;
+    order: 2;
     flex-grow: 12;
   }
-
-  
 `;
 
 export const BrandLink = styled("a")`
   text-decoration: none;
   @media (max-width: 555px) {
-    order:1;
-    margin-left:auto;
+    order: 1;
+    margin-left: auto;
     margin-right: auto;
   }
 `;
 
 export const BrandText = styled("img")`
-    width: 128px;
-    height: "auto";
+  width: 128px;
+  height: "auto";
 
   @media (max-width: 845px) {
     width: 110px;
@@ -217,8 +212,6 @@ export const BrandText = styled("img")`
     width: 95px;
     height: "auto";
   }
-
- 
 `;
 
 export const BrandIcon = styled("img")`
@@ -234,7 +227,7 @@ export const BrandIcon = styled("img")`
     height: 55px;
   }
 
-/*   @media (max-width: 455px) {
+  /*   @media (max-width: 455px) {
     width: 40px;
     height: 45px;
   } */
