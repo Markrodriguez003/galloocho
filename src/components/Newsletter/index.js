@@ -152,7 +152,7 @@ function Newsletter() {
 
             {/* Artist / Other Inqueries */}
 
-            <Tab eventKey="inquery" title={<span><BsFillPaletteFill /> {" "} Inqueries</span>}  >
+            <Tab eventKey="inquery" title={<span><BsFillPaletteFill /> {" "} Inquiries</span>}  >
               <Form>
 
                 <Form.Group as={Row} className="mb-3" controlId="contact-form">
