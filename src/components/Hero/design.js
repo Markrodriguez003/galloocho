@@ -18,7 +18,7 @@ export const HeroContainer = styled("div")`
   gap: 5px;
   width: 100%;
   height: 100%;
-  padding-top: 60px;
+  padding-top: 20px;
   padding-bottom: 80px;
   /* BG COLOR */
   background-color: rgba(0, 0, 0, 0.05);

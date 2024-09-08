@@ -28,7 +28,7 @@ export const Header = styled(Navbar)`
   flex-direction: row;
   justify-content: space-between;
   background-color: white;
-  padding: 3px;
+  padding: 0px;
   transition: top 0.4s;
   z-index: 1;
   -webkit-box-shadow: 3px 5px 30px 4px rgba(0, 0, 0, 0.53);
@@ -101,7 +101,7 @@ export const Menu = styled("a")`
   cursor: pointer;
   text-decoration: none;
   font-family: "menuFont";
-  font-size: 28px;
+  font-size: 25px;
   margin-left: 20px;
   padding: 3px;
   /*   transition:  2s linear 1s; */
@@ -186,7 +186,7 @@ export const BrandLink = styled("a")`
 `;
 
 export const BrandText = styled("img")`
-  width: 128px;
+  width: 90px;
   height: "auto";
 
   @media (max-width: 845px) {
@@ -220,7 +220,7 @@ export const BrandIcon = styled("img")`
   background-color: transparent;
   border-radius: 50%;
   padding: 5px;
-  margin-bottom: 24px;
+  margin-bottom: 12px;
   margin-right: 0px;
   @media (max-width: 675px) {
     width: 50px;
