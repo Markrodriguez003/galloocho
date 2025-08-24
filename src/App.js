@@ -21,7 +21,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Home />} />
-            {/* <Route path="/about" element={<AboutPage />} />
+            <Route path="/about" element={<AboutPage />} />
             <Route path="/news" element={<UnderConstruction />} />
             <Route path="/shop" element={<UnderConstruction />} />
             <Route path="/artists" element={<UnderConstruction />} />
@@ -34,7 +34,7 @@ function App() {
             <Route path="/contact" element={<Contact />} />
             <Route path="/future" element={<UnderConstruction />} />
             <Route path="/refund" element={<UnderConstruction />} />
-            <Route path="/affiliates" element={<UnderConstruction />} /> */}
+            <Route path="/affiliates" element={<UnderConstruction />} />
           </Routes>
           <MainFooter />
         </SimpleReactLightbox>

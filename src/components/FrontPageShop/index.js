@@ -69,6 +69,7 @@ export const ProductCardInfo = styled("div")`
  
  
   p {
+    font-size: 22.5px;
     /* text-shadow:1px 1px black; */
     
   }
@@ -159,6 +160,8 @@ function FrontPageShop() {
           alignContent: "center",
         }}
       ></div>
+      <br />
+      <br />
       <br />
       <br />
       <br />
