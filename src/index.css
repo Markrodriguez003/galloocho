@@ -1,36 +1,8 @@
-* {
-  margin: 0;
-  padding: 0;
-  font-size: 1em;
-  font-family: inherit;
- 
+@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
 
-}
-
- 
-
-html, body {
-  margin: 0;
-  padding: 0;
-  overflow-x: hidden;
-  scroll-behavior: smooth;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-
-
-}
-
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: "heroFont";
+  src: url("./fonts/Brush/LALOUZZ.ttf");
 }
 
 @font-face {
@@ -60,7 +32,7 @@ code {
   ;
 }
 
-@import url("https://fonts.googleapis.com/css?family=Montserrat:900");
+
 
 
 
@@ -68,21 +40,21 @@ code {
 
 @font-face {
   font-family: "heroFont";
- 
+
   /* FAVORITES */
   /* HERO H1 */
   src: url("./fonts/Brush/LALOUZZ.ttf");
- 
+
 
 }
 
 @font-face {
   font-family: "menuFont";
- 
+
 
   /* ALL */
   src: url("./fonts/Brush/Midnight\ Sun\ DEMO.otf");
- 
+
 
 }
 
@@ -91,4 +63,21 @@ code {
   src: url("./fonts/heroTapeFont/Trincha.ttf");
 }
 
- 
+
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

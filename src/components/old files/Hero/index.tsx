@@ -9,7 +9,7 @@ import { BsFillArrowDownCircleFill } from "react-icons/bs";
  
 import {
   HeroContainer,
-  MiamiText,
+  // MiamiText,
   ShopNowButton,
   BrushStrokeBorder,
   HeaderText,
@@ -17,7 +17,7 @@ import {
 } from "./design";
 
 // CSS
-import "../Hero/styles.css";
+import "./styles.css";
 
 function Hero() {
   return (

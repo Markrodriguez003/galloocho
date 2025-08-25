@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { ModelContainer } from "./design"
+// import { ModelContainer } from "./design"
 
 // MODELS
 import ModelDemo from "../../models/Rooster1.glb"

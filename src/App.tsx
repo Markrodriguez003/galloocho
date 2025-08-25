@@ -1,20 +1,22 @@
-import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
+// import { BrowserRouter, Routes, Route, Link, Outlet } from "react-router-dom";
 
-import BackgroundImg from "./components/BackgroundImg"
-import MainHeader from "./components/MainHeader";
-import MainFooter from "./components/MainFooter";
-import Home from "./components/Home";
-import AboutPage from "./components/AboutPage";
-import SimpleReactLightbox from "simple-react-lightbox";
-import UnderConstruction from "./components/UnderConstruction";
-import Contact from "./components/Contact"
+// import BackgroundImg from "./components/BackgroundImg";
+// import MainHeader from "./components/MainHeader";
+// import MainFooter from "./components/MainFooter";
+// import Home from "./components/Home";
+// import AboutPage from "./components/AboutPage";
+// import SimpleReactLightbox from "simple-react-lightbox";
+// import UnderConstruction from "./components/UnderConstruction";
+// import Contact from "./components/Contact";
+// import NewDesign from "./components/NewDesign";
 
-
-import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <>
-      <BackgroundImg />
+      <div>
+        <h1>GALLO - OCHO </h1>
+      </div>
+      {/* <BackgroundImg />
       <BrowserRouter>
         <SimpleReactLightbox>
           <MainHeader />
@@ -35,10 +37,11 @@ function App() {
             <Route path="/future" element={<UnderConstruction />} />
             <Route path="/refund" element={<UnderConstruction />} />
             <Route path="/affiliates" element={<UnderConstruction />} />
+            <Route path="/new-design" element={<NewDesign />} />
           </Routes>
           <MainFooter />
         </SimpleReactLightbox>
-      </BrowserRouter>
+      </BrowserRouter> */}
     </>
   );
 }
